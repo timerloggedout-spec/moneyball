@@ -1,0 +1,1362 @@
+{
+ "schema": "moneyball-cards-feed/v1",
+ "generated_at": "2026-11-03T22:20:52Z",
+ "generator": "scripts/generate_cards_feed.py (moneyball repo, lane A)",
+ "generator_run_id": "local-2026-11-03T22:20:52Z",
+ "sources": {
+  "registry": "termux-monorepo/docs/ops/AGENT-MONIKERS.md",
+  "book_feed_schema": "agentic-gambling-book-feed/v1",
+  "book_subjects": 26,
+  "book_settlements": 0
+ },
+ "population_scope": "v1: lead SSOT table + Fleet GitHub App function identities; lane-coordination monikers and 4n0n entrant identities are NOT card population (Registry boundary rules)",
+ "skipped": [
+  "Termux Fleet Collector: no moniker issued in Registry -> no card (DESIGN §2.1)"
+ ],
+ "cards": [
+  {
+   "card_id": "heyvern",
+   "moniker_v1": "heyVern",
+   "moniker_v2": "h3yVern",
+   "role": "Jules (implementation)",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": 352,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `heyVern`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `heyVern`"
+    },
+    {
+     "field": "moniker_v2",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#graduations-of-record (heyVern -> h3yVern, U=352, counted 2026-11-01)"
+    },
+    {
+     "field": "provenance_units",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#graduations-of-record (heyVern -> h3yVern, U=352, counted 2026-11-01)"
+    }
+   ]
+  },
+  {
+   "card_id": "sparkflux",
+   "moniker_v1": "sparkFlux",
+   "moniker_v2": null,
+   "role": "Gemini CLI (on-demand)",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `sparkFlux`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `sparkFlux`"
+    }
+   ]
+  },
+  {
+   "card_id": "deepcore",
+   "moniker_v1": "deepCore",
+   "moniker_v2": null,
+   "role": "DeepSeek CI (review/invoke)",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `deepCore`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `deepCore`"
+    }
+   ]
+  },
+  {
+   "card_id": "codehound",
+   "moniker_v1": "codeHound",
+   "moniker_v2": "c0deHound",
+   "role": "CodeRabbit (review)",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": 1663,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `codeHound`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `codeHound`"
+    },
+    {
+     "field": "moniker_v2",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#graduations-of-record (codeHound -> c0deHound, U=1663, counted 2026-11-01)"
+    },
+    {
+     "field": "provenance_units",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#graduations-of-record (codeHound -> c0deHound, U=1663, counted 2026-11-01)"
+    }
+   ]
+  },
+  {
+   "card_id": "devinforge",
+   "moniker_v1": "devinForge",
+   "moniker_v2": "d3vinForge",
+   "role": "Devin (review/fix)",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": 163,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `devinForge`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `devinForge`"
+    },
+    {
+     "field": "moniker_v2",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#graduations-of-record (devinForge -> d3vinForge, U=163, counted 2026-11-01)"
+    },
+    {
+     "field": "provenance_units",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#graduations-of-record (devinForge -> d3vinForge, U=163, counted 2026-11-01)"
+    }
+   ]
+  },
+  {
+   "card_id": "opssweep",
+   "moniker_v1": "opsSweep",
+   "moniker_v2": null,
+   "role": "Continuous-ops sweep",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `opsSweep`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `opsSweep`"
+    }
+   ]
+  },
+  {
+   "card_id": "archw1z",
+   "moniker_v1": "archW1z",
+   "moniker_v2": null,
+   "role": "OPERATOR / Grok",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `archW1z`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `archW1z`"
+    }
+   ]
+  },
+  {
+   "card_id": "grok",
+   "moniker_v1": "Grok",
+   "moniker_v2": null,
+   "role": "Grok (AI collaborator — recon)",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `Grok`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `Grok`"
+    }
+   ]
+  },
+  {
+   "card_id": "l337s33k",
+   "moniker_v1": "l337S33k",
+   "moniker_v2": null,
+   "role": "Leet-Seek Admin / Full-scope Operator",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `l337S33k`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `l337S33k`"
+    }
+   ]
+  },
+  {
+   "card_id": "peergate",
+   "moniker_v1": "peerGate",
+   "moniker_v2": null,
+   "role": "Peer orchestrator",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `peerGate`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `peerGate`"
+    }
+   ]
+  },
+  {
+   "card_id": "geminimesh",
+   "moniker_v1": "geminiMesh",
+   "moniker_v2": null,
+   "role": "Gemini / Gemini CLI contributor lane",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `geminiMesh`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `geminiMesh`"
+    }
+   ]
+  },
+  {
+   "card_id": "routemesh",
+   "moniker_v1": "routeMesh",
+   "moniker_v2": null,
+   "role": "OpenRouter contributor lane",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `routeMesh`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `routeMesh`"
+    }
+   ]
+  },
+  {
+   "card_id": "feloforge",
+   "moniker_v1": "feloForge",
+   "moniker_v2": null,
+   "role": "FELO contributor lane",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `feloForge`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `feloForge`"
+    }
+   ]
+  },
+  {
+   "card_id": "hffoundry",
+   "moniker_v1": "hfFoundry",
+   "moniker_v2": null,
+   "role": "Hugging Face contributor lane",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `hfFoundry`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `hfFoundry`"
+    }
+   ]
+  },
+  {
+   "card_id": "rolemesh",
+   "moniker_v1": "roleMesh",
+   "moniker_v2": null,
+   "role": "Contributor-role coordinator",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `roleMesh`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `roleMesh`"
+    }
+   ]
+  },
+  {
+   "card_id": "archaeo-oracle",
+   "moniker_v1": "Archaeo · Oracle",
+   "moniker_v2": null,
+   "role": "Recon 🏅 (fleet forensic recon lane)",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `Archaeo · Oracle`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `Archaeo · Oracle`"
+    }
+   ]
+  },
+  {
+   "card_id": "inquest-sofa",
+   "moniker_v1": "Inquest · SOFA",
+   "moniker_v2": null,
+   "role": "SOFA seat (Stack Overflow for Agents — swarm research loop)",
+   "source": "ssot-lead",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `Inquest · SOFA`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#ssot-lead row `Inquest · SOFA`"
+    }
+   ]
+  },
+  {
+   "card_id": "edict-publisher",
+   "moniker_v1": "Edict · Publisher",
+   "moniker_v2": null,
+   "role": "Termux Fleet Publisher",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Edict · Publisher`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Edict · Publisher`"
+    }
+   ],
+   "actor": "termux-fleet-publisher[bot]"
+  },
+  {
+   "card_id": "argus-reviewer",
+   "moniker_v1": "Argus · Reviewer",
+   "moniker_v2": null,
+   "role": "Termux Fleet Reviewer",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Argus · Reviewer`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Argus · Reviewer`"
+    }
+   ],
+   "actor": "termux-fleet-reviewer[bot]"
+  },
+  {
+   "card_id": "janus-lifecycle",
+   "moniker_v1": "Janus · Lifecycle",
+   "moniker_v2": null,
+   "role": "Termux Fleet Lifecycle",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Janus · Lifecycle`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Janus · Lifecycle`"
+    }
+   ],
+   "actor": "termux-fleet-lifecycle[bot]"
+  },
+  {
+   "card_id": "cerberus-gate",
+   "moniker_v1": "Cerberus · Gate",
+   "moniker_v2": null,
+   "role": "Termux Fleet Gate",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Cerberus · Gate`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Cerberus · Gate`"
+    }
+   ],
+   "actor": "termux-fleet-gate[bot]"
+  },
+  {
+   "card_id": "myriad-swarm",
+   "moniker_v1": "Myriad · Swarm",
+   "moniker_v2": null,
+   "role": "Termux Fleet Swarm",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Myriad · Swarm`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Myriad · Swarm`"
+    }
+   ],
+   "actor": "termux-fleet-swarm[bot]"
+  },
+  {
+   "card_id": "scalpel-crossreference",
+   "moniker_v1": "Scalpel · CrossReference",
+   "moniker_v2": null,
+   "role": "Termux Fleet CrossReference",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Scalpel · CrossReference`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Scalpel · CrossReference`"
+    }
+   ],
+   "actor": "termux-fleet-crossreference[bot]"
+  },
+  {
+   "card_id": "porter-apkrelease",
+   "moniker_v1": "Porter · ApkRelease",
+   "moniker_v2": null,
+   "role": "Termux Fleet ApkRelease",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Porter · ApkRelease`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Porter · ApkRelease`"
+    }
+   ],
+   "actor": "— (actor per AppID provisioning record)"
+  },
+  {
+   "card_id": "chronicler-repostory",
+   "moniker_v1": "Chronicler · RepoStory",
+   "moniker_v2": null,
+   "role": "Termux Fleet RepoStory",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Chronicler · RepoStory`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Chronicler · RepoStory`"
+    }
+   ],
+   "actor": "termux-fleet-repostory[bot]"
+  },
+  {
+   "card_id": "factorial-doe",
+   "moniker_v1": "Factorial · DoE",
+   "moniker_v2": null,
+   "role": "Termux Fleet DoE",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Factorial · DoE`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Factorial · DoE`"
+    }
+   ],
+   "actor": "termux-fleet-doe[bot]"
+  },
+  {
+   "card_id": "mimir-ugreenskills",
+   "moniker_v1": "Mimir · UgreenSkills",
+   "moniker_v2": null,
+   "role": "Termux Fleet UgreenSkills",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Mimir · UgreenSkills`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Mimir · UgreenSkills`"
+    }
+   ],
+   "actor": "— (not yet provisioned; deferred 2026-11-03, below)"
+  },
+  {
+   "card_id": "pythia-delphioracle",
+   "moniker_v1": "Pythia · DelphiOracle",
+   "moniker_v2": null,
+   "role": "Termux Fleet DelphiOracle",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Pythia · DelphiOracle`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Pythia · DelphiOracle`"
+    }
+   ],
+   "actor": "termux-fleet-delphioracle[bot]"
+  },
+  {
+   "card_id": "actuary-moneyball",
+   "moniker_v1": "Actuary · MoneyBall",
+   "moniker_v2": null,
+   "role": "Termux Fleet MoneyBall",
+   "source": "fleet-app",
+   "status": "INTAKE",
+   "stats": {
+    "provenance_units": null,
+    "landed_prs": null,
+    "mirror_scores": null,
+    "book": {
+     "forecasts_issued": null,
+     "brier": null,
+     "hit_rate": null,
+     "open_positions": null
+    },
+    "subjects_active": null,
+    "countdown_refs": null
+   },
+   "stat_null_states": {
+    "provenance_units": "NOT_ESTABLISHED",
+    "landed_prs": "NOT_ESTABLISHED",
+    "mirror_scores": "NOT_ESTABLISHED",
+    "book.forecasts_issued": "INTAKE",
+    "book.brier": "INTAKE",
+    "book.hit_rate": "INTAKE",
+    "book.open_positions": "NOT_ESTABLISHED",
+    "subjects_active": "NOT_ESTABLISHED",
+    "countdown_refs": "NOT_ESTABLISHED"
+   },
+   "snapshot_at": "2026-11-03T22:20:52Z",
+   "receipts": [
+    {
+     "field": "identity",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Actuary · MoneyBall`"
+    },
+    {
+     "field": "status",
+     "type": "feed",
+     "ref": "termux-monorepo/docs/ops/AGENT-MONIKERS.md#fleet-app-identities row `Actuary · MoneyBall`"
+    }
+   ],
+   "actor": "termux-fleet-moneyball[bot]"
+  }
+ ]
+}
