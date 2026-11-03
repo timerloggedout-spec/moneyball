@@ -1,0 +1,69 @@
+name: book-feed-refresh
+
+# G1 feed-refresh fold-in — Swarm dispatch #1 (Web3 seat 779d33ad,
+# 2026-11-03; DESIGN §2.2 pipeline + §9 step 3 remainder).
+# Mirrors the monorepo Book publication feed into data/book-feed.json
+# VERBATIM (consumed, never re-authored — §9.1). Source of record:
+# timerloggedout-spec/termux-monorepo (public)
+#   ops/agentic-gambling/book/book-feed.json
+# generated there from challenges-book.json + ledger.jsonl by
+# scripts/moneyball/wagering_book_feed.py.
+# Commit actor: termux-fleet-moneyball[bot] via the SEC-03
+# installation token — the mint step precedes checkout so the
+# checkout-persisted credential is the App, never GITHUB_TOKEN.
+# Cadence (§2.2: Actions only): scheduled sweep + manual dispatch +
+# repository_dispatch(book-feed-changed) for event-driven callers.
+# A no-change run is a green no-op and says so; validation of the
+# mirrored feed rides the repo's validate-feeds workflow on push.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+  repository_dispatch:
+    types: [book-feed-changed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: book-feed-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mint the App installation token (before checkout)
+        id: app-token
+        uses: actions/create-github-app-token@b60ed23e06e1e229cd0384bf542ad2781a8df21e # v3
+        with:
+          app-id: ${{ vars.TERMUX_FLEET_MONEYBALL_APP_ID }}
+          private-key: ${{ secrets.TERMUX_FLEET_MONEYBALL_PRIVATE_KEY }}
+
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Mirror the Book publication feed verbatim
+        id: mirror
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/ops/agentic-gambling/book/book-feed.json" -o "$RUNNER_TEMP/book-feed.json"
+          python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$RUNNER_TEMP/book-feed.json"
+          if cmp -s "$RUNNER_TEMP/book-feed.json" data/book-feed.json; then
+            echo "in_sync=true" >> "$GITHUB_OUTPUT"
+            echo "Book feed already in sync with the monorepo publication feed — no commit."
+          else
+            cp "$RUNNER_TEMP/book-feed.json" data/book-feed.json
+            echo "in_sync=false" >> "$GITHUB_OUTPUT"
+            echo "Book feed changed upstream — committing the refresh."
+          fi
+
+      - name: Commit the refresh as the App bot
+        if: steps.mirror.outputs.in_sync == 'false'
+        run: |
+          git config user.name "termux-fleet-moneyball[bot]"
+          git config user.email "termux-fleet-moneyball[bot]@users.noreply.github.com"
+          git add data/book-feed.json
+          git commit -m "data: book-feed refresh — mirror of the monorepo Book publication feed (run ${{ github.run_id }})"
+          git push
