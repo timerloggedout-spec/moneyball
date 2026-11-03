@@ -1,45 +1,179 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "moneyball/wallet-ledger/v1/event",
-  "title": "wallet-ledger/v1 event",
-  "description": "One append-only line of wallet-ledger.jsonl (DESIGN section 4.2). Fold-level checks (gapless seq, balance_after == fold, hash-chain continuity) are verifier duties beyond this per-event schema.",
-  "type": "object",
-  "additionalProperties": true,
-  "required": ["seq", "ts", "type", "wallet_id", "delta", "balance_after", "ref", "receipt"],
-  "properties": {
-    "seq": {"type": "integer", "minimum": 1},
-    "ts": {"type": "string", "minLength": 1},
-    "type": {
-      "type": "string",
-      "enum": ["wallet_provisioned", "faucet_issued", "stake_escrowed", "stake_released",
-               "payout_credited", "pool_contribution", "pool_distribution",
-               "cull_transferred", "adjustment"]
-    },
-    "wallet_id": {"type": "string", "minLength": 1},
-    "delta": {"type": "number"},
-    "balance_after": {"type": "number"},
-    "ref": {"type": "string", "minLength": 1},
-    "position_ref": {"type": ["string", "null"]},
-    "settlement_ref": {"type": ["string", "null"]},
-    "receipt": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["receipt_id", "payload_hash", "prev_receipt_hash"],
-      "properties": {
-        "receipt_id": {"type": "string", "minLength": 1},
-        "payload_hash": {"type": "string", "minLength": 1},
-        "prev_receipt_hash": {"type": "string", "minLength": 1}
-      }
-    }
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "moneyball/wallet-ledger/v1/event",
+ "title": "wallet-ledger/v1 event",
+ "description": "One append-only line of wallet-ledger.jsonl (DESIGN section 4.2). Fold-level checks (gapless seq, balance_after == fold, hash-chain continuity) are verifier duties beyond this per-event schema.",
+ "type": "object",
+ "additionalProperties": true,
+ "required": [
+  "seq",
+  "ts",
+  "type",
+  "wallet_id",
+  "delta",
+  "balance_after",
+  "ref",
+  "receipt"
+ ],
+ "properties": {
+  "seq": {
+   "type": "integer",
+   "minimum": 1
   },
-  "allOf": [
-    {
-      "if": {"properties": {"type": {"const": "stake_escrowed"}}},
-      "then": {"required": ["position_ref"], "properties": {"position_ref": {"type": "string", "minLength": 1}}}
+  "ts": {
+   "type": "string",
+   "minLength": 1
+  },
+  "type": {
+   "type": "string",
+   "enum": [
+    "wallet_provisioned",
+    "faucet_issued",
+    "stake_escrowed",
+    "stake_released",
+    "payout_credited",
+    "pool_contribution",
+    "pool_distribution",
+    "cull_transferred",
+    "adjustment"
+   ]
+  },
+  "wallet_id": {
+   "type": "string",
+   "minLength": 1
+  },
+  "delta": {
+   "type": "number"
+  },
+  "balance_after": {
+   "type": "number"
+  },
+  "ref": {
+   "type": "object",
+   "required": [
+    "kind"
+   ],
+   "properties": {
+    "kind": {
+     "type": "string"
     },
-    {
-      "if": {"properties": {"type": {"const": "wallet_provisioned"}}},
-      "else": {"not": {"properties": {"delta": {"const": 0}}, "required": ["delta"]}}
+    "source": {
+     "type": "string"
+    },
+    "by": {
+     "type": "string"
+    },
+    "at": {
+     "type": "string"
+    },
+    "rule": {
+     "type": "string"
+    },
+    "unit": {
+     "type": "string"
+    },
+    "unit_source": {
+     "type": "string"
+    },
+    "design": {
+     "type": "string"
+    },
+    "design_ref": {
+     "type": "string"
+    },
+    "manager_wallet": {
+     "type": "string"
     }
-  ]
+   },
+   "additionalProperties": false
+  },
+  "position_ref": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "settlement_ref": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "receipt": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "event_seq",
+    "payload_hash",
+    "prev_receipt_hash",
+    "receipt_id",
+    "wallet_id"
+   ],
+   "properties": {
+    "receipt_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "payload_hash": {
+     "type": "string",
+     "minLength": 1
+    },
+    "prev_receipt_hash": {
+     "type": "string",
+     "minLength": 1
+    },
+    "wallet_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "event_seq": {
+     "type": "integer",
+     "minimum": 1
+    }
+   }
+  }
+ },
+ "allOf": [
+  {
+   "if": {
+    "properties": {
+     "type": {
+      "const": "stake_escrowed"
+     }
+    }
+   },
+   "then": {
+    "required": [
+     "position_ref"
+    ],
+    "properties": {
+     "position_ref": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "type": {
+      "const": "wallet_provisioned"
+     }
+    }
+   },
+   "else": {
+    "not": {
+     "properties": {
+      "delta": {
+       "const": 0
+      }
+     },
+     "required": [
+      "delta"
+     ]
+    }
+   }
+  }
+ ]
 }
