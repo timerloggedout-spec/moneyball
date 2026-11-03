@@ -5,11 +5,11 @@
   "description": "One append-only line of wallet-ledger.jsonl (DESIGN section 4.2). Fold-level checks (gapless seq, balance_after == fold, hash-chain continuity) are verifier duties beyond this per-event schema.",
   "type": "object",
   "additionalProperties": true,
-  "required": ["seq", "ts", "event_type", "wallet_id", "delta", "balance_after", "ref", "receipt"],
+  "required": ["seq", "ts", "type", "wallet_id", "delta", "balance_after", "ref", "receipt"],
   "properties": {
     "seq": {"type": "integer", "minimum": 1},
     "ts": {"type": "string", "minLength": 1},
-    "event_type": {
+    "type": {
       "type": "string",
       "enum": ["wallet_provisioned", "faucet_issued", "stake_escrowed", "stake_released",
                "payout_credited", "pool_contribution", "pool_distribution",
@@ -34,11 +34,11 @@
   },
   "allOf": [
     {
-      "if": {"properties": {"event_type": {"const": "stake_escrowed"}}},
+      "if": {"properties": {"type": {"const": "stake_escrowed"}}},
       "then": {"required": ["position_ref"], "properties": {"position_ref": {"type": "string", "minLength": 1}}}
     },
     {
-      "if": {"properties": {"event_type": {"const": "wallet_provisioned"}}},
+      "if": {"properties": {"type": {"const": "wallet_provisioned"}}},
       "else": {"not": {"properties": {"delta": {"const": 0}}, "required": ["delta"]}}
     }
   ]
