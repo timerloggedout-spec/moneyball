@@ -73,3 +73,25 @@ else:
 if errs:
     print("FEED VALIDATION FAILED:"); [print(" -", e) for e in errs]; sys.exit(1)
 print(f"feed ok: {len(subs)} subjects, {len(feed.get('positions', []))} positions, {len(feed.get('settlements', []))} settlements, B5 clean")
+
+# --- pools feed (DESIGN §3): pools must reference real cards, styles stated ---
+pools_path = root / "data" / "pools-feed.json"
+if pools_path.exists():
+    pf = json.loads(pools_path.read_text())
+    if pf.get("schema") != "moneyball-pools-feed/v1":
+        errs.append(f"pools schema mismatch: {pf.get('schema')!r}")
+    cards_path = root / "data" / "cards-feed.json"
+    card_ids = set()
+    if cards_path.exists():
+        card_ids = {c.get("card_id") for c in json.loads(cards_path.read_text()).get("cards", [])}
+    for p in pf.get("pools", []):
+        if card_ids and p.get("card_id") not in card_ids:
+            errs.append(f"pool {p.get('pool_wallet_id')} references unknown card {p.get('card_id')}")
+        if not p.get("styles"):
+            errs.append(f"pool {p.get('pool_wallet_id')} missing styles")
+        if not p.get("receipts"):
+            errs.append(f"pool {p.get('pool_wallet_id')} missing receipts")
+    scan(pf)
+    if errs:
+        print("FEED VALIDATION FAILED:"); [print(" -", e) for e in errs]; sys.exit(1)
+    print(f"pools feed checked: {len(pf.get('pools', []))} pools")
