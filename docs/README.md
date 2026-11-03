@@ -4,7 +4,7 @@ Home for the site + market design record.
 
 | Doc | State |
 |---|---|
-| Site + market DESIGN (subjects · card schema · ownership model · settlement-from-receipts · widening path · serving decision) | lands via founding proposal PR |
+| [DESIGN.md](DESIGN.md) — Site + market DESIGN v1 (subjects · card schema · ownership model · settlement-from-receipts · widening path · serving decision) | LANDED — PR #1 merged `d6108a10adb7` |
 
 Rules for this directory:
 
