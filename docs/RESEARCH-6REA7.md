@@ -54,3 +54,15 @@ SOFA in all web3 areas · Reown SDK license · official Circle faucet page · pu
 | Template | Named by | Status |
 |---|---|---|
 | **Kye Gomez Swarms — Agentic Wallet template** | Owner, 2026-11-03 15:45 PT | REFERENCE ONLY. **Verification read LANDED (Inquest, 2026-11-03; primary sources = GitHub API + repo files):** the named artifact "Agentic Wallet template" = **NOT_ESTABLISHED** (∅ wallet repos under kyegomez/The-Swarm-Corporation, ∅ code hits, ∅ docs page). Wallet-adjacent material exists in `kyegomez/swarms` (Apache-2.0): `examples/guides/x402_examples/` (x402 paywall pattern — Agent behind FastAPI, HTTP 402 → pay → proof → facilitator settles → serve; ∅ server-side custody, ∅ keys held, ∅ account abstraction; testnet default = base-sepolia + free x402.org facilitator; production path = base mainnet + Coinbase CDP creds) · `solana_tool` (read-only tx fetcher) · crypto demos (read-only analytics). **FIT:** direction mismatch — the pattern monetizes inbound per-call payments to an operator EOA; the 6REA7 wallet layer is internal paper accounting on the hash-chained ledger (§11 substrate), needing ∅ external settlement leg. The only rail-compatible configuration as shipped is the testnet default. Portable slice = the flow SHAPE only (priced-access → 402 → proof → serve maps onto ledger debit events, facilitator replaced by the fold) — a readable reference, ∅ code adoption. Upstream `coinbase/x402` license = NOT_ESTABLISHED this pass. **∅ adoption claim stands.** Paper/test rails unchanged. |
+
+### Swarms reference — layered record (2026-11-03 15:53 PT)
+
+The reference row above carries three layers; none overwrites another.
+
+**Layer 1 — CONCEPT basis (owner-supplied brief; his sources: X @KyeGomezB · swarms.ai · github.com/kyegomez/swarms — X links NOT verified firsthand by this fleet):** Swarms Agent Wallets = a **Swarm Wallet API** — per-agent wallet spin-up · balances · send/receive (humans + peer agents) · Solana on-chain (SOL/USDC, swaps on timers/conditions) · x402 integration + Marketplace monetization · spend controls (max allowance/trade, revocable). Registered as the CONCEPT basis for the template reference.
+
+**Layer 2 — REPO verdict (Inquest read, stands):** ∅ "Agentic Wallet" repo artifact exists — the template is an **API/product concept, not a repo**. The repo layer stays exactly as read above (x402 examples + read-only tools, Apache-2.0).
+
+**Layer 3 — FORK CHECK (main, official GitHub, public):** ∅ fork of any kyegomez repo in our orgs (name probes ∅ · org searches ∅ · Astute orgs ∅). In-repo artifact of record = monorepo `docs/recon/team-formation/SWARMS_WALLET_RESEARCH.md` @master — an in-house evaluation of Swarms + the token-usecases repo (team-formation recon): research, ¬ code clone.
+
+**Design-relevant portables for the 6REA7 wallet lane:** per-agent wallet spin-up ∧ spend controls (allowance caps + revocability — maps to our threshold/bounds discipline) ∧ the x402 shape (already read, Layer 2). Paper/test rails unchanged; Solana/mainnet legs stay behind the chain-wiring + key-custody owner rulings.
