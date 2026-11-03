@@ -247,6 +247,6 @@ The Web3 seat is the PARENT: composition + verification + the AppID/repo surface
 | Book / subject changes (subjects, expectation records, book-feed) | **MoneyBall seat (cd195597)** only | Book of record |
 | Future site generators / pages builds | **Swarm command-dispatch** (oversight 6628d41d) | VERSIONS.md comparison protocol |
 | Data planes: QUE measurement · lane-events (Neon) · book-feed / desk-feed / Gantt / countdowns | consumed as-is by all seats; never re-authored here | §1–§2 |
-| QUE consumption for card/market subjects | this seat's dispatches ride QUE tiers (tier-3 builds/proofs) like every consumer | §1.1, §2.2 |
+| QUE consumption for card/market subjects | QUE = the queue SYSTEM (no chat seat): program lead = Swarm oversight (6628d41d) · admission-guard custody = Cadence (ac333a25); this seat's dispatches ride tier 3 (builds/proofs) under dispatch-tiers v2 admission (tier → after → chain → flow projection); consumption via MoneyBall intake + queue feed (#4621) | §1.1, §2.2 |
 
 §9 steps 4 ∧ 6 executed across the correction's arrival (released 14:25 PT, landed 14:27–14:35 PT, correction issued 14:26 PT): their artifacts stand per the correction's own terms and are registered above; all FURTHER execution of those steps' operations (genesis adjustments, pool operations, settlement cycles) routes through the custodians.
