@@ -59,3 +59,11 @@ Named by the owner in the Actu4ry pattern (version name, mark layer). Headline r
 - **Custodial sweeps** — wallet-ops pattern under Speculators-build custody scoping.
 
 Sequence: research package first (awesome-web3 tools/docs/skills inventory, sourced rows ∨ NOT_ESTABLISHED, via the SOFA/Inquest lane riding QUE tier-3 admission — "use the Desk QUE" per the owner's directive) → next-version proposals synthesized from it → parallel comparison lanes per the standing protocol. Build dispatches ride Swarm command-dispatch; nothing hand-built in the Web3 seat.
+
+### DoE position of record — bonding curves (2026-11-03, proposals phase)
+
+Deciding invariant (DoE, grounded in DESIGN §1.3): a displayed price is adoptable iff it is a **pure function of receipted stake state** — a stake distribution, not an estimate.
+
+- **ADOPTABLE under labelling:** a curve whose reserves ARE the outcome pools (CPMM-ratio over real stakes; ∅ seeded/virtual reserves; ∅ external liquidity). Conditions: displayed value labelled `pool share` (the pool ratio or its named transform — never odds/probability) · parameters stake-derived ∨ flat symmetric constants stated in the open · mechanics only (continuous entry/exit, slippage shape) — no information beyond the pools.
+- **NOT ADOPTABLE under current DESIGN:** LMSR ∧ any subsidized/seeded variant (marginal price = probability by construction ∧ market-maker subsidy — both excluded by §1.3). Adoption would require a §1.3 amendment + owner ruling, never a lane decision.
+- **Rails:** B5 exposure is parametric (parameters from any model estimate = import by construction) · curve price NEVER populates a position's asserted `p` (buying at a price ≠ forecasting) · curve price is never a posterior input or evidence at reachable pool depth · B2/B3/F1 untouched (every curve trade = its own stamped ledger event).
