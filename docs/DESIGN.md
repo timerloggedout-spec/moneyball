@@ -232,3 +232,21 @@ Identity provider/binding (blocks G2 + external wallets) · genesis/faucet amoun
 7. Drain subjects intake with QUE (first subject lists only with record of record + DoE check).
 
 — End of design v1. Amendments = PRs against this file, claims cited, blanks filled only by records.
+
+## 9.1 Custody register (owner correction via main, 2026-11-03 14:26 PT)
+
+The Web3 seat is the PARENT: composition + verification + the AppID/repo surface. It does not hand-build. Research rides the packaged machinery (challenge-opportunity pipeline stages · OSINT dispatch · Inquest/SOFA) · builds ride the fleet's arms · data rides system planes, consumed never re-authored. Artifacts landed before this correction STAND (verification passed); custody transfers as follows:
+
+| Artifact / function | Custodian (execution owner) | Record |
+|---|---|---|
+| This design · repo surface · AppID surface · composition + verification of all stages | Web3 seat (779d33ad) | this file |
+| Wallet-ledger (`ops/agentic-gambling/site/wallet-ledger.jsonl` in monorepo) + `wallet_ledger.py` fold/verify + settlement execution (escrow/payout cycles, cull waterfall ops) | **Speculators-build seat (a996d481)** — their system: WALLETS, cull waterfall, campaign runs | monorepo PRs #4651/#4653 (landed pre-correction under the §9 release; stand) |
+| Settlement replay (`scripts/settlement/replay.py`) — execution | Speculators-build (a996d481) | moneyball PR #5/#7 |
+| Scoring-integrity checks over replay + settlement (B1–B5 audits, G0-exit scoring check) | **DoE oversight (44bb4068)** | §6 of this design |
+| Cards generator (`scripts/generate_cards_feed.py`) + cards-feed refresh | **MoneyBall seat (cd195597)** — refresh rides the repo's existing feed machinery patterns (build_feed / dispatch-state-feed class), not bespoke generators | moneyball PR #6 |
+| Book / subject changes (subjects, expectation records, book-feed) | **MoneyBall seat (cd195597)** only | Book of record |
+| Future site generators / pages builds | **Swarm command-dispatch** (oversight 6628d41d) | VERSIONS.md comparison protocol |
+| Data planes: QUE measurement · lane-events (Neon) · book-feed / desk-feed / Gantt / countdowns | consumed as-is by all seats; never re-authored here | §1–§2 |
+| QUE consumption for card/market subjects | this seat's dispatches ride QUE tiers (tier-3 builds/proofs) like every consumer | §1.1, §2.2 |
+
+§9 steps 4 ∧ 6 executed across the correction's arrival (released 14:25 PT, landed 14:27–14:35 PT, correction issued 14:26 PT): their artifacts stand per the correction's own terms and are registered above; all FURTHER execution of those steps' operations (genesis adjustments, pool operations, settlement cycles) routes through the custodians.
