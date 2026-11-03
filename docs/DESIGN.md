@@ -276,3 +276,17 @@ The basis, verbatim in substance:
 **% discipline (Amendment 6 applies ∀):** every % in this basis is DYNAMIC — the DESIGN records allocation RULES (category-usage-driven, method-bounded per pool-scope-methods/v1); any reported % is a snapshot stamped {at · window · method · bounds}, never a fixed number. ∅ % figure is asserted by this section.
 
 Status: basis of record for the wagering design layer; mechanics (escrow shapes, contract forms, algorithm-market rules) = future design work under §9.1 custody, built on this basis, superseded only by the source document surfacing ∨ a later owner ruling.
+
+### §11 substrate wiring (POPULATE order, owner via main 2026-11-03 15:43 PT)
+
+The established wallet layer is §11's substrate — each basis point names its wallet/pool leg. Population = the wallet-ledger FOLD only (genesis 12 @ 1,000 soft_quota_token ∧ pool wallets at measured-0; 222 wallets at foundation-statement time, growing by append only): ∅ new provisioning, ∅ invented balances.
+
+| §11 point | Wallet/pool leg (substrate of record) |
+|---|---|
+| ① Required wagering on QUE tasks | Participant wallets (the genesis 12 + every provisioned participant wallet) wager against the QUE-lane pools (`pool:que-lane:*`, 32) — escrow events append to the same ledger |
+| ② Teams requested for a % fee per agent contract | Team contracts ride the moniker ∧ role pools (`pool:moniker:*` · `pool:role:*`); the fee is a ledger move from the requester's wallet to the team pool, % per the dynamic rule (§11 % discipline) |
+| ③ Challenge Opportunities: in-house pooled funding | Entry-desk pools (`pool:desk-lane:*`) hold granted funding; winnings split by ledger events between the earner wallet ∧ the pool — with `pool:other:pooled-buckets` (the cull-waterfall destination of record) as the pooled 🪣 leg |
+| ④ Discounted agent-team custom requests + winnings bonus | Requester wallet ↔ agent-team pools (moniker/role/speculator classes); the discount ∧ the bonus are allocation-rule outcomes, settled as ledger events to the agents' wallets |
+| ⑤ Allocation algorithms as agent property | Algorithms attach to the speculator instances (`pool:speculator:*` ∧ their `paper:` wallets); sale = a ledger transfer between wallets, royalties = residual-stream events back to the author's wallet (Addendum 2 residuals/royalties leg) |
+
+Site population: the wallets surface renders this fold (wallets feed from the ledger of record, generated under MoneyBall custody; page under Swarm Dispatch) — balances render only as the fold proves them.
