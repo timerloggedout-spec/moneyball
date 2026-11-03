@@ -3,12 +3,19 @@
  "generated_from": {
   "book": "ops/agentic-gambling/book/challenges-book.json",
   "ledger": "ops/agentic-gambling/book/ledger.jsonl",
-  "ledger_events": 15
+  "ledger_events": 16
  },
  "subjects_checked": 26,
  "positions_total": 1,
  "positions_open": 1,
- "settlements": [],
+ "settlements": [
+  {
+   "subject_id": "D1-1-submission-landed",
+   "value": "Y \u2014 SUBMITTED-PUBLISHED 2026-11-03T10:01:00-08:00 \u00b7 confirmation_ref https://builder.aws.com/project/3LRJu2KZOWsFqd5oGHyt52lcR5P/studysprint",
+   "source": "entries confirmation_ref + coordinator record",
+   "record_of_record": "entries confirmation_ref + coordinator record"
+  }
+ ],
  "scores": {},
  "abstentions": [],
  "invalid_positions": [],
