@@ -22,7 +22,7 @@ reference only:
 |---|---|---|
 | `seq` | integer ≥ 1 | strictly increasing, gapless per file; assigned by the writer at append |
 | `ts` | string (ISO 8601 instant + offset) | append time; never backdated |
-| `event_type` | enum, §Event types | — |
+| `type` | enum, §Event types | — |
 | `wallet_id` | string | opaque, chain-agnostic (`paper:<hash>` pattern of record) |
 | `delta` | number | signed points movement for this wallet; 0 allowed only for `wallet_provisioned` |
 | `balance_after` | number | a CLAIM: recomputable as the fold of all `delta` for this wallet up to `seq`; mismatch = defect |
@@ -75,3 +75,15 @@ duties beyond per-event schema — verifier tooling is `NOT_ESTABLISHED` in this
 - DESIGN §4.2 (ledger decision), §4.3 (issuance/escrow/parimutuel payout), §4.4 (cull waterfall), §4.5 (web3 seams)
 - Book ledger: `termux-monorepo/ops/agentic-gambling/book/ledger.jsonl`
 - Wallet provisioning of record: `termux-monorepo/experiments/speculators/token-strategies/WALLETS.json` (`speculators-wallets/v1`, 12 paper|test wallets)
+
+## Conformance note (2026-11-03)
+
+Field-name variance resolved in favour of the LANDED artifact: the draft schema/doc
+named the discriminator `event_type`; the hash-chained ledger as landed (monorepo
+ops/agentic-gambling/site/wallet-ledger.jsonl, 28 events) uses `type`. A chained
+ledger is never edited to fit a draft — the schema/doc were amended to the landed
+vocabulary (this file + wallet-ledger.schema.json). Flagged firsthand by the
+execution custodian (Speculators-build) at custody transfer; verify substance was
+unaffected (fold/verify PASS 28/28 under the landed vocabulary). Note the Book's
+own ledger uses a third field name (`event`) — cross-ledger consumers must map
+per-ledger, never assume one vocabulary.
