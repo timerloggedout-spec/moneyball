@@ -1,6 +1,6 @@
 # MoneyBall — Site + Market Design
 
-`moneyball-design/v1` · founding design · seat: Web3 · MoneyBall Site (2026-11-03)
+`moneyball-design/v1.1` · founding design, amended 2026-11-03 (market-design fold-in) · seat: Web3 · MoneyBall Site
 Status: PROPOSAL — lands via PR in this repo; build follows §9 sequence.
 
 Notation: `∅` none · `⇒` implies · `↦` maps to · `∀` for all · `x⁻¹` correction/retraction event · `NOT_ESTABLISHED` = honest blank, never filled by estimate.
@@ -42,9 +42,12 @@ A **subject** = one forecastable question over a fleet outcome, with a named rec
   "expectation_record_ref": "book subject ref (B1: exactly one)",
   "record_of_record": "named source, resolvable locator",
   "anchors": {"cushion": "…", "landing": "…", "wall": "…", "final": "…"},
-  "opens_at": "ts", "locks_at": "min(wall, first-knowable ts)",
+  "settlement_predicate": "frozen at first position; material correction ⇒ void/refund + relist as new market",
+  "record_finality": {"finality_rule": "…", "snapshot_rule": "…"},
+  "actor_influence": "none | indirect | direct | NOT_ESTABLISHED (mandatory; undisclosed direct influence blocks listing; control policy NOT_ESTABLISHED)",
+  "opens_at": "ts (instant + offset; date-only anchors never define open/lock/settle)", "locks_at": "wall",
   "knowable_when": "per Book / register",
-  "status": "INTAKE | OPEN | LOCKED | SETTLED | VOID"
+  "status": "INTAKE | OPEN | LOCKED | RESOLVING | SETTLED | SCORED | VOID"
 }
 ```
 
@@ -54,21 +57,26 @@ A **subject** = one forecastable question over a fleet outcome, with a named rec
 
 - **v1 = parimutuel pools per outcome.** All stakes on a subject form outcome pools; winners receive the losing pool pro-rata by stake (§5.2 formula in wallet layer). Reasons: bookmaker class is ABSENT on record (∅ house counterparty, ∅ house liability); paper liquidity is thin (12 wallets, balance 0) so an order book or LMSR would quote fiction; parimutuel needs no market-maker subsidy, no price oracle, and settles exactly from receipts.
 - **Displayed price** = implied share of pool (`pool_outcome / pool_total`), labelled `pool share`, never "odds" or "probability" — a pool share is a stake distribution, not an estimate; the subject's expectation record carries the estimate layer, separately.
+- **Operating rules:** `total_pool = 0` ⇒ price `null / NO_POOL` (never a synthetic 50%); fee/rake = 0; positions may increase pre-lock — ∅ sale, transfer, withdrawal, cancellation in v1; rounding rule declared per manifest, points never silently appear/disappear; the same subject never runs parimutuel ∧ LMSR pools simultaneously.
+- **Settlement edge cases:** winning outcome received ∅ stakes ⇒ `VOID_UNBACKED` — all stakes refunded (∅ winners exist; routing losers' stakes to pooled-buckets would be an unowned rake, contradicting rake = ∅; this supersedes any pool-capture reading). Zero stakes at lock ⇒ `NO_CONTEST`, closes ∅ payout, ∅ score. Binary absence settles `NO` only when the record affirmatively establishes non-occurrence — missing record ⇒ void review, never inferred `NO`. Placement = one categorical market (¬ correlated binaries); unpublished placement by `final` ⇒ void unless an extension rule was predeclared pre-position.
 - **Deferred seam:** LMSR-style paper AMM may be proposed later for drain subjects (high-frequency, many small outcomes) once ≥1 subject class shows sustained volume; activation = separate design amendment with subsidy budget stated. Order book = ∅ at any paper stage (no matching-engine integrity story without identity, §7 G2).
 
 ### 1.4 Position lifecycle
 
 `open (basis cited, B2) → escrow (§4) → lock at locks_at → record_of_record lands → settlement_proposed → settlement_final → scored (§6) → payout (§4)`.
 
-- A position names: subject, outcome, stake, stated probability `p` (the forecast — scored, §6), basis refs (B2: uncited ∨ unresolvable ⇒ invalid, never opens).
+- Lifecycle: `INTAKE → OPEN → LOCKED (wall; boundary acceptance by ledger sequence; authoritative clock source NOT_ESTABLISHED, named before G2) → RESOLVING (knowable_when = the named record becomes final ∧ readable, an event ¬ a date) → SETTLED → SCORED`, with `VOID → REFUNDED` from any post-open stage (missing/ambiguous/contradictory record, material manifest error, ∨ unresolved at `final` with ∅ predeclared extension).
+- A position names: subject, outcome, stake, basis refs (B2: uncited ∨ unresolvable ⇒ invalid, never opens), and an **optional** explicit forecast probability `p`. Scoring (§6) applies only to positions carrying an explicit pre-lock `p`; absent `p` ⇒ `NOT_SCORED` — stake size alone never implies a probability.
 - Forecast = OUTPUT class: scored at its issuer's record, never at the subject (§6).
 - Late positions (ledger ts ≥ knowable ts) = invalid, unscored.
 - Amendments post-open = ∅. A changed mind = a new position; netting rules (§6.4) govern scoring.
 
 ### 1.5 Listing governance
 
-- New subjects (drain / card-performance) list only with: B1 expectation record created in the Book's shape, record_of_record named + resolvable, anchors bound, DoE conformity check passed. Listing authority = this seat under DoE criteria until a listing role is separately established (`NOT_ESTABLISHED`).
-- Book subjects list automatically by feed; delisting a Book subject happens in the Book, never site-side.
+- Flow: `PROPOSE → BOOK REVIEW (duplication/overlap, clarity, exhaustive outcomes, record can decide the predicate) → DoE B1–B5 CONFORMITY → LIST (immutable manifest) → OPEN`. QUE subjects add a certifier step (scope, baseline, measurement query, snapshot method, controlling record — per-subject fields currently `NOT_ESTABLISHED`; ∅ QUE market opens until its manifest is certified). Every gate requires an evidence ref + PASS; any pending gate blocks listing.
+- A proposer may not self-approve or self-list. Eligible proposer roster = `NOT_ESTABLISHED` (internal: recognized ledger participants). Overlapping markets on the same record+outcome are prohibited unless window/threshold/predicate materially differs.
+- Emergency pause (record failure, schema failure, manifest ambiguity) appends a reasoned ledger event; it alters ∅ odds, predicates, or positions.
+- Book subjects pass the same gate with their established fields carried by reference, and list by feed; delisting a Book subject happens in the Book, never site-side. Listing authority = this seat under DoE criteria until a listing role is separately established (`NOT_ESTABLISHED`).
 
 ## 2. Trading cards + data pipeline
 
@@ -142,7 +150,7 @@ Events: `wallet_provisioned · faucet_issued · stake_escrowed · stake_released
 - Issuance legs: genesis grant (amount `NOT_ESTABLISHED`, owner-ruled pre-launch) · periodic faucet (cadence/cap `NOT_ESTABLISHED`) · promotional grants ⇐ pooled-buckets · payouts. Total supply = Σ issuance, ledger-visible; ∅ burn (culling ≠ burn, §4.4).
 - Escrow: position open moves `available → escrow` in the same wallet (`stake_escrowed`, position_ref + basis cited; B2 failure ⇒ escrow rejected). Void pre-resolution ⇒ full `stake_released`.
 - Settlement trigger = book ledger settlement ONLY (B3). Wallet layer never settles from assertion, price, or vote.
-- Parimutuel payout: `payout_i = stake_i + (stake_i / Σ winning stakes) × Σ losing stakes`. One-sided pool ⇒ winners refunded stake only (∅ invented profit). ∅ winning stakes ⇒ full pool → pooled-buckets (¬ house). Rake = ∅ (any future rake = separate owner ruling). ∅ negative balances, ∅ credit.
+- Parimutuel payout: `payout_i = stake_i + (stake_i / Σ winning stakes) × Σ losing stakes`. One-sided pool ⇒ winners refunded stake only (∅ invented profit). Winning outcome with ∅ stakes ⇒ `VOID_UNBACKED`, all stakes refunded (§1.3). Rake = ∅ (any future rake = separate owner ruling). ∅ negative balances, ∅ credit.
 
 ### 4.4 Cull waterfall (inherited, unchanged)
 
@@ -183,7 +191,7 @@ B1 one expectation record per subject · B2 basis cited or invalid · B3 settlem
 
 ### 6.3 Scoring
 
-Per resolved probabilistic position: Brier `BS_i = (p_i − o_i)²` (multicategory: `Σ_k (p_ik − o_ik)²`); mean Brier over resolved; hit-rate = correct calls / resolved non-null calls (call = `p > 0.5` ∨ argmax). Skill vs base-rate baseline fixed at subject open: `BSS = 1 − BS/BS_ref`; `BSS ≤ 0` stated as no demonstrated skill. Scores are **unweighted by stake** (stake sizes wallet P/L only). Nulls/abstains/unresolved/invalid = separate counts, excluded from N, never scored as misses; coverage (resolved/opened) prints beside every score.
+Per resolved probabilistic position **carrying an explicit pre-lock `p`** (absent `p` ⇒ `NOT_SCORED`, §1.4): Brier `BS_i = (p_i − o_i)²` (multicategory: `Σ_k (p_ik − o_ik)²`); mean Brier over resolved; hit-rate = correct calls / resolved non-null calls (call = `p > 0.5` ∨ argmax). Skill vs base-rate baseline fixed at subject open: `BSS = 1 − BS/BS_ref`; `BSS ≤ 0` stated as no demonstrated skill. Scores are **unweighted by stake** (stake sizes wallet P/L only). Nulls/abstains/unresolved/invalid = separate counts, excluded from N, never scored as misses; coverage (resolved/opened) prints beside every score.
 
 **Public-ranking gate (∀ required):** `N_resolved ≥ 30 ∧ ≥10 distinct subjects`, else `UNRANKED / INSUFFICIENT_N` (stats may show, rank may not) · hit-rate claims require Wilson 95% lower bound > base rate · Brier-skill claims require subject-cluster bootstrap 95% CI for BSS excluding 0. Sort: mean Brier ↑, tie-break N ↓, hit-rate ↓; CI-crossing entries flagged `PROVISIONAL`.
 
@@ -211,7 +219,7 @@ Group positions settle pro-rata from receipts only: shares snapshotted at subjec
 
 ## 8. NOT_ESTABLISHED register (honest blanks carried, not filled)
 
-Identity provider/binding (blocks G2 + external wallets) · genesis/faucet amounts + cadence · dispute-window default · settlement-role identity · pool NAV method post-first-settlement · share exit/transfer · `first_loss` activation · QUE feed schema/version · mirror-score surface · cards-feed refresh schedule · Pages source/domain · pool manager rule (general) · LMSR activation threshold evidence.
+Identity provider/binding (blocks G2 + external wallets) · genesis/faucet amounts + cadence · dispute-window default · settlement-role identity · pool NAV method post-first-settlement · share exit/transfer · `first_loss` activation · QUE feed schema/version · mirror-score surface · cards-feed refresh schedule · Pages source/domain · pool manager rule (general) · LMSR activation threshold evidence · authoritative clock source for lock boundary · QUE per-subject certification fields (queue/gate ids, measurement owner, query, baseline, terminal-record locator) · eligible proposer roster · actor-influence control policy (exclusion/cap) · provisional-to-final dispute interval default.
 
 ## 9. Build sequence (next PRs)
 
