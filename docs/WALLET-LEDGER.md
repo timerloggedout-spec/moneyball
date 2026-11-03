@@ -87,3 +87,7 @@ execution custodian (Speculators-build) at custody transfer; verify substance wa
 unaffected (fold/verify PASS 28/28 under the landed vocabulary). Note the Book's
 own ledger uses a third field name (`event`) — cross-ledger consumers must map
 per-ledger, never assume one vocabulary.
+
+## Sweep events (`sweep_transferred`) — 6REA7 paper analogue (2026-11-03)
+
+The sweep engine (monorepo `wallet_ledger.py` mode `sweep`, PR #4695) consolidates wallet balances to pools as paired `sweep_transferred` debit+credit events (the `cull_transferred` pattern), fold-derived triggers: {threshold ⇒ excess} ∨ {settlement ⇒ full} ∨ {manual ⇒ named}. Threshold configuration: `ops/agentic-gambling/site/sweep-thresholds.json` — **all values NOT_ESTABLISHED (unruled)**; the engine invents no defaults and an unruled class never fires (live run at landing: 0/0 no-op). Testnet sweep execution = NOT_ESTABLISHED in every leg.
