@@ -250,3 +250,11 @@ The Web3 seat is the PARENT: composition + verification + the AppID/repo surface
 | QUE consumption for card/market subjects | QUE = the queue SYSTEM (no chat seat): program lead = Swarm oversight (6628d41d) · admission-guard custody = Cadence (ac333a25); this seat's dispatches ride tier 3 (builds/proofs) under dispatch-tiers v2 admission (tier → after → chain → flow projection); consumption via MoneyBall intake + queue feed (#4621) | §1.1, §2.2 |
 
 §9 steps 4 ∧ 6 executed across the correction's arrival (released 14:25 PT, landed 14:27–14:35 PT, correction issued 14:26 PT): their artifacts stand per the correction's own terms and are registered above; all FURTHER execution of those steps' operations (genesis adjustments, pool operations, settlement cycles) routes through the custodians.
+
+## 10. Eligibility ruling (owner direct, 2026-11-03 15:07 PT)
+
+- **All participants in the system are eligible.** Eligibility spans every participant class of record — speculator ∧ gambler ∧ card-holder; no class is excluded from positioning.
+- **Speculators are first-class speculation SUBJECTS.** Web3 users can speculate on the speculators: their campaign outcomes (token-strategies runs; pre-registered acceptance ≥0.50 ∧ speedup ≥1.20 ∧ margin ≥0.10) list as card-performance subjects under §1.1, with the campaign run records as record_of_record.
+- **Layer unchanged:** speculation rides the paper/test wallet layer (soft_quota_token points) for everyone, web3 users included; the real-money gate stays a separate later gate, untouched by this ruling.
+- **Settlement honesty:** speculator subjects settle ONLY from executed run records. Runs of record at ruling time = 0/48 executed — subjects may list (B1 record + named RoR) before runs exist; settlement cannot precede the runs.
+- Execution routes per §9.1 custody: subject intake → MoneyBall seat · run records + wallet ops → Speculators-build · scoring checks → DoE.
