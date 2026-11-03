@@ -1,0 +1,129 @@
+{
+ "schema": "moneyball-pools-feed/v1",
+ "generated_from": {
+  "ledger": "termux-monorepo/ops/agentic-gambling/site/wallet-ledger.jsonl",
+  "ledger_events": 28
+ },
+ "pools": [
+  {
+   "pool_wallet_id": "pool:actuary-moneyball",
+   "card_id": "actuary-moneyball",
+   "card_moniker": "Actuary \u00b7 MoneyBall",
+   "status": "provisioned",
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN \u00a73.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN \u00a73.1)"
+    }
+   },
+   "balance": 0,
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 28",
+     "payload_hash": "6a08bd8c2e2382ac9039d5d203edd63d662ec5738f819e02d4e9fbf3342b8264"
+    }
+   ],
+   "members_count": 0
+  },
+  {
+   "pool_wallet_id": "pool:codehound",
+   "card_id": "codehound",
+   "card_moniker": "codeHound",
+   "status": "provisioned",
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN \u00a73.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN \u00a73.1)"
+    }
+   },
+   "balance": 0,
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 26",
+     "payload_hash": "d6a367d9808e8d749434b1a2a2cd66b674c415119f7f1d169ed39952c0cadd0d"
+    }
+   ],
+   "members_count": 0
+  },
+  {
+   "pool_wallet_id": "pool:devinforge",
+   "card_id": "devinforge",
+   "card_moniker": "devinForge",
+   "status": "provisioned",
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN \u00a73.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN \u00a73.1)"
+    }
+   },
+   "balance": 0,
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 27",
+     "payload_hash": "ee02ae7ad68797835dfd79229dd06fbd46367283b2bb2205c3f62bb024305113"
+    }
+   ],
+   "members_count": 0
+  },
+  {
+   "pool_wallet_id": "pool:heyvern",
+   "card_id": "heyvern",
+   "card_moniker": "heyVern",
+   "status": "provisioned",
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN \u00a73.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN \u00a73.1)"
+    }
+   },
+   "balance": 0,
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 25",
+     "payload_hash": "254374fd0f2fdbd5f859903b1cf3d4ff305450d107d409800392c155d40144fd"
+    }
+   ],
+   "members_count": 0
+  }
+ ]
+}
