@@ -273,7 +273,6 @@ def main(argv):
             # F3: p = 0.5 exactly is abstention-shaped (no directional
             # call) — a separate count, excluded from N (§6.3).
             abstentions.append(pid)
-            not_scored.append({"position_id": pid, "reason": "ABSTAIN — p = 0.5 exactly (abstention-shaped, no directional call)"})
             continue
         o = binary_outcome(subj["settle"]["value"])
         if o is None:
