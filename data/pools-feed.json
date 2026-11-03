@@ -2,13 +2,13 @@
  "schema": "moneyball-pools-feed/v1",
  "generated_from": {
   "ledger": "termux-monorepo/ops/agentic-gambling/site/wallet-ledger.jsonl",
-  "ledger_events": 234,
-  "ledger_blob": "e2e58ea2e361541aa409a77d396fb402c3ce392b",
-  "generator": "[MUSEai]@{role:{moneyball-plane}} — pools-feed regeneration under feed-machinery custody (DESIGN 9.1); regen 2: Amendment-1 doe class landed (monorepo PR #4692)"
+  "ledger_events": 255,
+  "ledger_blob": "88609a0856bf6f4a6635f1c1dc1fd8c6bf012781",
+  "generator": "[MUSEai]@{role:{moneyball-plane}} — pools-feed regeneration under feed-machinery custody (DESIGN 9.1); regen 3: Amendment-2 classes landed (monorepo PR #4693)"
  },
  "census": {
-  "feed_pools": 210,
-  "ledger_pool_wallets": 210,
+  "feed_pools": 231,
+  "ledger_pool_wallets": 231,
   "deltas": [],
   "class_x_depth": {
    "depth_levels_present": [
@@ -51,8 +51,16 @@
      "depth_0": 32,
      "deeper_levels": "NOT_ESTABLISHED — no depth/parent fields in provisioning events at this layer; deeper taxonomy levels provision only from their sources of record"
     },
+    "researcher": {
+     "depth_0": 9,
+     "deeper_levels": "NOT_ESTABLISHED — no depth/parent fields in provisioning events at this layer; deeper taxonomy levels provision only from their sources of record"
+    },
     "role": {
      "depth_0": 34,
+     "deeper_levels": "NOT_ESTABLISHED — no depth/parent fields in provisioning events at this layer; deeper taxonomy levels provision only from their sources of record"
+    },
+    "speculator": {
+     "depth_0": 12,
      "deeper_levels": "NOT_ESTABLISHED — no depth/parent fields in provisioning events at this layer; deeper taxonomy levels provision only from their sources of record"
     },
     "version": {
@@ -61,8 +69,6 @@
     }
    },
    "classes_absent_from_ledger": [
-    "speculators-as-pools (12 paper wallets exist as wallets, not pools)",
-    "researchers",
     "development",
     "recon",
     "campaign-arms",
@@ -5983,6 +5989,312 @@
    ]
   },
   {
+   "pool_wallet_id": "pool:researcher:archaeo-oracle",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "archaeo-oracle",
+   "display": "Recon (Archaeo - Oracle, fleet forensic recon lane)",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 247",
+     "payload_hash": "9bd6b5354c533fd241e96989ed7a331ed2dbe2ca67f757fd66294ae3c2c552b8"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:researcher:archwiz-recon",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "archwiz-recon",
+   "display": "Foundry - ArchWiz Recon",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 250",
+     "payload_hash": "c9a62df6d1c64cacef3ada1af719f4c123490edf91f34697ea78538981e36a5a"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:researcher:delphi-oracle-substrate",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "delphi-oracle-substrate",
+   "display": "Scoring - Delphi: Oracle Substrate",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 253",
+     "payload_hash": "6ac0a1407200e0d70ec21fcb775167f68223445ce87c2317faa1f40a43544c5c"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:researcher:delphi-research-silo-validation",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "delphi-research-silo-validation",
+   "display": "Scoring - Delphi: Research Silo Validation",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 252",
+     "payload_hash": "3d4257cb2f1b54381c10f4826528c81d1bd49ce7d7d3f43824fb11d4a82ae1dd"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:researcher:inquest-sofa",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "inquest-sofa",
+   "display": "Inquest - SOFA research seat",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 248",
+     "payload_hash": "cd199fb421ab97412318455f905f580a85b0058b04c800d81a45b7d3c340a15f"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:researcher:osint-metrics",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "osint-metrics",
+   "display": "Challenges - Recruitment: OSINT & Metrics",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 251",
+     "payload_hash": "108fc66a43956351f44e224b7009452ff45e1180afc762caaa3c14ac1053227d"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:researcher:pinecone-research-fit",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "pinecone-research-fit",
+   "display": "Providers - Pinecone: Research & Fit",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 254",
+     "payload_hash": "000c387ae7b53c5cbc2dc03e822802c5792e9129242e5d7cc0add3fd020af79c"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:researcher:providers-recon-27-families",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "providers-recon-27-families",
+   "display": "Providers - Recon: 27 Families (enumeration/research lane)",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 249",
+     "payload_hash": "0a5b291316fe612c16dcd442b6251a1705a3a0301aae9d0df24f2158a4d06412"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:researcher:x-observatory-research",
+   "class": "researcher",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "x-observatory-research",
+   "display": "Observatory - X research surfaces (Papers/Explore)",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 255",
+     "payload_hash": "804ee93332ced57db8a6e0637565a839b168f957d71414032fae7c777bb42f7b"
+    }
+   ]
+  },
+  {
    "pool_wallet_id": "pool:role:11th-man",
    "class": "role",
    "depth": 0,
@@ -7135,6 +7447,414 @@
      "type": "ledger",
      "ref": "wallet-ledger.jsonl seq 180",
      "payload_hash": "76596602f7f5430aded6d49704f842aa62e1c398e272a1185e752b3b8561b35d"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:meta-llama-llama-3-1-8b-instruct-baseline",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "meta-llama-llama-3-1-8b-instruct-baseline",
+   "display": "meta-llama/Llama-3.1-8B-Instruct+baseline",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 241",
+     "payload_hash": "ca2abd76ee27087adb04f50423d723566744c7847129623f0333da8aa015d3d9"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:meta-llama-llama-3-1-8b-instruct-dflash",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "meta-llama-llama-3-1-8b-instruct-dflash",
+   "display": "meta-llama/Llama-3.1-8B-Instruct+dflash",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 239",
+     "payload_hash": "5c14650d080e386a6dc480694419e5e106befbfdc25521499a815157959ea3d6"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:meta-llama-llama-3-1-8b-instruct-dspark",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "meta-llama-llama-3-1-8b-instruct-dspark",
+   "display": "meta-llama/Llama-3.1-8B-Instruct+dspark",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 236",
+     "payload_hash": "d9c293a240d1380075ee7f0352badf0a2aca5df3f8fa67d7a0b5742bd112dca7"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:meta-llama-llama-3-1-8b-instruct-eagle3",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "meta-llama-llama-3-1-8b-instruct-eagle3",
+   "display": "meta-llama/Llama-3.1-8B-Instruct+eagle3",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 240",
+     "payload_hash": "e49b3030a6431eb6dce3d923d1656c7aa01091881276612a26010576203ae9c8"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:meta-llama-llama-3-1-8b-instruct-mtp",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "meta-llama-llama-3-1-8b-instruct-mtp",
+   "display": "meta-llama/Llama-3.1-8B-Instruct+mtp",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 245",
+     "payload_hash": "e1ef3aae51906c92a9179e344b5a10d8db058faaa4e77d38789ff250c10a4a5b"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:meta-llama-llama-3-1-8b-instruct-peagle",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "meta-llama-llama-3-1-8b-instruct-peagle",
+   "display": "meta-llama/Llama-3.1-8B-Instruct+peagle",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 244",
+     "payload_hash": "8d759313cea8f019b8e5a9727b3438849dad289f6a6bb133f1cb89d99876129c"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:qwen-qwen3-8b-baseline",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "qwen-qwen3-8b-baseline",
+   "display": "Qwen/Qwen3-8B+baseline",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 238",
+     "payload_hash": "f802078fa2321834291ad8ace7d59182776a0420757242229f7ca0cf061d2397"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:qwen-qwen3-8b-dflash",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "qwen-qwen3-8b-dflash",
+   "display": "Qwen/Qwen3-8B+dflash",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 235",
+     "payload_hash": "5d5f9cae62ce12ea82fbe7d5f29819d44417be60f9333197b0c266a116e87499"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:qwen-qwen3-8b-dspark",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "qwen-qwen3-8b-dspark",
+   "display": "Qwen/Qwen3-8B+dspark",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 237",
+     "payload_hash": "5aedd09d16bb6f813301160b9ed156d7607d49029a9a574c0281004580fe2fa8"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:qwen-qwen3-8b-eagle3",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "qwen-qwen3-8b-eagle3",
+   "display": "Qwen/Qwen3-8B+eagle3",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 243",
+     "payload_hash": "bbda80fcdc370d33e127bb557904b62eaae6dafde4ee01c880ba230e46acb5c1"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:qwen-qwen3-8b-mtp",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "qwen-qwen3-8b-mtp",
+   "display": "Qwen/Qwen3-8B+mtp",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 246",
+     "payload_hash": "d1e8827def4fb35fd97139922ddb330f05628ca3c77e610ea5f16e8254b0f61d"
+    }
+   ]
+  },
+  {
+   "pool_wallet_id": "pool:speculator:qwen-qwen3-8b-peagle",
+   "class": "speculator",
+   "depth": 0,
+   "parent_ref": null,
+   "entity_ref": "qwen-qwen3-8b-peagle",
+   "display": "Qwen/Qwen3-8B+peagle",
+   "status": "provisioned",
+   "balance": 0,
+   "balance_basis": "measured — fold-proven from the wallet ledger (delta 0 at provisioning)",
+   "contributions_total": 0,
+   "contributions_count": 0,
+   "distributions_total": 0,
+   "members": [],
+   "members_count": 0,
+   "styles": {
+    "pro_rata": "active",
+    "capped": {
+     "state": "NOT_ESTABLISHED",
+     "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
+    },
+    "first_loss": {
+     "state": "gated",
+     "note": "activation requires >=1 settled pool cycle + owner ruling (DESIGN §3.1)"
+    }
+   },
+   "receipts": [
+    {
+     "type": "ledger",
+     "ref": "wallet-ledger.jsonl seq 242",
+     "payload_hash": "e1dafea4fcf63fa220ad834222003d25ac9c5b53584f785ba3b5d031ef658ec9"
     }
    ]
   },
