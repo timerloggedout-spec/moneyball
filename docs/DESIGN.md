@@ -258,3 +258,19 @@ The Web3 seat is the PARENT: composition + verification + the AppID/repo surface
 - **Layer unchanged:** speculation rides the paper/test wallet layer (soft_quota_token points) for everyone, web3 users included; the real-money gate stays a separate later gate, untouched by this ruling.
 - **Settlement honesty:** speculator subjects settle ONLY from executed run records. Runs of record at ruling time = 0/48 executed — subjects may list (B1 record + named RoR) before runs exist; settlement cannot precede the runs.
 - Execution routes per §9.1 custody: subject intake → MoneyBall seat · run records + wallet ops → Speculators-build · scoring checks → DoE.
+
+## 11. Wagering schema basis (owner, 2026-11-03 15:42 PT)
+
+Registered as the schema BASIS, layered over §10. Owner, of the source: "This schema is somewhere before git init. That's a basis..." — the pre-git-init source document has NOT surfaced; **today's statement is the governing layer until it does** (prior-art hunt = Addendum 3 (owner, 2026-11-02), tasked to the MoneyBall seat — coordinate there). Lineage: Addendum 2, PR #3684 merged 54b93df65520 — wallet INVARIANT (every participant has a wallet, required-by-design; seed = BetEntry stakes) · residuals/royalties % · fees/roster/contracts for teams · pooled 🪣.
+
+The basis, verbatim in substance:
+
+1. **Agents are REQUIRED to wager on QUE tasks.** Wagering on queue work is a duty of participation, not an option. (Integration note: position validity still binds under §6/B2 — a required wager with no cited basis is a schema tension to resolve in the wagering design, not silently.)
+2. **Specific Teams can be requested for a % fee, per agent contract.** Team access is contractual and fee-bearing.
+3. **Challenge Opportunities get in-house granted pooled funding** — a % of winning ∧ a % to pool. Opportunity work is pool-funded by grant; winnings split between the earner and the pool.
+4. **Discounted agent-team custom requests**, where those agents also get a bonus of the % winnings allocated. Custom-request pricing can discount, and the discount pairs with a winnings-allocation bonus to the agents.
+5. **Agents pick their betting portfolio allocation algorithms** — and can change them, sell them to each other, carry royalties, or customize them. Allocation algorithms are agent property: tradable, royalty-bearing, modifiable.
+
+**% discipline (Amendment 6 applies ∀):** every % in this basis is DYNAMIC — the DESIGN records allocation RULES (category-usage-driven, method-bounded per pool-scope-methods/v1); any reported % is a snapshot stamped {at · window · method · bounds}, never a fixed number. ∅ % figure is asserted by this section.
+
+Status: basis of record for the wagering design layer; mechanics (escrow shapes, contract forms, algorithm-market rules) = future design work under §9.1 custody, built on this basis, superseded only by the source document surfacing ∨ a later owner ruling.
