@@ -290,3 +290,15 @@ The established wallet layer is §11's substrate — each basis point names its 
 | ⑤ Allocation algorithms as agent property | Algorithms attach to the speculator instances (`pool:speculator:*` ∧ their `paper:` wallets); sale = a ledger transfer between wallets, royalties = residual-stream events back to the author's wallet (Addendum 2 residuals/royalties leg) |
 
 Site population: the wallets surface renders this fold (wallets feed from the ledger of record, generated under MoneyBall custody; page under Swarm Dispatch) — balances render only as the fold proves them.
+
+## 12. Web3 surface inventory (owner classification ruling, 2026-11-03 15:49 PT)
+
+Owner: "Tribute Queues && Validation etc are web3 Surfaces." Registered: the Web3 surface family is the user-facing surface set under this seat's claims/labelling discipline (paper/test labelling · winprob hidden · ∅ probability-shaped displays · measured values only · pre-serve verify via the Web3 seat).
+
+| Surface | Class | State |
+|---|---|---|
+| MoneyBall site (index · cards · pools · settlement · wallets) | Web3 surface — built here | LIVE (GitHub Pages); wallets page in flight |
+| **Tribute queues** (filing/merge queue surfaces) | **Web3 surface — classified 2026-11-03** | Classification ONLY: the Tribute lane stays PAUSED (diagnostics); ∅ behavior change; foreign-only scope rule untouched |
+| **Validation** (gate/status validation surfaces) | **Web3 surface — classified 2026-11-03** | Classification ONLY; validation behavior unchanged |
+
+The classification carries the discipline, not new work: any user-visible change on a classified surface routes the same claims ceiling + pre-serve verify as the MoneyBall pages.
