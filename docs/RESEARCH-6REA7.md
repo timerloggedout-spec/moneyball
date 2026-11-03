@@ -48,3 +48,9 @@ SPLIT (Speculators scoping, accepted): accounting SUPPORTED now on the paper led
 
 ## Gaps (explicit NOT_ESTABLISHED)
 SOFA in all web3 areas · Reown SDK license · official Circle faucet page · pump + SqrtBondingCurve license/liveness · EVM pump template · sweep threshold values · any real-money tooling (out of scope by rail).
+
+## Template references — agentic-wallet layer
+
+| Template | Named by | Status |
+|---|---|---|
+| **Kye Gomez Swarms — Agentic Wallet template** | Owner, 2026-11-03 15:45 PT | REFERENCE ONLY. Registered for the 6REA7 wallet lane as a template reference for the agentic-wallet layer. Verification read dispatched via Inquest (QUE tier-3, research-package pattern): existence/shape/license/fit from primary sources (the Swarms repos), sourced rows ∨ NOT_ESTABLISHED. **∅ adoption claim until the read lands.** Paper/test rails unchanged. |
