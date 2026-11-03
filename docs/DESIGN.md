@@ -263,6 +263,8 @@ The Web3 seat is the PARENT: composition + verification + the AppID/repo surface
 
 Registered as the schema BASIS, layered over §10. Owner, of the source: "This schema is somewhere before git init. That's a basis..." — the pre-git-init source document has NOT surfaced; **today's statement is the governing layer until it does** (prior-art hunt = Addendum 3 (owner, 2026-11-02), tasked to the MoneyBall seat — coordinate there). Lineage: Addendum 2, PR #3684 merged 54b93df65520 — wallet INVARIANT (every participant has a wallet, required-by-design; seed = BetEntry stakes) · residuals/royalties % · fees/roster/contracts for teams · pooled 🪣.
 
+**Foundation ordering (owner, 2026-11-03 15:43 PT): "This is in house wallets already established first 🏅"** — the in-house wallet layer is ESTABLISHED FIRST and is this section's foundation, NOT a build item: the wallet invariant (Addendum 2, PR #3684) ∧ WALLETS.json provisioned (PR #4640) ∧ the site wallet-ledger of record (234 events / 222 wallets at statement time; append-only — its current fold is the live figure). Wagering mechanics layer ON the established wallets: ∅ re-derivation, ∅ re-provisioning.
+
 The basis, verbatim in substance:
 
 1. **Agents are REQUIRED to wager on QUE tasks.** Wagering on queue work is a duty of participation, not an option. (Integration note: position validity still binds under §6/B2 — a required wager with no cited basis is a schema tension to resolve in the wagering design, not silently.)
