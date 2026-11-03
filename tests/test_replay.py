@@ -87,5 +87,7 @@ def test_f3_abstention_excluded_from_scoring(tmp_path):
     assert rc == 0
     report = json.loads(out.read_text())
     assert report["abstentions"] == ["POS-1"]
+    assert all(n["position_id"] != "POS-1"
+               for n in report["not_scored"])  # no dual-listing
     assert report["scores"] == {}
     assert report["coverage"]["resolved"] == 0
