@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoneyBall — Speculator Markets over Fleet Outcomes</title>
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--tx:#e6edf3;--dim:#8b949e;--acc:#3fb950;--warn:#d29922}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  header{padding:28px 20px 8px;max-width:1080px;margin:0 auto}
+  h1{margin:0 0 4px;font-size:28px} h2{margin:28px 0 10px;font-size:19px}
+  .sub{color:var(--dim)} main{max-width:1080px;margin:0 auto;padding:0 20px 40px}
+  .strip{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 14px;min-width:130px}
+  .stat b{display:block;font-size:20px} .stat span{color:var(--dim);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  .group{color:var(--warn);font-weight:600;margin:22px 0 8px}
+  .subj{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0}
+  .subj .id{font-family:ui-monospace,Menlo,monospace;color:var(--acc);font-size:13px}
+  .subj .q{font-weight:600;margin:2px 0}
+  .meta{color:var(--dim);font-size:13px} .meta b{color:var(--tx);font-weight:600}
+  .bar{height:6px;background:#21262d;border-radius:3px;margin-top:8px} .bar i{display:block;height:6px;background:var(--acc);border-radius:3px}
+  .intake{color:var(--warn);font-weight:600}
+  details{margin-top:6px} summary{cursor:pointer;color:var(--dim);font-size:13px}
+  footer{max-width:1080px;margin:0 auto;padding:0 20px 32px;color:var(--dim);font-size:13px}
+  a{color:#58a6ff}
+</style>
+</head>
+<body>
+<header>
+  <h1>MoneyBall</h1>
+  <div class="sub">Speculator markets over fleet outcomes — the public face of The Book. Paper/test points only; every value on this page renders verbatim from the book feed. ∅ entry path from this surface.</div>
+  <div class="strip" id="strip"></div>
+</header>
+<main>
+  <h2>Subjects — The Book</h2>
+  <div id="subjects">Loading book feed…</div>
+  <h2>Positions</h2>
+  <div id="positions"></div>
+  <h2>Settlements</h2>
+  <div id="settlements"></div>
+</main>
+<footer>
+  <p>Render rules (B4/R1–R3): published values = ledger values verbatim, this page computes nothing · null expectations render as INTAKE — no estimate, never 0 · read-only, no position entry. Hidden internal win-probability is never published here (B5).</p>
+  <p>Record of record: the Book in <a href="https://github.com/timerloggedout-spec/termux-monorepo/tree/master/ops/agentic-gambling/book">termux-monorepo/ops/agentic-gambling/book</a> · Design: <a href="https://github.com/timerloggedout-spec/moneyball/blob/main/docs/DESIGN.md">docs/DESIGN.md</a> · Canonical book render also at <a href="https://timerloggedout-spec.github.io/tribute/wagering-book.html">tribute/wagering-book</a>.</p>
+  <p id="stamp"></p>
+</footer>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const intake = '<span class="intake">INTAKE — no estimate</span>';
+fetch('data/book-feed.json').then(r => r.json()).then(f => {
+  const subs = f.subjects || [], pos = f.positions || [], set = f.settlements || [];
+  document.getElementById('strip').innerHTML = [
+    [subs.length, 'subjects'], [pos.length, 'open positions'], [set.length, 'settlements'],
+    [(f.counts && f.counts.expectation_records) ?? 'NOT_ESTABLISHED', 'expectation records']
+  ].map(([v,l]) => `<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join('');
+  const groups = {};
+  subs.forEach(s => { (groups[s.group || 'Ungrouped'] ||= []).push(s); });
+  document.getElementById('subjects').innerHTML = Object.entries(groups).map(([g, arr]) =>
+    `<div class="group">${esc(g)}</div>` + arr.map(s => {
+      const prior = s.expectation_record && s.expectation_record.prior;
+      const post = s.expectation_record && s.expectation_record.posterior;
+      const exp = (prior && prior.value != null) ? esc(prior.value) : intake;
+      const settled = s.settle && s.settle.value != null;
+      return `<div class="subj">
+        <div class="id">${esc(s.id)}</div>
+        <div class="q">${esc(s.subject)}</div>
+        <div class="meta">Expectation: ${exp}${post && post.value != null ? ' · posterior ' + esc(post.value) : ''} · Knowable: <b>${esc(s.knowable)}</b> · Wall: <b>${esc((s.anchors && s.anchors.wall) || 'NOT_ESTABLISHED')}</b> · Status: <b>${settled ? 'SETTLED — ' + esc(s.settle.value) : 'unsettled'}</b></div>
+        <div class="meta">Record of record: ${esc(s.record_of_record)}</div>
+        ${s.pct_remaining != null ? `<div class="bar"><i style="width:${esc(s.pct_remaining)}%"></i></div><div class="meta">${esc(s.pct_remaining)}% of window remaining</div>` : ''}
+      </div>`; }).join('')
+  ).join('');
+  document.getElementById('positions').innerHTML = pos.length ? pos.map(p =>
+    `<div class="subj"><div class="id">${esc(p.position_id)}</div>
+     <div class="q">${esc(p.subject_id)} — ${esc(p.side)}</div>
+     <div class="meta">Status: <b>${esc(p.status)}</b> · Opened: <b>${esc(p.opened)}</b> · By: ${esc(p.gambler)}</div>
+     <details><summary>basis</summary><div class="meta">${esc(p.basis)}</div></details></div>`).join('')
+    : '<div class="meta">∅ positions — honest empty state.</div>';
+  document.getElementById('settlements').innerHTML = set.length ? set.map(s =>
+    `<div class="subj"><div class="meta">${esc(JSON.stringify(s))}</div></div>`).join('')
+    : '<div class="meta">∅ settlements yet — no subject has resolved from its record of record.</div>';
+  document.getElementById('stamp').textContent = 'Feed: ' + f.schema + ' · computed ' + (subs[0] ? subs[0].computed_at : 'NOT_ESTABLISHED') + ' · ledger of record: ' + (f.ledger_of_record || '');
+}).catch(e => { document.getElementById('subjects').textContent = 'Book feed failed to load — state NOT_ESTABLISHED, nothing estimated.'; });
+</script>
+</body>
+</html>
