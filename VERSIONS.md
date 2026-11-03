@@ -3,7 +3,7 @@
 | Version | Identity | State |
 |---|---|---|
 | v1 (current) | `Actuary` line — site skeleton + DESIGN v1.1 on `main` | LIVE (Pages deploy) |
-| v2 (next) | **`Actu4ry`** — owner designation 2026-11-03 | parallel comparison builds, below |
+| v2 | **`Actu4ry`** — owner designation 2026-11-03 | **LANDED on main 2026-11-03** — composition of lanes A+B (below) |
 
 ## The Actu4ry ruling (owner, 2026-11-03 14:17 PT)
 
@@ -34,3 +34,17 @@ Comparison criteria (scored from the PRs + branch content, firsthand):
 5. Composition value — how cleanly the lane's slice lifts into a merged v2 alongside the other's.
 
 Decision + merge of the composed v2 = this seat, reported ↑ main with the comparison table.
+
+## Comparison outcome (2026-11-03, this seat)
+
+Both lanes delivered their §9 slice in full; the lanes were complementary, so the verdict is **compose both** (the protocol's composition path), not winner-take-all.
+
+| Criterion | Lane A — cards-first (PR #6) | Lane B — settlement-first (PR #5) |
+|---|---|---|
+| Conformance B1–B5/R1–R3 | PASS — B5 scan in generator + validator | PASS — B1/B2/B3 validated in replay over real record |
+| Feed fidelity | PASS — 29 cards, 3 graduated w/ U receipts (352/1,663/163), Collector honestly skipped (∅ moniker ⇒ ∅ card), Actuary v2=null/INTAKE | PASS — report verbatim from real sources; POS-001 NOT_SCORED w/ reason |
+| Slice completeness | FULL — generator + feed + page + validator extension; caught ∧ fixed a real line-wrap parsing bug mid-run (documented) | FULL — replay + schema + spec + page + report |
+| Hygiene | validate-feeds green (both feeds) | replay exit 0; invariants PASS 26/26 |
+| Composition value | cards slice lifts clean | settlement slice lifts clean; only friction = index.html adjacency conflict, composed by hand in PR #7 (disclosed) |
+
+Landing: #6 merged `4494836a3ac7` → composition PR #7 merged `d4ed306a4abb` (lane B files verbatim + composed index nav) → #5 closed superseded-by-composition, evidence intact. Post-merge firsthand verify: main tree complete (18 files), extended validator green on main content, Actuary card correct. Pages deploy of the composed tree = the surviving queued run; served-verify closes on fetch.
