@@ -1,0 +1,39 @@
+{
+ "schema": "moneyball-settlement-replay/v1",
+ "generated_from": {
+  "book": "ops/agentic-gambling/book/challenges-book.json",
+  "ledger": "ops/agentic-gambling/book/ledger.jsonl",
+  "ledger_events": 15
+ },
+ "subjects_checked": 26,
+ "positions_total": 1,
+ "positions_open": 1,
+ "settlements": [],
+ "scores": {},
+ "not_scored": [
+  {
+   "position_id": "POS-001",
+   "reason": "subject unresolved \u2014 no settlement from record of record yet"
+  }
+ ],
+ "ranking": "UNRANKED / INSUFFICIENT_N",
+ "coverage": {
+  "opened": 1,
+  "resolved": 0,
+  "ratio": 0.0
+ },
+ "invariants": {
+  "B1_one_expectation_record_per_subject": {
+   "pass": true,
+   "violations": []
+  },
+  "B3_record_of_record_named": {
+   "pass": true,
+   "violations": []
+  },
+  "B2_basis_cited": {
+   "pass": true,
+   "violations": []
+  }
+ }
+}
