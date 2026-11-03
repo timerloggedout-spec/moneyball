@@ -10,6 +10,8 @@
  "positions_open": 1,
  "settlements": [],
  "scores": {},
+ "abstentions": [],
+ "invalid_positions": [],
  "not_scored": [
   {
    "position_id": "POS-001",
@@ -34,6 +36,22 @@
   "B2_basis_cited": {
    "pass": true,
    "violations": []
+  },
+  "B4_ledger_first_public_render_only": {
+   "pass": true,
+   "violations": [],
+   "note": "input-side home; render R1-R3 verified at render"
+  },
+  "B5_hidden_winprob_never_imported": {
+   "pass": true,
+   "violations": []
+  },
+  "F1_forecast_timing_pre_outcome": {
+   "pass": true,
+   "violations": [],
+   "not_established": [
+    "POS-001: knowable ts NOT_ESTABLISHED for D2-5-placement-top3"
+   ]
   }
  }
 }
