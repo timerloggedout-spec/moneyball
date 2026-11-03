@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Feed validation for the MoneyBall site (DESIGN §2.2/§5: render verbatim or fail loud).
 Checks data/book-feed.json: schema, subject/position referential integrity, B5 boundary
-(no numeric win_probability anywhere). Exit 1 on any violation."""
+(no numeric win_probability anywhere). Also checks data/cards-feed.json (DESIGN §2):
+schema moneyball-cards-feed/v1, unique card_ids, every non-null stat carries a receipt,
+moniker_v2 only with a graduation receipt, null stats carry an honest state. Exit 1 on
+any violation."""
 import json, sys, pathlib
 root = pathlib.Path(__file__).resolve().parent.parent
 feed = json.loads((root / "data" / "book-feed.json").read_text())
@@ -31,6 +34,42 @@ def scan(o, path="$"):
         for i, v in enumerate(o):
             scan(v, f"{path}[{i}]")
 scan(feed)
+# --- cards feed (DESIGN §2) ---
+cpath = root / "data" / "cards-feed.json"
+if not cpath.exists():
+    errs.append("data/cards-feed.json missing")
+else:
+    cf = json.loads(cpath.read_text())
+    if cf.get("schema") != "moneyball-cards-feed/v1":
+        errs.append(f"cards schema mismatch: {cf.get('schema')!r}")
+    cards = cf.get("cards", [])
+    cids = [c.get("card_id") for c in cards]
+    if len(cids) != len(set(cids)):
+        errs.append("duplicate card_ids in cards feed")
+    for c in cards:
+        fields = {r.get("field") for r in c.get("receipts", [])}
+        s = c.get("stats", {})
+        flat = {"provenance_units": s.get("provenance_units"),
+                "landed_prs": s.get("landed_prs"),
+                "mirror_scores": s.get("mirror_scores"),
+                "book.forecasts_issued": (s.get("book") or {}).get("forecasts_issued"),
+                "book.brier": (s.get("book") or {}).get("brier"),
+                "book.hit_rate": (s.get("book") or {}).get("hit_rate"),
+                "book.open_positions": (s.get("book") or {}).get("open_positions"),
+                "subjects_active": s.get("subjects_active"),
+                "countdown_refs": s.get("countdown_refs")}
+        states = c.get("stat_null_states", {})
+        for name, v in flat.items():
+            if v is not None and name not in fields and name.split(".")[-1] not in fields:
+                errs.append(f"card {c.get('card_id')}: stat {name} non-null without receipt")
+            if v is None and name not in states:
+                errs.append(f"card {c.get('card_id')}: stat {name} null without honest state")
+        if c.get("moniker_v2") is not None and "moniker_v2" not in fields:
+            errs.append(f"card {c.get('card_id')}: moniker_v2 without graduation receipt")
+        if not c.get("receipts"):
+            errs.append(f"card {c.get('card_id')}: no receipts (identity/stat receipts required)")
+    scan(cf, path="$cards")
+    print(f"cards feed checked: {len(cards)} cards, {sum(1 for c in cards if c.get('moniker_v2'))} graduated")
 if errs:
     print("FEED VALIDATION FAILED:"); [print(" -", e) for e in errs]; sys.exit(1)
 print(f"feed ok: {len(subs)} subjects, {len(feed.get('positions', []))} positions, {len(feed.get('settlements', []))} settlements, B5 clean")
