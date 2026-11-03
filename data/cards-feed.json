@@ -1,15 +1,21 @@
 {
  "schema": "moneyball-cards-feed/v1",
- "generated_at": "2026-11-03T22:20:52Z",
+ "generated_at": "2026-11-03T23:57:16Z",
  "generator": "scripts/generate_cards_feed.py (moneyball repo, lane A)",
- "generator_run_id": "local-2026-11-03T22:20:52Z",
+ "generator_run_id": "local-2026-11-03T23:57:16Z",
  "sources": {
   "registry": "termux-monorepo/docs/ops/AGENT-MONIKERS.md",
   "book_feed_schema": "agentic-gambling-book-feed/v1",
   "book_subjects": 26,
-  "book_settlements": 0
+  "book_settlements": 1
  },
  "population_scope": "v1: lead SSOT table + Fleet GitHub App function identities; lane-coordination monikers and 4n0n entrant identities are NOT card population (Registry boundary rules)",
+ "mechanics_sources": {
+  "allocation_algorithm": "Speculators strategies registry (termux-monorepo experiments/speculators/token-strategies DESIGN.json, campaign token-strategies-1) — per-card records arrive via the Speculators-build source leg",
+  "allocation_snapshot": "pool-scope-methods/v1 (termux-monorepo docs/ops/POOL-SCOPE-METHODS.md) — stampable only from a category-usage window with N>=30",
+  "terms": "moneyball DESIGN S.11 (owner wagering-schema basis, 2026-11-03) — schema-level basis; per-agent recorded terms are the only renderable source"
+ },
+ "mechanics_note": "Mechanics publication (owner leg 2026-11-03): every card carries a mechanics block; each field renders only from a record of record with its receipt, otherwise null with its honest state in mechanics_null_states.",
  "skipped": [
   "Termux Fleet Collector: no moniker issued in Registry -> no card (DESIGN §2.1)"
  ],
@@ -37,14 +43,24 @@
    "stat_null_states": {
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -92,14 +108,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -137,14 +163,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -181,14 +217,24 @@
    "stat_null_states": {
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -235,14 +281,24 @@
    "stat_null_states": {
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -290,14 +346,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -335,14 +401,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -380,14 +456,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -425,14 +511,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -470,14 +566,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -515,14 +621,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -560,14 +676,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -605,14 +731,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -650,14 +786,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -695,14 +841,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -740,14 +896,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -785,14 +951,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -830,14 +1006,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -876,14 +1062,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -922,14 +1118,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -968,14 +1174,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -1014,14 +1230,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -1060,14 +1286,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -1106,14 +1342,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -1152,14 +1398,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -1198,14 +1454,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -1244,14 +1510,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -1290,14 +1566,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
@@ -1336,14 +1622,24 @@
     "provenance_units": "NOT_ESTABLISHED",
     "landed_prs": "NOT_ESTABLISHED",
     "mirror_scores": "NOT_ESTABLISHED",
-    "book.forecasts_issued": "INTAKE",
-    "book.brier": "INTAKE",
-    "book.hit_rate": "INTAKE",
+    "book.forecasts_issued": "NOT_ESTABLISHED",
+    "book.brier": "NOT_ESTABLISHED",
+    "book.hit_rate": "NOT_ESTABLISHED",
     "book.open_positions": "NOT_ESTABLISHED",
     "subjects_active": "NOT_ESTABLISHED",
     "countdown_refs": "NOT_ESTABLISHED"
    },
-   "snapshot_at": "2026-11-03T22:20:52Z",
+   "mechanics": {
+    "allocation_algorithm": null,
+    "allocation_snapshot": null,
+    "terms": null
+   },
+   "mechanics_null_states": {
+    "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+    "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
+    "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
+   },
+   "snapshot_at": "2026-11-03T23:57:16Z",
    "receipts": [
     {
      "field": "identity",
