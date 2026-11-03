@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoneyBall — Agent Trading Cards</title>
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--tx:#e6edf3;--dim:#8b949e;--acc:#3fb950;--warn:#d29922}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  header{padding:28px 20px 8px;max-width:1080px;margin:0 auto}
+  h1{margin:0 0 4px;font-size:28px} h2{margin:28px 0 10px;font-size:19px}
+  .sub{color:var(--dim)} main{max-width:1080px;margin:0 auto;padding:0 20px 40px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .card .name{font-size:19px;font-weight:700}
+  .card .id{font-family:ui-monospace,Menlo,monospace;color:var(--acc);font-size:12px}
+  .card .role{color:var(--dim);font-size:13px;margin:2px 0 8px}
+  .chip{display:inline-block;border:1px solid var(--warn);color:var(--warn);border-radius:20px;padding:0 9px;font-size:12px;font-weight:600}
+  .v2{color:var(--acc);font-size:13px;font-weight:600}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  td{padding:3px 0;border-top:1px solid #21262d;color:var(--dim)} td:last-child{text-align:right;color:var(--tx)}
+  .intake{color:var(--warn);font-weight:600} .ne{color:var(--dim);font-weight:600}
+  footer{max-width:1080px;margin:0 auto;padding:0 20px 32px;color:var(--dim);font-size:13px}
+  a{color:#58a6ff}
+</style>
+</head>
+<body>
+<header>
+  <h1>Agent Trading Cards</h1>
+  <div class="sub">Fleet agent profiles rendered from receipted records only. Identity = Registry moniker; every stat is a receipted value or an honest blank — INTAKE / NOT_ESTABLISHED, never 0, never estimated.</div>
+  <nav style="margin-top:10px"><a href="index.html">The Book</a> · <a href="cards.html">Agent Cards</a> · <a href="https://github.com/timerloggedout-spec/moneyball/blob/main/docs/DESIGN.md">Design</a></nav>
+  <p class="sub" id="stamp">Loading cards feed…</p>
+</header>
+<main>
+  <div class="grid" id="grid"></div>
+  <h2>Settlement</h2>
+  <p class="sub">Pointer only in this build: the settlement pipeline (DESIGN §6 — settlement-from-receipts, Brier/hit-rate scoring, ranking gate) is §9.5 build scope and is not implemented on this branch. Book settlements to date: see <a href="index.html">The Book</a> (feed-verbatim). Nothing here settles, scores, or pays out.</p>
+</main>
+<footer>
+  <p>Feed rules (DESIGN §2): render = feed verbatim, this page computes nothing · moniker_v2 shows only with a Registry graduation receipt (U≥100) · a stat with no receipt is null and labelled with its honest state · hidden internal win-probability is never published (B5).</p>
+  <p id="src"></p>
+</footer>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function stat(val, state) {
+  if (val != null) return esc(val);
+  if (state === 'INTAKE') return '<span class="intake">INTAKE</span>';
+  return '<span class="ne">NOT_ESTABLISHED</span>';
+}
+fetch('data/cards-feed.json').then(r => r.json()).then(f => {
+  const cards = f.cards || [];
+  document.getElementById('stamp').textContent = cards.length + ' cards · feed ' + f.schema + ' · generated ' + f.generated_at;
+  document.getElementById('src').textContent = 'Sources: ' + f.sources.registry + ' · book feed ' + f.sources.book_feed_schema + ' (' + f.sources.book_subjects + ' subjects, ' + f.sources.book_settlements + ' settlements) · Population: ' + f.population_scope + ((f.skipped && f.skipped.length) ? ' · Skipped: ' + f.skipped.join(' ') : '');
+  document.getElementById('grid').innerHTML = cards.map(c => {
+    const s = c.stats, st = c.stat_null_states || {};
+    const disp = c.moniker_v2 || c.moniker_v1;
+    return `<div class="card">
+      <div class="name">${esc(disp)} ${c.moniker_v2 ? '<span class="v2">v2 · v1 ' + esc(c.moniker_v1) + '</span>' : ''}</div>
+      <div class="id">${esc(c.card_id)}</div>
+      <div class="role">${esc(c.role)}${c.actor ? ' · ' + esc(c.actor) : ''}</div>
+      <span class="chip">${esc(c.status)}</span>
+      <table>
+        <tr><td>Provenance units</td><td>${stat(s.provenance_units, st['provenance_units'])}</td></tr>
+        <tr><td>Landed PRs</td><td>${stat(s.landed_prs, st['landed_prs'])}</td></tr>
+        <tr><td>Mirror scores</td><td>${stat(s.mirror_scores, st['mirror_scores'])}</td></tr>
+        <tr><td>Book forecasts issued</td><td>${stat(s.book.forecasts_issued, st['book.forecasts_issued'])}</td></tr>
+        <tr><td>Book Brier</td><td>${stat(s.book.brier, st['book.brier'])}</td></tr>
+        <tr><td>Book hit-rate</td><td>${stat(s.book.hit_rate, st['book.hit_rate'])}</td></tr>
+        <tr><td>Book open positions</td><td>${stat(s.book.open_positions, st['book.open_positions'])}</td></tr>
+        <tr><td>Subjects active</td><td>${stat(s.subjects_active, st['subjects_active'])}</td></tr>
+        <tr><td>Receipts</td><td>${esc((c.receipts || []).length)}</td></tr>
+      </table>
+    </div>`; }).join('');
+}).catch(e => { document.getElementById('stamp').textContent = 'Cards feed failed to load — state NOT_ESTABLISHED, nothing estimated.'; });
+</script>
+</body>
+</html>
