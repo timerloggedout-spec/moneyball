@@ -48,3 +48,14 @@ Both lanes delivered their §9 slice in full; the lanes were complementary, so t
 | Composition value | cards slice lifts clean | settlement slice lifts clean; only friction = index.html adjacency conflict, composed by hand in PR #7 (disclosed) |
 
 Landing: #6 merged `4494836a3ac7` → composition PR #7 merged `d4ed306a4abb` (lane B files verbatim + composed index nav) → #5 closed superseded-by-composition, evidence intact. Post-merge firsthand verify: main tree complete (18 files), extended validator green on main content, Actuary card correct. Pages deploy of the composed tree = the surviving queued run; served-verify closes on fetch.
+
+## v3 — `6REA7` (owner designation, 2026-11-03 15:28 PT)
+
+Named by the owner in the Actu4ry pattern (version name, mark layer). Headline requirements of record:
+
+- **Installable PWA webApp — REQUIRED** (manifest + service worker + install UX on the Pages site; the app-package research of 2026-11-03 already flagged the richer-install manifest + custom install prompt as top items — 6REA7 makes them mandatory).
+- **Wallet + testnet integrations** (web3 wallet connect on testnets first — the paper/test rail extends on-chain; real-money gate untouched).
+- **Uniswap bonding curves** — pricing candidate for the next version (against parimutuel v1 of record; a curve price reads probability-shaped, so a DoE B-rail assessment is a proposals-phase input, not an afterthought).
+- **Custodial sweeps** — wallet-ops pattern under Speculators-build custody scoping.
+
+Sequence: research package first (awesome-web3 tools/docs/skills inventory, sourced rows ∨ NOT_ESTABLISHED, via the SOFA/Inquest lane riding QUE tier-3 admission — "use the Desk QUE" per the owner's directive) → next-version proposals synthesized from it → parallel comparison lanes per the standing protocol. Build dispatches ride Swarm command-dispatch; nothing hand-built in the Web3 seat.
