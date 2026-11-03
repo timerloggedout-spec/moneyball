@@ -1,0 +1,1171 @@
+{
+ "book": "challenges-book",
+ "counts": {
+  "expectation_records": 26,
+  "positions": 1,
+  "settlements": 0,
+  "subjects": 26
+ },
+ "generated_from": {
+  "book": "ops/agentic-gambling/book/challenges-book.json",
+  "ledger": "ops/agentic-gambling/book/ledger.jsonl"
+ },
+ "ledger_of_record": "ops/agentic-gambling/book/ledger.jsonl — append-only, PRIVATE record of record. This feed is a read-only render extract at ledger truth; it does not move the ledger.",
+ "pct_block": {
+  "computed_at": "2026-11-03T14:17:33Z",
+  "rule": "pct_consumed/pct_remaining computed at feed build from window anchors; stamped per subject; never hand-entered; degenerate windows carry null + pct_note"
+ },
+ "positions": [
+  {
+   "position_id": "POS-001",
+   "gambler": "owner (house stake, placed via the D2 entry operation)",
+   "subject_id": "D2-5-placement-top3",
+   "side": "Y — placement top-3",
+   "stake": {
+    "kind": "soft_quota_token (provider credit — house money)",
+    "instrument": "Vultr credit $200.00, applied 2026-11-03, expires ~2026-12-03 (use-it-or-lose-it; no cash at risk)",
+    "deployment_rule": "the position is taken by SPENDING the credit: every $ of burn (instances + inference, at plans-API rates) is stake deployed on the D2 entry's win expectation; unspent credit at expiry = stake never placed — a NEUTRAL state, not a loss (owner refinement 2026-11-03)",
+    "metering": "quota wiring provider row vultr {entitlement 200.00 · burn legs instances + inference}; D2 seat supplies daily credit ground-truth in build week",
+    "deployed_to_date": null
+   },
+   "basis": "owner framing direct to the D2 seat 2026-11-03 (the use of the Vultr credits is itself a wager on the win, placed with house credits) + D2 entry records D2-3/D2-4/D2-5 in this book",
+   "precondition": "D2-4-submission-landed; resolution source of record = D2 submission confirmation_ref on lablab + official results",
+   "opened": "2026-11-03",
+   "status": "open",
+   "payout": {
+    "structure": "FIXED — burn does not raise the win amount by a cent (owner refinement 2026-11-03)",
+    "pool_total": "$14,000",
+    "first_place": "$5,000 cash + $3,000 credits (tiers of record)",
+    "subject_tier": "top-3 placement per D2-5; amounts per the tiers of record"
+   },
+   "dilution_note": "stake rises against a FIXED payout => the position dilutes as burn grows: rational spend stops where marginal delta-p(win) per $ approaches 0; past that point extra burn wagers more for the identical return. Allocations argue their marginal delta-p, never their total spend.",
+   "amended": "2026-11-03 (owner addendum via D2 seat: expiring-stake x fixed-payout equilibrium + demo-uptime reserve)",
+   "equilibrium": {
+    "model": "expiring stake AND fixed payout — two edges, both real (owner addendum 2026-11-03)",
+    "expiry_edge": "expiry kills salvage value: unspent credit is worth $0 on Dec 4, so hoarding buys nothing",
+    "fixed_payout_edge": "fixed payout caps the return: spend past marginal delta-p ~ 0 still dilutes (per the dilution note)",
+    "equilibrium": "deploy credit wherever it buys delta-p(win) > 0 inside the window",
+    "reserved_slice": {
+     "purpose": "demo-uptime through judging — the ONLY reserved slice with standing value",
+     "window": "demo VM from Nov 8 to credit death ~Dec 3 (~25 days)",
+     "cost_estimate": "~$19.80 @ 2c-4gb plans-API rate / ~$39.60 @ 4c-8gb",
+     "priority": "outranks discretionary burn — a dead demo during judging is a delta-p cliff"
+    }
+   }
+  }
+ ],
+ "publication": {
+  "b4_note": "B4 AS RULED (owner 2026-11-02, DoE-discharged): private ledger first stands (ledger of record unchanged, entries internal, stakes observational, no external participation) AND public read-only render authorized. Render conformity R1 values verbatim / R2 true state as-is / R3 no entry path from the public surface.",
+  "external_entries": "CLOSED — publication opens no external entries; positions are fleet-internal only",
+  "mode": "read-only render (owner ruling via main, 2026-11-02)",
+  "render_conformity": {
+   "R1": "published values = ledger values verbatim; render computes nothing, re-estimates nothing",
+   "R2": "expectation records display TRUE STATE — INTAKE/null priors + posteriors as-is, never dressed, interpolated or hidden",
+   "R3": "read-only means read-only — no entry/position path from the public surface"
+  },
+  "surfaces": "fleet web Viz/dev surfaces"
+ },
+ "publishability_flags": [
+  "record_of_record text for AMD-20 cites an internal seat short-id (840bd147) — settlement-critical text, carried verbatim; flagged to main before render",
+  "expectation priors/posteriors are null/NOT_ESTABLISHED at open — render as no-estimate, never as 0",
+  "no winprob values exist anywhere in the book or this feed (B5 boundary holds)",
+  "ledger bookkeeping-event notes (internal routing language) are NOT carried in this feed — only positions/settlements arrays render"
+ ],
+ "schema": "agentic-gambling-book-feed/v1",
+ "settlements": [],
+ "subjects": [
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-03T09:00:00-08:00"
+    ],
+    "final": "2026-11-04T23:29:00-08:00",
+    "landing": "2026-11-03T09:00:00-08:00",
+    "register_item": "D1 StudySprint submission",
+    "wall": "2026-11-04"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D1 Workshop to Ship (landing Nov 3, wall Nov 4 23:59 PT)",
+   "id": "D1-1-submission-landed",
+   "knowable": "2026-11-04",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "entries confirmation_ref + coordinator record",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "entries confirmation_ref + coordinator record",
+    "value": null
+   },
+   "subject": "Submission landed by wall {Y/N}",
+   "window": {
+    "wall": "2026-11-04T23:59:00-08:00",
+    "window_start": "2026-11-03T09:00:00-08:00",
+    "window_start_basis": "register stage B — earliest register anchor for the item (no stage A)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-03T09:00:00-08:00"
+    ],
+    "final": "2026-11-04T23:29:00-08:00",
+    "landing": "2026-11-03T09:00:00-08:00",
+    "note": "anchors = the D1 submission item's set; the placement itself settles on the official results posting",
+    "register_item": "D1 StudySprint submission",
+    "wall": "2026-11-04"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D1 Workshop to Ship",
+   "id": "D1-2-placement-winner",
+   "knowable": "NOT_ESTABLISHED (judging date unpublished)",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "Builder Center official results",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Builder Center official results",
+    "value": null
+   },
+   "subject": "Placement = winner (top-3) {Y/N}",
+   "window": {
+    "wall": "2026-11-04T23:59:00-08:00",
+    "window_start": "2026-11-03T09:00:00-08:00",
+    "window_start_basis": "register stage B — earliest register anchor for the item (no stage A)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-03T09:00:00-08:00"
+    ],
+    "final": null,
+    "landing": "2026-11-03T09:00:00-08:00",
+    "note": "kickoff item carries stage B only in the register",
+    "register_item": "D2 Vultr kickoff",
+    "wall": null
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D2 Vultr Agent Rush (kickoff Nov 3 15:00Z, landing Nov 7, wall Nov 8 15:00 PT)",
+   "id": "D2-3-nocard-account-live",
+   "knowable": "2026-11-03 15:00Z",
+   "pct_consumed": null,
+   "pct_note": "degenerate window (instant/point subject) — no honest percentage",
+   "pct_remaining": null,
+   "record_of_record": "D2 seat + gate D2-NOCARD",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "D2 seat + gate D2-NOCARD",
+    "value": null
+   },
+   "subject": "Vultr no-card account live at kickoff {Y/N}",
+   "window": {
+    "wall": "2026-11-03T15:00:00Z",
+    "window_start": "2026-11-03T09:00:00-08:00",
+    "window_start_basis": "register stage B (kickoff day cushion)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-04T09:00:00-08:00",
+     "2026-11-07T09:00:00-08:00"
+    ],
+    "final": "2026-11-08T14:30:00-08:00",
+    "landing": "2026-11-07T09:00:00-08:00",
+    "register_item": "D2 Vultr submission",
+    "wall": "2026-11-08"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D2 Vultr Agent Rush",
+   "id": "D2-4-submission-landed",
+   "knowable": "2026-11-08",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "entries confirmation_ref",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "entries confirmation_ref",
+    "value": null
+   },
+   "subject": "Submission landed by wall {Y/N}",
+   "window": {
+    "wall": "2026-11-08T15:00:00-08:00",
+    "window_start": "2026-11-04T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-04T09:00:00-08:00",
+     "2026-11-07T09:00:00-08:00"
+    ],
+    "final": "2026-11-08T14:30:00-08:00",
+    "landing": "2026-11-07T09:00:00-08:00",
+    "note": "anchors = the D2 submission item's set; placement settles on official posting",
+    "register_item": "D2 Vultr submission",
+    "wall": "2026-11-08"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [
+     {
+      "ref": "D2 seat relay 2026-11-03 (owner framing + field correction)",
+      "note": "house-stake position POS-001 opened on this subject (stake = $200 Vultr house credit, deployed by burn). Field denominator of record corrected: 2,308 participants (2026-11-03 dashboard) vs stale 1,617 in the coordinator prior — context only; no probability is derived or republished in the book (B5)."
+     }
+    ],
+    "posterior": {
+     "n_evidence": 1,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D2 Vultr Agent Rush",
+   "id": "D2-5-placement-top3",
+   "knowable": "NOT_ESTABLISHED (post-close posting)",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "lablab official results",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "lablab official results",
+    "value": null
+   },
+   "subject": "Placement top-3 {Y/N}",
+   "window": {
+    "wall": "2026-11-08T15:00:00-08:00",
+    "window_start": "2026-11-04T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-05T09:00:00-08:00",
+     "2026-11-08T09:00:00-08:00"
+    ],
+    "final": "2026-11-09T23:29:00-08:00",
+    "landing": "2026-11-08T09:00:00-08:00",
+    "register_item": "D3 ListingLens submission",
+    "wall": "2026-11-09"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D3 Builder.io (landing Nov 8, wall Nov 9 23:59 PT)",
+   "id": "D3-6-clips-gate-cleared",
+   "knowable": "2026-11-08",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "gate D3-CLIPS-STORAGE",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "gate D3-CLIPS-STORAGE",
+    "value": null
+   },
+   "subject": "Clips gate cleared by landing {Y/N}",
+   "window": {
+    "wall": "2026-11-08T23:59:00-08:00",
+    "window_start": "2026-11-05T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-05T09:00:00-08:00",
+     "2026-11-08T09:00:00-08:00"
+    ],
+    "final": "2026-11-09T23:29:00-08:00",
+    "landing": "2026-11-08T09:00:00-08:00",
+    "register_item": "D3 ListingLens submission",
+    "wall": "2026-11-09"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D3 Builder.io",
+   "id": "D3-7-feature-batch-b1-b3",
+   "knowable": "2026-11-08",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "D3 seat per-PR verification",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "D3 seat per-PR verification",
+    "value": null
+   },
+   "subject": "Feature batch B1-B3 landed by Nov 8 {Y/N}",
+   "window": {
+    "wall": "2026-11-08T23:59:00-08:00",
+    "window_start": "2026-11-05T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-05T09:00:00-08:00",
+     "2026-11-08T09:00:00-08:00"
+    ],
+    "final": "2026-11-09T23:29:00-08:00",
+    "landing": "2026-11-08T09:00:00-08:00",
+    "register_item": "D3 ListingLens submission",
+    "wall": "2026-11-09"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D3 Builder.io",
+   "id": "D3-8-submission-landed",
+   "knowable": "2026-11-09",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "entries / D3 record",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "entries / D3 record",
+    "value": null
+   },
+   "subject": "Submission landed (form + public Clips URL) by wall {Y/N}",
+   "window": {
+    "wall": "2026-11-09T23:59:00-08:00",
+    "window_start": "2026-11-05T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-05T09:00:00-08:00",
+     "2026-11-08T09:00:00-08:00"
+    ],
+    "final": "2026-11-09T23:29:00-08:00",
+    "landing": "2026-11-08T09:00:00-08:00",
+    "note": "anchors = the D3 submission item's set; placement settles on official posting",
+    "register_item": "D3 ListingLens submission",
+    "wall": "2026-11-09"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D3 Builder.io",
+   "id": "D3-9-placement-paid-tier",
+   "knowable": "NOT_ESTABLISHED (post-close TBD)",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "Builder.io official results",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Builder.io official results",
+    "value": null
+   },
+   "subject": "Placement = paid tier (top-5) {Y/N}",
+   "window": {
+    "wall": "2026-11-09T23:59:00-08:00",
+    "window_start": "2026-11-05T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-27T09:00:00-08:00",
+     "2026-11-30T09:00:00-08:00"
+    ],
+    "final": "2026-12-01T11:30:00-08:00",
+    "landing": "2026-11-30T09:00:00-08:00",
+    "register_item": "D4 Kiro ID credit form",
+    "wall": "2026-12-01"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D4 Kiroween (form landing Nov 30, landing Dec 2, wall Dec 4 14:00 PT)",
+   "id": "D4-10-credit-form-filed",
+   "knowable": "2026-11-30",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "Gates / D4 seat",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Gates / D4 seat",
+    "value": null
+   },
+   "subject": "4,000-credit form filed by Nov 30 {Y/N}",
+   "window": {
+    "wall": "2026-11-30T23:59:00-08:00",
+    "window_start": "2026-11-27T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-29T09:00:00-08:00",
+     "2026-12-02T09:00:00-08:00"
+    ],
+    "final": "2026-12-04T13:30:00-08:00",
+    "landing": "2026-12-02T09:00:00-08:00",
+    "register_item": "D4 Kiroween submission",
+    "wall": "2026-12-04"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D4 Kiroween",
+   "id": "D4-11-skeleton-apps-live",
+   "knowable": "2026-12-02",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "D4 seat record",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "D4 seat record",
+    "value": null
+   },
+   "subject": "Both Skeleton Crew apps live in public repo by Dec 2 {Y/N}",
+   "window": {
+    "wall": "2026-12-02T23:59:00-08:00",
+    "window_start": "2026-11-29T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-29T09:00:00-08:00",
+     "2026-12-02T09:00:00-08:00"
+    ],
+    "final": "2026-12-04T13:30:00-08:00",
+    "landing": "2026-12-02T09:00:00-08:00",
+    "register_item": "D4 Kiroween submission",
+    "wall": "2026-12-04"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D4 Kiroween",
+   "id": "D4-12-submission-landed",
+   "knowable": "2026-12-04",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "entries confirmation_ref (Devpost)",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "entries confirmation_ref (Devpost)",
+    "value": null
+   },
+   "subject": "Submission landed by wall {Y/N}",
+   "window": {
+    "wall": "2026-12-04T14:00:00-08:00",
+    "window_start": "2026-11-29T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-29T09:00:00-08:00",
+     "2026-12-02T09:00:00-08:00"
+    ],
+    "final": "2026-12-04T13:30:00-08:00",
+    "landing": "2026-12-02T09:00:00-08:00",
+    "note": "anchors = the D4 submission item's set; placement settles on official posting",
+    "register_item": "D4 Kiroween submission",
+    "wall": "2026-12-04"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D4 Kiroween",
+   "id": "D4-13-placement-any-prize",
+   "knowable": "NOT_ESTABLISHED (post-close TBD)",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "Devpost official results",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Devpost official results",
+    "value": null
+   },
+   "subject": "Placement = any prize (overall/category/crew) {Y/N}",
+   "window": {
+    "wall": "2026-12-04T14:00:00-08:00",
+    "window_start": "2026-11-29T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-17T09:00:00-08:00"
+    ],
+    "final": null,
+    "landing": "2026-11-17T09:00:00-08:00",
+    "note": "no dedicated spot item in the register; anchors = D5 Aha kickoff stage B (the spot gates the kickoff)",
+    "register_item": "D5 Aha kickoff",
+    "wall": null
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D5 Aha (kickoff Nov 17, landing Nov 18 EOD, wall Nov 19 12:00 PT)",
+   "id": "D5-14-spot-confirmation",
+   "knowable": "on receipt (pending now)",
+   "pct_consumed": null,
+   "pct_note": "degenerate window (instant/point subject) — no honest percentage",
+   "pct_remaining": null,
+   "record_of_record": "entries + gate D5-SPOT",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "entries + gate D5-SPOT",
+    "value": null
+   },
+   "subject": "Spot confirmation received {Y/N}",
+   "window": {
+    "wall": "2026-11-17T09:00:00-08:00",
+    "window_start": "2026-11-17T09:00:00-08:00",
+    "window_start_basis": "register stage B (kickoff) — earliest anchor; spot gates the kickoff"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-15T09:00:00-08:00",
+     "2026-11-18T09:00:00-08:00"
+    ],
+    "final": "2026-11-19T11:30:00-08:00",
+    "landing": "2026-11-18T09:00:00-08:00",
+    "register_item": "D5 Aha submission",
+    "wall": "2026-11-19"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D5 Aha",
+   "id": "D5-15-submission-landed",
+   "knowable": "2026-11-19",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "entries confirmation_ref",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "entries confirmation_ref",
+    "value": null
+   },
+   "subject": "Submission landed by wall {Y/N}",
+   "window": {
+    "wall": "2026-11-19T12:00:00-08:00",
+    "window_start": "2026-11-15T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-15T09:00:00-08:00",
+     "2026-11-18T09:00:00-08:00"
+    ],
+    "final": "2026-11-19T11:30:00-08:00",
+    "landing": "2026-11-18T09:00:00-08:00",
+    "note": "anchors = the D5 submission item's set; placement settles 2026-11-20 11:30 PT per Aha official",
+    "register_item": "D5 Aha submission",
+    "wall": "2026-11-19"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "D5 Aha",
+   "id": "D5-16-placement-winner",
+   "knowable": "2026-11-20 11:30 PT (dated)",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "Aha official results",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Aha official results",
+    "value": null
+   },
+   "subject": "Placement = winner {Y/N}",
+   "window": {
+    "wall": "2026-11-19T12:00:00-08:00",
+    "window_start": "2026-11-15T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": null,
+   "anchors_note": "NOT_ESTABLISHED — no register item for the M1 GPU claim; nearest register coverage starts at the League submission item",
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "AMD AI League (landing Nov 28, wall Dec 1 11:00 PT)",
+   "id": "AMD-17-gpu100-claim",
+   "knowable": "2026-11-07",
+   "pct_consumed": 21.0,
+   "pct_remaining": 79.0,
+   "record_of_record": "gate AMD-GPU100",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "gate AMD-GPU100",
+    "value": null
+   },
+   "subject": "M1 $100 GPU claim filed by Nov 7 {Y/N}",
+   "window": {
+    "wall": "2026-11-07T23:59:00-08:00",
+    "window_start": "2026-11-02T00:00:00-08:00",
+    "window_start_basis": "book intake date (day granularity) — no register item; earliest honest date = subject opened at book open"
+   }
+  },
+  {
+   "anchors": null,
+   "anchors_note": "NOT_ESTABLISHED — no register item for M4; M4 target Nov 9 predates the League submission item's cushion (Nov 25)",
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "AMD AI League",
+   "id": "AMD-18-m4-submitted",
+   "knowable": "2026-11-09",
+   "pct_consumed": 15.8,
+   "pct_remaining": 84.2,
+   "record_of_record": "AMD seat + League platform",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "AMD seat + League platform",
+    "value": null
+   },
+   "subject": "M4 submitted by Nov 9 target {Y/N}",
+   "window": {
+    "wall": "2026-11-09T23:59:00-08:00",
+    "window_start": "2026-11-02T00:00:00-08:00",
+    "window_start_basis": "book intake date (day granularity) — no register item"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-16T09:00:00-08:00",
+     "2026-11-19T09:00:00-08:00"
+    ],
+    "final": "2026-11-20T23:29:00-08:00",
+    "landing": "2026-11-19T09:00:00-08:00",
+    "note": "subject settles when the 5th course lands; anchors shown = AMD Academy C5 item; C1-C4 items carry their own full anchor sets in the register (C1 B Nov 6 / C2 B Nov 9 / C3 B Nov 12 / C4 B Nov 16)",
+    "register_item": "AMD Academy C5",
+    "wall": "2026-11-20"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "AMD AI League",
+   "id": "AMD-19-academy-5-complete",
+   "knowable": "2026-11-19",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "Gates evidence (cert + points) + certs ledger",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Gates evidence (cert + points) + certs ledger",
+    "value": null
+   },
+   "subject": "Academy >=5 complete by Nov 19 landing {Y/N}",
+   "window": {
+    "wall": "2026-11-19T23:59:00-08:00",
+    "window_start": "2026-11-03T09:00:00-08:00",
+    "window_start_basis": "register AMD Academy C1 stage A — first anchor of the >=5 course set"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-22T09:00:00-08:00",
+     "2026-11-25T09:00:00-08:00"
+    ],
+    "final": "2026-11-28T23:29:00-08:00",
+    "landing": "2026-11-25T09:00:00-08:00",
+    "register_item": "AMD ROCm exam",
+    "wall": "2026-11-28"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "AMD AI League",
+   "id": "AMD-20-rocm-exam-passed",
+   "knowable": "2026-11-25",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "Gates seat 840bd147 evidence",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Gates seat 840bd147 evidence",
+    "value": null
+   },
+   "subject": "ROCm exam passed by Nov 25 landing {Y/N}",
+   "window": {
+    "wall": "2026-11-25T23:59:00-08:00",
+    "window_start": "2026-11-22T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-25T09:00:00-08:00",
+     "2026-11-28T09:00:00-08:00"
+    ],
+    "final": "2026-12-01T10:30:00-08:00",
+    "landing": "2026-11-28T09:00:00-08:00",
+    "register_item": "AMD AI League submission",
+    "wall": "2026-12-01"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "AMD AI League",
+   "id": "AMD-21-m2-m3-m5-m6-submissions",
+   "knowable": "2026-11-28",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "AMD seat records",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "AMD seat records",
+    "value": null
+   },
+   "subject": "M2/M3/M5/M6 submissions all by Nov 28 {per-match Y/N}",
+   "window": {
+    "wall": "2026-11-28T23:59:00-08:00",
+    "window_start": "2026-11-25T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-11-25T09:00:00-08:00",
+     "2026-11-28T09:00:00-08:00"
+    ],
+    "final": "2026-12-01T10:30:00-08:00",
+    "landing": "2026-11-28T09:00:00-08:00",
+    "note": "anchors = the League submission item's set; podium settles on official posting (may lag Dec 1)",
+    "register_item": "AMD AI League submission",
+    "wall": "2026-12-01"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "AMD AI League",
+   "id": "AMD-22-podium",
+   "knowable": "2026-12-01 (posting may lag)",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "lablab official results",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "lablab official results",
+    "value": null
+   },
+   "subject": "Podium (top-3) at close {Y/N}",
+   "window": {
+    "wall": "2026-12-01T11:00:00-08:00",
+    "window_start": "2026-11-25T09:00:00-08:00",
+    "window_start_basis": "register stage A (cushion-3d)"
+   }
+  },
+  {
+   "anchors": {
+    "cushion": [
+     "2026-12-02T09:00:00-08:00",
+     "2026-12-05T09:00:00-08:00",
+     "2026-12-09T09:00:00-08:00",
+     "2026-12-12T09:00:00-08:00"
+    ],
+    "final": null,
+    "landing": "2026-12-05T09:00:00-08:00",
+    "note": "soft item: register carries A/B stages only (checkpoint Dec 5 + exam soft wall Dec 12); no D/E stages",
+    "register_item": "FCC L1 checkpoint (Dec 5) + FCC L1 exam (soft wall Dec 12)",
+    "wall": "2026-12-12 (soft)"
+   },
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "FCC L1 (baseline milestone)",
+   "id": "FCC-23-relational-db-cert",
+   "knowable": "at exam pass",
+   "pct_consumed": 0.0,
+   "pct_remaining": 100.0,
+   "record_of_record": "certs ledger #506 + FCC verify link",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "certs ledger #506 + FCC verify link",
+    "value": null
+   },
+   "subject": "Relational DB cert earned (5 projects + exam) by Dec 12 {Y/N}",
+   "window": {
+    "wall": "2026-12-12T23:59:00-08:00",
+    "window_start": "2026-12-02T09:00:00-08:00",
+    "window_start_basis": "register FCC checkpoint stage A — earliest anchor (soft item)"
+   }
+  },
+  {
+   "anchors": null,
+   "anchors_note": "NOT_ESTABLISHED — no register item for C12 (register built 2026-11-02; C12 graduated 2026-11-03); buffer landing Nov 14 per manager",
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "C12 (graduated 2026-11-03)",
+   "id": "C12-24-r1-submission",
+   "knowable": "2026-11-15",
+   "pct_consumed": 2.0,
+   "pct_remaining": 98.0,
+   "record_of_record": "coordinator + C12 record",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "coordinator + C12 record",
+    "value": null
+   },
+   "subject": "R1 submission landed by wall Nov 15 23:45 PT {Y/N}",
+   "window": {
+    "wall": "2026-11-15T23:45:00-08:00",
+    "window_start": "2026-11-03T00:00:00-08:00",
+    "window_start_basis": "slate graduation/intake date (day granularity) — no register item"
+   }
+  },
+  {
+   "anchors": null,
+   "anchors_note": "NOT_ESTABLISHED — no register item for C12",
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "C12 (graduated 2026-11-03)",
+   "id": "C12-25-finalist-selection",
+   "knowable": "2026-11-21",
+   "pct_consumed": 1.4,
+   "pct_remaining": 98.6,
+   "record_of_record": "Devpost official",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Devpost official",
+    "value": null
+   },
+   "subject": "Finalist selection {Y/N}",
+   "window": {
+    "wall": "2026-11-21T23:59:00-08:00",
+    "window_start": "2026-11-03T00:00:00-08:00",
+    "window_start_basis": "slate graduation/intake date (day granularity) — no register item"
+   }
+  },
+  {
+   "anchors": null,
+   "anchors_note": "NOT_ESTABLISHED — no register item for C12",
+   "computed_at": "2026-11-03T14:17:33Z",
+   "expectation_record": {
+    "evidence": [],
+    "posterior": {
+     "n_evidence": 0,
+     "range": null,
+     "value": null
+    },
+    "prior": {
+     "basis": "NOT_ESTABLISHED at book open — no base-rate record of record exists for this subject yet; prior is set only from a cited record, never asserted",
+     "value": null
+    },
+    "quantity": "P(subject resolves Y)"
+   },
+   "group": "C12 (graduated 2026-11-03)",
+   "id": "C12-26-placement",
+   "knowable": "2026-11-30",
+   "pct_consumed": 0.9,
+   "pct_remaining": 99.1,
+   "record_of_record": "Devpost official results",
+   "settle": {
+    "field": "place earned / official outcome",
+    "source": "Devpost official results",
+    "value": null
+   },
+   "subject": "Placement (Grand/2nd/3rd/Creative) at final {Y/N per tier}",
+   "window": {
+    "wall": "2026-11-30T23:59:00-08:00",
+    "window_start": "2026-11-03T00:00:00-08:00",
+    "window_start_basis": "slate graduation/intake date (day granularity) — no register item"
+   }
+  }
+ ]
+}
