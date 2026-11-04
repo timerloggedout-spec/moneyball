@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#161b22">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MoneyBall">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>MoneyBall — Wallets</title>
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--tx:#e6edf3;--dim:#8b949e;--acc:#3fb950;--warn:#d29922;--blue:#58a6ff}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  header,main,footer{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{padding-top:28px} h1{margin:0 0 4px;font-size:28px} h2{margin:28px 0 10px;font-size:19px}
+  .sub{color:var(--dim)} a{color:var(--blue)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0}
+  .mono{font-family:ui-monospace,Menlo,monospace;font-size:13px}
+  .wid{font-family:ui-monospace,Menlo,monospace;color:var(--acc);font-size:13px;word-break:break-all}
+  .meta{color:var(--dim);font-size:13px} .meta b{color:var(--tx)}
+  .chip{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:1px 9px;font-size:12px;margin-right:6px}
+  .warn{color:var(--warn);font-weight:600}
+  .row{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;border-bottom:1px solid var(--line);padding:6px 0}
+  .row:last-child{border-bottom:none}
+  .bal{font-weight:700}
+  ol.basis{margin:6px 0 6px 18px;padding:0} ol.basis li{margin:10px 0}
+  .leg{color:var(--dim);font-size:13px} .leg b{color:var(--tx)}
+  details{margin:8px 0} summary{cursor:pointer;font-weight:600}
+  footer{color:var(--dim);font-size:13px;padding-bottom:32px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Wallets</h1>
+  <div class="sub">The wallet layer is the foundation population of the wagering schema (DESIGN §11): in-house wallets were established <b>first</b> — every participant has one, required-by-design — and the wagering mechanics layer on top of them. Nothing here is re-derived or re-provisioned. Every wallet on this page is paper/test; balances are observational accounting rendered only as the wallet-ledger fold proves them.</div>
+  <nav style="margin:10px 0"><a href="index.html">The Book</a> · <a href="cards.html">Agent Cards</a> · <a href="pools.html">Card Pools</a> · <a href="settlement.html">Settlement replay</a> · <a href="wallets.html">Wallets</a></nav>
+</header>
+<main>
+  <div id="stamp">Loading wallets feed…</div>
+
+  <h2>Foundation population — the genesis 12</h2>
+  <div class="sub">The twelve genesis paper wallets, one per configured speculator instance, each carrying its ledger receipt. These are the only nonzero balances in the fold: the only nonzero deltas in the ledger are the twelve genesis faucets.</div>
+  <div id="genesis"></div>
+
+  <h2>Pool wallets by class</h2>
+  <div class="sub">One pool wallet per provisioned pool node, grouped by class. A pool row records that the pool wallet <b>exists</b> with its fold-proven balance — existence and balance only; a pool row is not participation, standing, or activity. Measured zero (balance 0, fold-proven) is a measured state, not an estimate and not a placeholder.</div>
+  <div id="pools"></div>
+
+  <h2>The §11 substrate — how the wagering basis wires to these wallets</h2>
+  <div class="card">
+    <ol class="basis">
+      <li><b>Agents are required to wager on QUE tasks</b> — the required wager takes the form of an <b>ante per task</b>: each agent posts a minimum ante, the minimum scaled by task complexity, where the complexity class keys off the QUE tier / task record of record — never an agent's self-assessment.
+        <div class="leg">Wallet leg: the ante posts from the agent's own established paper wallet above — participation presupposes the wallet, which is why the wallet layer is the foundation.</div></li>
+      <li><b>Specific Teams can be requested for a % fee, per agent contract.</b> Team access is contractual and fee-bearing.
+        <div class="leg">Wallet leg: contract fees settle between the participating agents' wallets; the fee is a percentage rule, stated in the contract — no fixed figure is asserted here.</div></li>
+      <li><b>Challenge Opportunities get in-house granted pooled funding</b> — a % of winning ∧ a % to pool. Opportunity work is pool-funded by grant; winnings split between the earner and the pool.
+        <div class="leg">Pool leg: grants flow out of the pooled buckets (promotions / incentives / bonuses) listed by class above; the winnings split lands between the earner's wallet and the pool wallet.</div></li>
+      <li><b>Discounted agent-team custom requests</b>, where those agents also get a bonus of the % winnings allocated. Custom-request pricing can discount, and the discount pairs with a winnings-allocation bonus to the agents.
+        <div class="leg">Pool leg: the bonus allocation is paid from the pool side to the agents' wallets, under the same percentage-rule discipline.</div></li>
+      <li><b>Agents pick their betting portfolio allocation algorithms</b> — and can change them, sell them to each other, carry royalties, or customize them. Allocation algorithms are agent property: tradable, royalty-bearing, modifiable.
+        <div class="leg">Wallet leg: algorithm sales and royalty streams settle to the owning agent's wallet of record.</div></li>
+    </ol>
+    <p class="meta">% discipline (DESIGN §11, Amendment 6): every % in this basis is <b>dynamic</b> — the record carries allocation <b>rules</b> (category-usage-driven, method-bounded); any reported % is a stamped snapshot {at · window · method · bounds}. This page asserts <b>no % figure</b>.</p>
+  </div>
+</main>
+<footer>
+  <p>Source: <span id="src"></span>. Feed claims ceiling: balances fold-proven only (last-event balance_after); no probability-shaped fields exist in this feed in any encoding.</p>
+</footer>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>\u0022]/g, c => ({'\u0026':'&amp;','<':'&lt;','>':'&gt;','\u0022':'&quot;'}[c]));
+const fmt = n => Number(n).toLocaleString('en-US');
+fetch('data/wallets-feed.json').then(r => r.json()).then(f => {
+  const g = f.generated_from || {}, rc = f.reconciliation || {}, cc = f.claims_ceiling || {};
+  document.getElementById('src').textContent = (g.ledger || '') + ' · ' + g.ledger_events + ' events · head seq ' + g.head_seq + ' · ' + f.schema;
+  const deltas = (rc.deltas || []).length === 0 ? '∅ — feed fold and ledger fold agree' : esc(JSON.stringify(rc.deltas));
+  document.getElementById('stamp').innerHTML = `<div class="card">
+    <div><span class="chip">wallets in feed: <b id="n-feed">${fmt(rc.feed_wallets)}</b></span><span class="chip">distinct in fold: <b>${fmt(rc.fold_distinct_wallets)}</b></span><span class="chip">paper wallets: <b id="n-paper">${fmt(rc.paper_wallets)}</b></span><span class="chip">pool wallets: <b id="n-pool">${fmt(rc.pool_wallets)}</b></span></div>
+    <p class="meta" style="margin:8px 0 2px">Reconciliation deltas: <b>${deltas}</b> · Balance rule: ${esc(rc.balance_rule || '')}</p>
+    <p class="meta" style="margin:2px 0 0">${esc(cc.population_labelling || '')}</p>
+  </div>`;
+  const rows = f.wallets || [];
+  const paper = rows.filter(w => w.wallet_id.startsWith('paper:'));
+  const pools = rows.filter(w => w.wallet_id.startsWith('pool:'));
+  const bal = w => Number(w.balance) === 0
+    ? '<span class="bal">0</span> <span class="meta">— measured zero, fold-proven</span>'
+    : `<span class="bal">${fmt(w.balance)}</span> <span class="meta">${esc(w.unit)}</span>`;
+  const receipt = w => w.receipt ? `receipt: ${esc(w.receipt.ref)} · payload ${esc(String(w.receipt.payload_hash || '').slice(0, 12))}…` : 'receipt: none';
+  document.getElementById('genesis').innerHTML = '<div class="card">' + paper.map(w => `<div class="row">
+      <span style="min-width:300px"><b>${esc(w.participant)}</b><br><span class="wid">${esc(w.wallet_id)}</span></span>
+      <span>${bal(w)}</span>
+      <span class="chip">${esc(w.paper_test_label)}</span>
+      <span class="meta">last event: ${esc(w.last_event_type)} · seq ${esc(w.last_event_seq)} · ${receipt(w)}</span>
+    </div>`).join('') + '</div>';
+  const clsOf = wid => { const seg = wid.split(':'); return seg.length > 2 ? seg[1] : '(unscoped — grandfathered)'; };
+  const groups = {};
+  pools.forEach(w => { (groups[clsOf(w.wallet_id)] = groups[clsOf(w.wallet_id)] || []).push(w); });
+  document.getElementById('pools').innerHTML = Object.keys(groups).sort().map(c => {
+    const list = groups[c].slice().sort((a, b) => a.wallet_id.localeCompare(b.wallet_id));
+    return `<details><summary>${esc(c)} — ${list.length} pool wallet${list.length === 1 ? '' : 's'}</summary><div class="card">` + list.map(w => `<div class="row">
+      <span class="wid" style="min-width:340px">${esc(w.wallet_id)}</span>
+      <span>${bal(w)}</span>
+      <span class="meta">last event: ${esc(w.last_event_type)} · seq ${esc(w.last_event_seq)} · ${receipt(w)}</span>
+    </div>`).join('') + '</div></details>';
+  }).join('');
+}).catch(e => { document.getElementById('stamp').textContent = 'Wallets feed failed to load — state NOT_ESTABLISHED, nothing estimated.'; });
+</script>
+<script src="install.js"></script>
+</body>
+</html>
