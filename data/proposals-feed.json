@@ -1,6 +1,6 @@
 {
  "schema": "moneyball-proposals-feed/v1",
- "generated_at": "2026-11-04T09:56:57Z",
+ "generated_at": "2026-11-04T09:58:08Z",
  "generator": "scripts/generate_proposals_feed.py (DESIGN \u00a713.5)",
  "claims_ceiling": {
   "labelling": "PAPER / TEST \u2014 proposals are stage-0 decision objects: they create no position, move no balance, and score nothing.",
@@ -16,8 +16,8 @@
   "none_by_class": {}
  },
  "chain": {
-  "receipts": 11,
-  "head_hash": "7b96e5596efa0cf7afae6cab",
+  "receipts": 13,
+  "head_hash": "6f93f2a66f9c4d114325b79b",
   "valid": true
  },
  "proposals": [
@@ -92,7 +92,7 @@
       "role": "custodian reviewer \u2014 tranche 1 reviewer duty (\u00a713.7 call ii); \u2260 proposer, no position interest in the would-be contract"
      },
      "subject": "the provisioning search system (Providers Recon + the provisioning lane)",
-     "ts": "2026-11-04T09:39:15Z"
+     "ts": "2026-11-04T09:45:35Z"
     },
     "exit": null,
     "quarantine_stamp": {
@@ -315,6 +315,39 @@
      "basis_ref": "monorepo PR #4864 merged f35cf93b040b: subject PROP-01-fireworks-ai listed, one expectation record at INTAKE (B1), no position",
      "prev_hash": "e8f6a9bec5968bf360ef3276",
      "hash": "7b96e5596efa0cf7afae6cab"
+    },
+    {
+     "seq": 12,
+     "ts": "2026-11-04T09:58:08Z",
+     "proposal_id": "prop-0001",
+     "from_state": "LISTED",
+     "to_state": "LISTED",
+     "actor": "[MUSEai]@{role:{optimizations-assurance}}",
+     "role": "build arm (F2 repair)",
+     "basis_ref": "DoE gate finding F2 \u00b7 seq 9 stamp act",
+     "prev_hash": "7b96e5596efa0cf7afae6cab",
+     "kind": "store_correction",
+     "field": "stamp.ts",
+     "was": "2026-11-04T09:39:15Z",
+     "now": "2026-11-04T09:45:35Z",
+     "note": "stamp.ts corrected to the operative stamp act (seq 9); derivation ts preserved on the Q&A record; restamped_at carries the act ts on the object",
+     "hash": "2f56023c7b10ac810221cfb4"
+    },
+    {
+     "seq": 13,
+     "ts": "2026-11-04T09:58:08Z",
+     "proposal_id": "prop-0001",
+     "from_state": "LISTED",
+     "to_state": "LISTED",
+     "actor": "[MUSEai]@{role:{optimizations-assurance}}",
+     "role": "build arm (F4 provenance)",
+     "basis_ref": "seq 8 pattern \u00b7 DoE F4",
+     "prev_hash": "2f56023c7b10ac810221cfb4",
+     "kind": "correction_qa_provenance",
+     "field": "qa.recorded_by",
+     "value": "[MUSEai]@{role:{optimizations-assurance}}",
+     "note": "the derivation was recorded by the build arm; custodian adoption at seq 9 (Web3 doctrine-fit stamp)",
+     "hash": "6f93f2a66f9c4d114325b79b"
     }
    ]
   }
