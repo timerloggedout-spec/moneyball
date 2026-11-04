@@ -302,6 +302,7 @@ Owner: "Tribute Queues && Validation etc are web3 Surfaces." Registered: the Web
 | MoneyBall site (index · cards · pools · settlement · wallets) | Web3 surface — built here | LIVE (GitHub Pages); wallets page in flight |
 | **Tribute queues** (filing/merge queue surfaces) | **Web3 surface — classified 2026-11-03** | Classification ONLY: the Tribute lane stays PAUSED (diagnostics); ∅ behavior change; foreign-only scope rule untouched |
 | **Validation** (gate/status validation surfaces) | **Web3 surface — classified 2026-11-03** | Classification ONLY; validation behavior unchanged |
+| ↳ Tribute/validation substrate (pointer) | — | The machinery under the two rows above, registered at the Swarm seat: gate config (monorepo `scripts/ci/tribute_gate_config.json` + volume/placeholder/assignee gates) · status ledger (true `merged` state + backfill) · validation (`tests/test_tribute_gate.py`) — all in monorepo PR #4694, at the Desk for merge. Pointer only; the lane stays PAUSED, ∅ behavior change, resume owner-gated |
 | **In-house pools** (pools page + pools-feed surfaces) | **Web3 surface of record — classified 2026-11-03 (owner: "+ in house pools etc...")** | Already serving user-facing; this formalizes the classification. The pool population (§11 substrate legs) renders under the same ceiling |
 
 The classification carries the discipline, not new work: any user-visible change on a classified surface routes the same claims ceiling + pre-serve verify as the MoneyBall pages.
