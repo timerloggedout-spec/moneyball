@@ -40,7 +40,7 @@
 </header>
 <main>
   <div class="card" style="border-color:var(--warn);background:#221a08">
-    <b class="warn">PAPER / TEST — NOT REAL MONEY.</b> Every figure on this page — every balance, every population count — is paper/test points: unit <span class="mono">soft_quota_token</span> (observational). No wallet here holds, represents, or implies real-money value; balances are observational accounting rendered only as the wallet-ledger fold proves them.
+    <b class="warn">PAPER / TEST — NOT REAL MONEY.</b> Every figure on this page — every balance, every population count — is paper/test points: unit <span class="mono">booktally</span> (observational) — issued display name (Registry PR #4825); the ledger unit of record remains <span class="mono">soft_quota_token</span> (see unit_transition). No wallet here holds, represents, or implies real-money value; balances are observational accounting rendered only as the wallet-ledger fold proves them.
   </div>
   <div id="stamp">Loading wallets feed…</div>
 
@@ -81,7 +81,7 @@ fetch('data/wallets-feed.json').then(r => r.json()).then(f => {
   const deltas = (rc.deltas || []).length === 0 ? '∅ — feed fold and ledger fold agree' : esc(JSON.stringify(rc.deltas));
   document.getElementById('stamp').innerHTML = `<div class="card">
     <div><span class="chip">wallets in feed: <b id="n-feed">${fmt(rc.feed_wallets)}</b></span><span class="chip">distinct in fold: <b>${fmt(rc.fold_distinct_wallets)}</b></span><span class="chip">paper wallets: <b id="n-paper">${fmt(rc.paper_wallets)}</b></span><span class="chip">pool wallets: <b id="n-pool">${fmt(rc.pool_wallets)}</b></span></div>
-    <p class="meta" style="margin:8px 0 2px">All counts and balances above are <b>paper/test points</b> (soft_quota_token, observational) — see the banner. Reconciliation deltas: <b>${deltas}</b> · Balance rule: ${esc(rc.balance_rule || '')}</p>
+    <p class="meta" style="margin:8px 0 2px">All counts and balances above are <b>paper/test points</b> (booktally, observational) — see the banner. Reconciliation deltas: <b>${deltas}</b> · Balance rule: ${esc(rc.balance_rule || '')}</p>
     <p class="meta" style="margin:2px 0 0">${esc(cc.population_labelling || '')}</p>
   </div>`;
   const rows = f.wallets || [];
