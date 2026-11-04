@@ -1,6 +1,6 @@
 {
  "schema": "moneyball-proposals-feed/v1",
- "generated_at": "2026-11-04T09:45:50Z",
+ "generated_at": "2026-11-04T09:53:15Z",
  "generator": "scripts/generate_proposals_feed.py (DESIGN \u00a713.5)",
  "claims_ceiling": {
   "labelling": "PAPER / TEST \u2014 proposals are stage-0 decision objects: they create no position, move no balance, and score nothing.",
@@ -89,7 +89,23 @@
      "subject": "the provisioning search system (Providers Recon + the provisioning lane)",
      "ts": "2026-11-04T09:39:15Z"
     },
-    "exit": null
+    "exit": null,
+    "quarantine_stamp": {
+     "key": "quarantine",
+     "state": "QUARANTINED",
+     "unscored_in_fact": true,
+     "by": "Providers Recon + provisioning lane (fleet seat)",
+     "role": "proposer",
+     "at": "2026-11-04T09:39:43Z",
+     "receipt_seq": 2,
+     "receipt_hash": "967b8604a23bfcc6654dc413"
+    },
+    "intake": {
+     "channel": "fleet-machinery",
+     "tranche": 1,
+     "public_intake": "CLOSED (fleet-first, \u00a713.7 call i)"
+    },
+    "restamped_at": "2026-11-04T09:45:35Z"
    },
    "qa": {
     "carried": {

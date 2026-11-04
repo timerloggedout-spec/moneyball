@@ -48,6 +48,9 @@ QA = {"carried": {"subject": "provisioning search system",
                   "deadline": "2026-12-31 EOD PT"},
       "criteria": {"s1": "PASS", "s2": "PASS", "s3": "PASS",
                    "s4": "PASS"},
+      "rails_checked": {
+          "f1_pre_outcome": "PASS — candidate absent at "
+                            "intake; deadline future"},
       "transcript": [{"q": "S1?", "a": "named subject"}]}
 
 STAMP = {"s1": "PASS", "s2": "PASS", "s3": "PASS",
@@ -143,7 +146,9 @@ def test_none_exit_classes_and_classless_refused():
                      "custodian", "reviewer")
     obj = P.close_none("prop-t1", "N1",
                        "S4 fail → N1 (no record of record)",
-                       "custodian", "reviewer")
+                       "custodian", "reviewer",
+                       failing_criterion="S4",
+                       missing="a record of record")
     assert obj["state"] == "NONE_FOUND"
     assert obj["exit"]["class"] == "N1"
 
@@ -157,6 +162,85 @@ def test_duplicate_link_inside_quarantine():
                            "custodian", "reviewer")
     assert obj["decision"]["duplicate_of"] == "prop-t1"
     assert obj["state"] == "QUARANTINED"  # never deleted
+
+
+def test_quarantine_stamp_on_record():
+    obj = P.propose(SPEC, "fleet-seat-A", "proposer")
+    assert obj["intake"]["public_intake"].startswith("CLOSED")
+    P.quarantine("prop-t1", "fleet-seat-A", "proposer")
+    obj = P.load_obj("prop-t1")
+    qs = obj["quarantine_stamp"]
+    assert qs["key"] == "quarantine"
+    assert qs["unscored_in_fact"] is True
+    assert qs["receipt_seq"] == 2
+
+
+def test_q5_already_known_never_stamped():
+    _to_qa()
+    qa = dict(QA, determination="ALREADY_KNOWN")
+    P.record_qa("prop-t1", qa, "custodian", "reviewer")
+    with pytest.raises(P.IncompleteRecord):
+        P.stamp("prop-t1", STAMP, "custodian", "reviewer")
+    rows = P.read_log()
+    assert any(r.get("kind") == "q5_refusal" for r in rows)
+    assert P.load_obj("prop-t1")["state"] == "IN_Q&A"
+    # the one lawful exit: NONE, class N3
+    obj = P.close_none(
+        "prop-t1", "N3",
+        "F1 fail → N3 (outcome determined at intake — "
+        "ALREADY_KNOWN)", "custodian", "reviewer")
+    assert obj["exit"]["class"] == "N3"
+
+
+def test_n1_exit_emits_backlog_record(home):
+    P.propose(SPEC, "fleet-seat-A", "proposer")
+    P.quarantine("prop-t1", "fleet-seat-A", "proposer")
+    with pytest.raises(P.IncompleteRecord):
+        P.close_none("prop-t1", "N1", "S4 fail → N1",
+                     "custodian", "reviewer")
+    obj = P.close_none(
+        "prop-t1", "N1", "S4 fail → N1 (no source)",
+        "custodian", "reviewer", failing_criterion="S4",
+        missing="a record of record for the subject")
+    assert obj["exit"]["backlog_ref"] == "backlog/prop-t1.json"
+    rec = json.loads((home / "proposals" / "backlog"
+                      / "prop-t1.json").read_text())
+    assert rec["failing_criterion"] == "S4"
+    assert rec["qa_ref"] == "prop-t1.qa"
+    assert "exit_receipt_ref" in rec and rec["ts"]
+
+
+def test_f3_stamper_who_recorded_derivation_refused():
+    _to_qa()
+    st = dict(STAMP, stamper={"identity": "custodian",
+                              "role": "custodian reviewer"})
+    with pytest.raises(P.IntegrityFinding):
+        P.stamp("prop-t1", st, "custodian", "reviewer")
+    rows = P.read_log()
+    assert any(r.get("kind") == "custody_finding"
+               for r in rows)
+    assert P.load_obj("prop-t1")["state"] == "IN_Q&A"
+
+
+def test_f4_present_at_intake_fixture_routes_n3():
+    # candidate PRESENT in the intake snapshot (F4 code
+    # fixture): determination follows from the evidence —
+    # the stamp refuses and the lawful exit is N3
+    _to_qa()
+    qa = dict(QA, snapshot_basis={
+        "candidate": "cohere", "candidate_hits": 7,
+        "registry_rows": 171})
+    P.record_qa("prop-t1", qa, "custodian", "reviewer")
+    with pytest.raises(P.IncompleteRecord):
+        P.stamp("prop-t1", STAMP, "custodian", "reviewer")
+    rows = P.read_log()
+    assert any(r.get("kind") == "q5_refusal" for r in rows)
+    obj = P.close_none(
+        "prop-t1", "N3",
+        "F1 fail → N3 (candidate present at intake — "
+        "answer already in the records)", "custodian",
+        "reviewer")
+    assert obj["exit"]["class"] == "N3"
 
 
 def test_chain_tamper_detected():

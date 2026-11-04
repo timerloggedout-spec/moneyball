@@ -191,6 +191,11 @@ def propose(spec: dict, actor: str, role: str) -> dict:
                              OBLIGATION_FIELDS},
         "state": "PROPOSED", "decision": {},
         "qa_ref": f"{pid}.qa", "stamp": None, "exit": None,
+        "quarantine_stamp": None,
+        "intake": {"channel": "fleet-machinery",
+                   "tranche": 1,
+                   "public_intake": "CLOSED (fleet-first, "
+                                    "§13.7 call i)"},
     }
     if not obligation_complete(ob):
         # malformed at intake: filed, flagged, quarantined —
@@ -210,8 +215,18 @@ def quarantine(pid: str, actor: str, role: str) -> dict:
     if obj["state"] != "PROPOSED":
         raise MalformedAtIntake(
             f"quarantine from {obj['state']}")
-    _transition(obj, "QUARANTINED", actor, role,
-                "intake quarantine gate (§13.1A)")
+    r = _transition(obj, "QUARANTINED", actor, role,
+                    "intake quarantine gate (§13.1A)")
+    # Q1: quarantine is a verbatim-keyed stamped state —
+    # the object carries the stamp on its record and every
+    # downstream surface keys on it exactly (no aliases)
+    obj = load_obj(pid)
+    obj["quarantine_stamp"] = {
+        "key": "quarantine", "state": "QUARANTINED",
+        "unscored_in_fact": True, "by": actor, "role": role,
+        "at": r["ts"], "receipt_seq": r["seq"],
+        "receipt_hash": r["hash"]}
+    save_obj(obj)
     return obj
 
 
@@ -295,6 +310,53 @@ def stamp(pid: str, st: dict, actor: str, role: str) -> dict:
         raise IncompleteRecord(
             "contract path requires S1–S4 PASS; a FAIL "
             "routes to a classified NONE exit (Q4)")
+    # F3 (DoE gate finding, forward): reviewer-duty
+    # custody is verified in substance, not only literal
+    # self-identity — the stamper may not be the hand that
+    # recorded the derivation (custodian review = a
+    # different hand), and the stamp must name reviewer
+    # duty as its role
+    stamper_role = (st.get("stamper") or {}).get("role", "")
+    if "review" not in stamper_role.lower():
+        raise IncompleteRecord(
+            "stamper role must name reviewer duty (F3)")
+    if qa.get("recorded_by") and \
+            qa["recorded_by"] == stamper_id:
+        append_receipt(pid, "IN_Q&A", "IN_Q&A", actor, role,
+                       obj["qa_ref"],
+                       {"kind": "custody_finding",
+                        "finding": "stamper == derivation "
+                                   "recorder — reviewer-duty "
+                                   "custody fails (F3)"})
+        raise IntegrityFinding(
+            "stamper recorded the derivation — reviewer-"
+            "duty custody fails (F3); finding receipted")
+    # Q5/F1: already-knowable outcomes NEVER form contracts
+    # — ALREADY_KNOWN is never stamped, however clean the
+    # paperwork; and the pre-outcome attestation must be on
+    # the Q&A record (no field, no stamp).
+    # ALREADY_KNOWN is read from evidence, not assertion
+    # alone: a Q&A snapshot basis showing the candidate
+    # PRESENT at intake (hits > 0) determines it (F4)
+    snap_hits = (qa.get("snapshot_basis") or {}).get(
+        "candidate_hits")
+    if qa.get("determination") == "ALREADY_KNOWN" or (
+            isinstance(snap_hits, int) and snap_hits > 0):
+        append_receipt(pid, "IN_Q&A", "IN_Q&A", actor, role,
+                       obj["qa_ref"],
+                       {"kind": "q5_refusal",
+                        "finding": "ALREADY_KNOWN — stamp "
+                                   "refused (Q5); route = "
+                                   "NONE exit, class N3"})
+        raise IncompleteRecord(
+            "ALREADY_KNOWN is never stamped (Q5) — the "
+            "exit is NONE_FOUND, class N3")
+    f1 = (qa.get("rails_checked") or {}).get(
+        "f1_pre_outcome", "")
+    if not str(f1).startswith("PASS"):
+        raise IncompleteRecord(
+            "Q&A record carries no F1 pre-outcome PASS "
+            "attestation — no field, no stamp (Q2/Q5)")
     obj["stamp"] = st
     r = _transition(obj, "CONTRACT_DERIVED", actor, role,
                     f"{pid}#doctrine-fit-stamp")
@@ -346,7 +408,9 @@ def handoff(pid: str, actor: str, role: str) -> dict:
 # ---------- classified NONE exits (Q4) ----------
 
 def close_none(pid: str, exit_class: str, derivation: str,
-               actor: str, role: str) -> dict:
+               actor: str, role: str,
+               failing_criterion: str | None = None,
+               missing: str | None = None) -> dict:
     obj = load_obj(pid)
     if obj["state"] in ("CONTRACT_DERIVED", "LISTED",
                         "NONE_FOUND"):
@@ -363,6 +427,14 @@ def close_none(pid: str, exit_class: str, derivation: str,
         raise IncompleteRecord(
             "exit receipt must carry the criterion→class "
             "derivation (Q4)")
+    if exit_class == "N1" and not (
+            failing_criterion in ("S1", "S2", "S4")
+            and missing):
+        raise IncompleteRecord(
+            "an N1 exit must name its failing criterion "
+            "(S1/S2/S4) and the missing subject/source/"
+            "instrument — the backlog record is part of "
+            "the exit (§13.7 call iii)")
     r = _transition(obj, "NONE_FOUND", actor, role,
                     obj["qa_ref"],
                     {"kind": "none_exit",
@@ -374,6 +446,21 @@ def close_none(pid: str, exit_class: str, derivation: str,
                    "receipt_seq": r["seq"],
                    "receipt_hash": r["hash"], "at": r["ts"]}
     save_obj(obj)
+    if exit_class == "N1":
+        # the N1 home = the DoE upgrade backlog; the exit
+        # emits the backlog record in the §13.7(iii) shape
+        backlog = {"proposal_id": pid,
+                   "failing_criterion": failing_criterion,
+                   "missing": missing,
+                   "qa_ref": obj["qa_ref"],
+                   "exit_receipt_ref":
+                       f"seq {r['seq']} · {r['hash']}",
+                   "ts": r["ts"]}
+        bp = HOME / "proposals" / "backlog" / f"{pid}.json"
+        bp.parent.mkdir(parents=True, exist_ok=True)
+        bp.write_text(json.dumps(backlog, indent=1) + "\n")
+        obj["exit"]["backlog_ref"] = f"backlog/{pid}.json"
+        save_obj(obj)
     return obj
 
 
@@ -426,6 +513,8 @@ def main(argv=None) -> int:
     p.add_argument("proposal_id")
     p.add_argument("--class", dest="exit_class", required=True)
     p.add_argument("--derivation", required=True)
+    p.add_argument("--failing-criterion", default=None)
+    p.add_argument("--missing", default=None)
     p.add_argument("--actor", required=True)
     p.add_argument("--role", required=True)
     p = sub.add_parser("link")
@@ -466,7 +555,8 @@ def main(argv=None) -> int:
             print(f"{a.proposal_id} HANDED_OFF → Book intake")
         elif a.cmd == "none":
             close_none(a.proposal_id, a.exit_class,
-                       a.derivation, a.actor, a.role)
+                       a.derivation, a.actor, a.role,
+                       a.failing_criterion, a.missing)
             print(f"{a.proposal_id} NONE_FOUND [{a.exit_class}]")
         elif a.cmd == "link":
             link_duplicate(a.proposal_id, a.canonical,
