@@ -316,32 +316,32 @@ The classification carries the discipline, not new work: any user-visible change
 
 ### 13.1 The derivation (system Q&A)
 
-The Q&A interrogates the proposal into five slots — {actor · predicate · object · deadline · evidence} — then applies the settleability gates. Every gate is pass/fail on the proposal as posed; the transcript is part of the proposal record and renders verbatim on the surface (B4/R1: the render computes nothing).
+The Q&A interrogates the proposal into five slots — {actor · predicate · object · deadline · evidence} — and tests them against the **settleability criteria (DoE leg, joint spec)**: a proposal becomes a contract iff ALL FOUR hold. The Q&A is the derivation that tests — and where possible repairs — each criterion, one question class per criterion. The transcript is part of the proposal record and renders verbatim on the surface (B4/R1: the render computes nothing).
 
-| Gate | Test |
+| Criterion | Test |
 |---|---|
-| G1 Binary-decidable | The question resolves Y/N with no judgment residue |
-| G2 Pre-outcome | The outcome is not already determined at intake; deadline is a definite future instant (date-only ⇒ end-of-day PT, Book convention) |
-| G3 Record of record | A specific record that will carry the outcome is nameable **ex ante** (B3); if none exists and none can be commissioned, the gate fails |
-| G4 Observable-in-record | The predicate's occurrence is readable from that record's own fields; no hidden metrics (B5), no off-record evidence |
-| G5 Non-duplicate | Not the same subject as an extant Book subject (B1: one expectation record per subject); duplicates route to the extant subject |
-| G6 Vocabulary + claims | Issued vocabulary only (naming record PR #4834); no odds/probability framing; paper/test only |
+| S1 SUBJECT | A named subject of record: an entity/event with a citable identity (an entry, a release, a campaign, a pool subject). Free-floating topics fail S1 |
+| S2 OBSERVABLE RESOLUTION | The outcome is observable as a RECEIPT in a record (a release published · a placement posted · a run completed), with a binary or enumerable outcome shape. Opinions and vibes fail S2 |
+| S3 DEADLINE | A knowable time by which the outcome is determined (a wall of record). Open-ended fails S3, or the Q&A assigns the deadline and the proposer accepts it (date-only ⇒ end-of-day PT, Book convention) |
+| S4 SOURCE OF TRUTH | Exactly ONE record_of_record named ex ante (B3: settlement only ever from the subject's named record). A contested or absent source fails S4 until named |
+
+Inherited rails bind unchanged: forecasts valid only pre-outcome (F1) · explicit probability or NOT_SCORED · paper/test layer only · bookmaker absent (parimutuel) · no hidden metrics (B5) · non-duplication against extant Book subjects (B1) · issued vocabulary only (naming record PR #4834).
 
 Output: **CONTRACT** (a draft subject in Book shape, §13.3) or **NONE FOUND** (§13.2).
 
-### 13.2 NONE FOUND doctrine
+### 13.2 NONE FOUND taxonomy (v0 — DoE leg)
 
-NONE FOUND is a first-class terminal state, never an error and never a silent drop. Every NONE FOUND carries {gate(s) failed · disposition · feedback shown to the proposer} in the append-only proposal log, with exactly one disposition:
+NONE FOUND is a first-class terminal state, never an error and never a silent drop. Every NONE closes with **exactly one primary class** (a secondary reason note is optional), assigned from the Q&A record — the classification IS the feedback loop. A NONE with no class is an INCOMPLETE record, under the same rule as a contract missing its proof obligation.
 
-- **ESCALATE** — settleable in principle, but no record of record exists yet: the missing record is itself a system-upgrade candidate, routed as such (the proposal waits on the system, not the proposer).
-- **SPAM** — not a question / abuse: logged, no further Q&A cycles spent.
-- **KNOWLEDGE** — answerable but not settleable as posed: the feedback names the failed gate and what would make it settleable (the proposer's knowledge improves; resubmission is a fresh proposal linked to the prior).
-- **ALREADY_KNOWN** — outcome determined at intake (G2).
-- **DUPLICATE** — an extant Book subject already carries the question (G5); the feedback names it.
+- **N1 SYSTEM UPGRADE** — settleable in spirit, but the system lacks the subject, source, or instrument (no record of record exists · the outcome is not yet observable by any feed). Feedback: the NONE becomes an upgrade-backlog record with the failing criterion named; if the upgrade lands, re-proposal is invited. The N1 rate per window = system-gap pressure.
+- **N2 SPAM** — no good-faith subject: duplicative-as-abuse, abusive, incoherent, or external-wagering bait against the frozen rails. Feedback: an abuse-signal record feeding the sybil/wash metrics of record; repeat shapes become intake filters ONLY by versioned rule. Classifications are recorded, never silently deleted.
+- **N3 USER KNOWLEDGE IMPROVED** — the Q&A itself met the need: the answer already existed in the records (an outcome already settled · a fact already published · an extant Book subject already carries the question · a concept explained). This is the loop's SERVED class, not a failure: the Q&A transcript is the receipt, and recurring N3 questions feed the published ELI5/FAQ material on the surface.
+
+Discipline: class from evidence (which criterion failed, or what resolved) · corrections by appended record only · the taxonomy is versioned (this is v0 — new classes by amendment, never ad hoc) · class rates reported as counts per window, no claims below the evidence floor.
 
 ### 13.3 Contract shape + handoff
 
-A derived contract is a draft Book subject carrying the Book's own fields: subject string in the Book's binary form · `knowable_at` · `record_of_record` · the resolution rule (what in the record decides Y vs N) · proposer attribution. Handoff: contract → **MoneyBall Book intake** (custody of record); listing creates the subject's one expectation record at INTAKE (B1). Listing endorses **settleability only**, never an outcome. Positions, escrow, and settlement then run the Book's standing lifecycle (B2 basis-cited positions · B3 settlement from the named record) — the proposal layer adds no mechanics of its own.
+A derived contract is a draft Book subject carrying the Book's own fields: subject string in the Book's binary form · `knowable_at` · `record_of_record` · the resolution rule (what in the record decides Y vs N) · proposer attribution — **plus its proof obligation, stated at creation; a contract without one is malformed at intake**: {record_of_record ref · the receipt shape that settles it (event/record type + id pattern) · who may stamp the settlement (role of record) · the corroboration leg (a weight-bearing settlement requires a second leg — the DoE replay/audit check; single-leg settlements are HELD, not final) · the dispute rule (correction only by a receipted act appended to the record; unresolved reads as a gap — never averaged, never silently edited)}. Handoff: contract → **MoneyBall Book intake** (custody of record); listing creates the subject's one expectation record at INTAKE (B1). Listing endorses **settleability only**, never an outcome. Positions, escrow, and settlement then run the Book's standing lifecycle (B2 basis-cited positions · B3 settlement from the named record) — the proposal layer adds no mechanics of its own.
 
 State machine: `PROPOSED → QUARANTINED → IN_Q&A → CONTRACT_DERIVED → LISTED → (Book lifecycle)`; from any pre-listing state → `NONE_FOUND` (terminal, logged).
 
@@ -350,22 +350,22 @@ State machine: `PROPOSED → QUARANTINED → IN_Q&A → CONTRACT_DERIVED → LIS
 Proposal as posed: *"Will Hunt find new <[service]> by <[time]>?"* — instantiated in Q&A with <[service]> = a named service not in the provider registry at intake, <[time]> = a stated future date.
 
 - **Actor**: Hunt — the fleet's provider-hunt function; `find` is its verb of record.
-- **Predicate operationalized**: "find" settles only in its recorded form — a new service entry **attributable to Hunt's hunt** appearing in the record of record. An unrecorded find does not settle anything (G4).
-- **Object check**: Q&A snapshots the provider registry at intake. If <[service]> is already present, the question is determined → NONE FOUND / ALREADY_KNOWN. "New" means absent at intake, verbatim against that snapshot.
+- **Predicate operationalized**: "find" settles only in its recorded form — a new service entry **attributable to Hunt's hunt** appearing in the record of record. An unrecorded find does not settle anything (S2).
+- **Object check**: Q&A snapshots the provider registry at intake. If <[service]> is already present, the question is determined → NONE FOUND, class N3 (the answer already exists in the records). "New" means absent at intake, verbatim against that snapshot.
 - **Deadline**: <[time]> → `knowable_at` = that date, end-of-day PT.
-- **Record of record**: the provider-onboarding registry / provider index of record — the fleet's provider census surface, named ex ante (G3).
+- **Record of record**: the provider-onboarding registry / provider index of record — the fleet's provider census surface, named ex ante (S4).
 
 **Derived contract**: subject `Hunt finds new <service> by <time> {Y/N}` · knowable_at = <time> EOD PT · record_of_record = provider registry of record · resolution: **Y** iff a registry entry for <service> first appears at or before knowable_at carrying hunt attribution; otherwise **N**.
 
-NONE FOUND variants of the same question: (a) service already registered at intake → ALREADY_KNOWN; (b) the service class sits outside every census, so no record will carry the find → ESCALATE (commission the record = system upgrade) with KNOWLEDGE feedback to the proposer; (c) the proposer insists "find" needs no recorded evidence → KNOWLEDGE (feedback: settlement reads records, not impressions — the recorded form is what would make it settleable).
+NONE FOUND variants of the same question: (a) service already registered at intake → **N3** (answer already in the records); (b) the service class sits outside every census, so no record will carry the find → **N1 SYSTEM UPGRADE** (the missing record is the upgrade candidate; re-proposal invited if it lands); (c) the proposer insists "find" needs no recorded evidence → **N3** (the Q&A explains the recorded-evidence rule — knowledge improved; the recorded form is what would make it settleable).
 
 ### 13.5 Surface spec (moneyball site)
 
-A proposals surface on the moneyball site (page name settled at build against the naming record — the Desk shell's proposals page is a different object, so the name must not collide; working slot `propose.html`). Form: {question · proposed deadline · suggested record of record (optional)}. The surface renders, read-only and verbatim: the proposal · its Q&A transcript · its state · for NONE FOUND, the disposition + feedback text · for listed contracts, the Book subject it became. Claims ceiling binds in full: paper/test labelling · no odds, no implied probability · a proposal is not a position and the surface offers no entry path (R3).
+A proposals surface on the moneyball site (page name settled at build against the naming record — the Desk shell's proposals page is a different object, so the name must not collide; working slot `propose.html`). Form: {question · proposed deadline · suggested record of record (optional)}. The surface renders, read-only and verbatim: the proposal · its Q&A transcript · its state · for NONE FOUND, its class + feedback text · for listed contracts, the Book subject it became. Claims ceiling binds in full: paper/test labelling · no odds, no implied probability · a proposal is not a position and the surface offers no entry path (R3).
 
 ### 13.6 Custody
 
-Web3 seat = lead (spec · surface · pre-serve verify) · MoneyBall seat = Book intake + listing · DoE = doctrine check on the gate set before any build · Speculators-build = no leg at proposal stage (booktally moves only via Book positions after listing).
+Web3 seat = lead (spec · surface · pre-serve verify) · MoneyBall seat = Book intake + listing · DoE = settleability/proof-obligation doctrine (this §13.1–13.2 leg) + the settlement-side verifier the proof obligation names (replay B1–B5 + F1 + exit check) · Speculators-build = no leg at proposal stage (booktally moves only via Book positions after listing).
 
 ### 13.7 Open questions (owner/main)
 
