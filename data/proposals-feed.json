@@ -1,6 +1,6 @@
 {
  "schema": "moneyball-proposals-feed/v1",
- "generated_at": "2026-11-04T09:39:43Z",
+ "generated_at": "2026-11-04T09:45:50Z",
  "generator": "scripts/generate_proposals_feed.py (DESIGN \u00a713.5)",
  "claims_ceiling": {
   "labelling": "PAPER / TEST \u2014 proposals are stage-0 decision objects: they create no position, move no balance, and score nothing.",
@@ -16,8 +16,8 @@
   "none_by_class": {}
  },
  "chain": {
-  "receipts": 6,
-  "head_hash": "cdfed593ef7748b6da5cca13",
+  "receipts": 10,
+  "head_hash": "e8f6a9bec5968bf360ef3276",
   "valid": true
  },
  "proposals": [
@@ -63,9 +63,9 @@
      "handoff": {
       "to": "MoneyBall Book intake",
       "state": "HANDED_OFF",
-      "at": "2026-11-04T09:39:43Z",
-      "receipt_seq": 6,
-      "receipt_hash": "cdfed593ef7748b6da5cca13"
+      "at": "2026-11-04T09:45:50Z",
+      "receipt_seq": 10,
+      "receipt_hash": "e8f6a9bec5968bf360ef3276"
      }
     },
     "qa_ref": "prop-0001.qa",
@@ -83,7 +83,7 @@
      "s3": "PASS",
      "s4": "PASS",
      "stamper": {
-      "identity": "[MUSEai]@{role:{optimizations-assurance}}",
+      "identity": "[MUSEai]@{role:{web3-moneyball}}",
       "role": "custodian reviewer \u2014 tranche 1 reviewer duty (\u00a713.7 call ii); \u2260 proposer, no position interest in the would-be contract"
      },
      "subject": "the provisioning search system (Providers Recon + the provisioning lane)",
@@ -231,6 +231,57 @@
      "prev_hash": "aeed7ee2b609bb52b799e155",
      "kind": "book_intake_handoff",
      "hash": "cdfed593ef7748b6da5cca13"
+    },
+    {
+     "seq": 7,
+     "ts": "2026-11-04T09:45:35Z",
+     "proposal_id": "prop-0001",
+     "from_state": "CONTRACT_DERIVED",
+     "to_state": "IN_Q&A",
+     "actor": "[MUSEai]@{role:{web3-moneyball}}",
+     "role": "gate custodian",
+     "basis_ref": "gate custody ruling 2026-11-04: derivation review + doctrine-fit stamp reserved to the Web3 seat per the commission coordinates (\u00a713.7 call ii); build-arm stamp voided for custodian re-stamp \u2014 append-only correction per \u00a713.3A",
+     "prev_hash": "cdfed593ef7748b6da5cca13",
+     "kind": "stamp_voided",
+     "hash": "85562108b9b3fbdc79022568"
+    },
+    {
+     "seq": 8,
+     "ts": "2026-11-04T09:45:35Z",
+     "proposal_id": "prop-0001",
+     "from_state": "IN_Q&A",
+     "to_state": "IN_Q&A",
+     "actor": "[MUSEai]@{role:{web3-moneyball}}",
+     "role": "gate custodian",
+     "basis_ref": "gate correction: proposer attribution \u2014 the filing was executed by the build arm (Swarm) as the tranche-1 worked-example exercise; the provisioning lane is the subject operator (\u00a713.4 instance \u2460), not the acting proposer",
+     "prev_hash": "85562108b9b3fbdc79022568",
+     "kind": "correction_proposer_attribution",
+     "hash": "6cc9529f7f50753570856def"
+    },
+    {
+     "seq": 9,
+     "ts": "2026-11-04T09:45:35Z",
+     "proposal_id": "prop-0001",
+     "from_state": "IN_Q&A",
+     "to_state": "CONTRACT_DERIVED",
+     "actor": "[MUSEai]@{role:{web3-moneyball}}",
+     "role": "custodian reviewer",
+     "basis_ref": "prop-0001#doctrine-fit-stamp",
+     "prev_hash": "6cc9529f7f50753570856def",
+     "hash": "ee93ed0ac7ad7791a07052a0"
+    },
+    {
+     "seq": 10,
+     "ts": "2026-11-04T09:45:50Z",
+     "proposal_id": "prop-0001",
+     "from_state": "CONTRACT_DERIVED",
+     "to_state": "CONTRACT_DERIVED",
+     "actor": "[MUSEai]@{role:{web3-moneyball}}",
+     "role": "composition hand \u2014 Book intake handoff to the MoneyBall seat (listing = Book custody act)",
+     "basis_ref": "prop-0001#doctrine-fit-stamp",
+     "prev_hash": "ee93ed0ac7ad7791a07052a0",
+     "kind": "book_intake_handoff",
+     "hash": "e8f6a9bec5968bf360ef3276"
     }
    ]
   }
