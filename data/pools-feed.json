@@ -150,7 +150,8 @@
    "depth_2_no_depth_as_rank": "depth is taxonomy position from the provisioning event, never seniority",
    "depth_3_honest_bottom": "taxonomy leaves without a provisionable entity are NOT_ESTABLISHED (see not_established_cells + classes_absent_from_ledger), never empty pools",
    "pct_rail": "no bare % field on any row; % appears only as a snapshot object {at, window, method pool-scope-methods/v1:wilson95, n, shares, bounds, clamped[]} — none exists at this layer; DISPUTED state reserved in vocabulary"
-  }
+  },
+  "arm_split_stamp": "all 4 arm rows carry split: NOT_ESTABLISHED verbatim from their provisioning events; no % value exists anywhere in this feed"
  },
  "pools": [
   {
@@ -225,7 +226,9 @@
      "ref": "wallet-ledger.jsonl seq 709",
      "payload_hash": "306b11c6193951376416ec413fad3c2c36675136f8926205642732ab5ffa27f3"
     }
-   ]
+   ],
+   "split": "NOT_ESTABLISHED",
+   "split_basis": "carried verbatim from the pool's provisioning event (Amendment 6: no % anywhere until a pool-scope-methods/v1 snapshot can be stamped)"
   },
   {
    "pool_wallet_id": "pool:arm:doe-evolve",
@@ -260,7 +263,9 @@
      "ref": "wallet-ledger.jsonl seq 712",
      "payload_hash": "5cf18153935880fd30da8508d4905350c93117e95f4d4655a5973f79386b58a4"
     }
-   ]
+   ],
+   "split": "NOT_ESTABLISHED",
+   "split_basis": "carried verbatim from the pool's provisioning event (Amendment 6: no % anywhere until a pool-scope-methods/v1 snapshot can be stamped)"
   },
   {
    "pool_wallet_id": "pool:arm:requested-fee",
@@ -295,7 +300,9 @@
      "ref": "wallet-ledger.jsonl seq 711",
      "payload_hash": "69694bcf073b5cf49698690c4b8cd591ab3a7350e752721a3479507d842a706e"
     }
-   ]
+   ],
+   "split": "NOT_ESTABLISHED",
+   "split_basis": "carried verbatim from the pool's provisioning event (Amendment 6: no % anywhere until a pool-scope-methods/v1 snapshot can be stamped)"
   },
   {
    "pool_wallet_id": "pool:arm:rnd",
@@ -330,7 +337,9 @@
      "ref": "wallet-ledger.jsonl seq 710",
      "payload_hash": "fe63357b262fdcd82f77842eb842d053fb69caf196eda8b24130e32fabb70ada"
     }
-   ]
+   ],
+   "split": "NOT_ESTABLISHED",
+   "split_basis": "carried verbatim from the pool's provisioning event (Amendment 6: no % anywhere until a pool-scope-methods/v1 snapshot can be stamped)"
   },
   {
    "pool_wallet_id": "pool:codehound",
