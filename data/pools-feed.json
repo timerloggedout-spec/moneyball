@@ -5,7 +5,7 @@
   "ledger_events": 717,
   "head_seq": 717,
   "ledger_blob": "0b0c4d5e302ebdb14c59d5f532c5b22f487ade2b",
-  "generator": "[MUSEai]@{role:{moneyball-plane}} — pools-feed regeneration under feed-machinery custody (DESIGN 9.1); regen 5: full class x depth matrix at 717 events (Amendment-3 depth rows + devwork/recon/arm/loop classes)"
+  "generator": "[MUSEai]@{role:{moneyball-plane}} — pools-feed generator of record under feed-machinery custody (DESIGN 9.1); regen via generator of record; split carried mechanically from provisioning events"
  },
  "census": {
   "feed_pools": 693,
@@ -151,7 +151,7 @@
    "depth_3_honest_bottom": "taxonomy leaves without a provisionable entity are NOT_ESTABLISHED (see not_established_cells + classes_absent_from_ledger), never empty pools",
    "pct_rail": "no bare % field on any row; % appears only as a snapshot object {at, window, method pool-scope-methods/v1:wilson95, n, shares, bounds, clamped[]} — none exists at this layer; DISPUTED state reserved in vocabulary"
   },
-  "arm_split_stamp": "all 4 arm rows carry split: NOT_ESTABLISHED verbatim from their provisioning events; no % value exists anywhere in this feed"
+  "arm_split_stamp": "all 4 arm rows carry split verbatim from their provisioning events; no % value exists anywhere in this feed"
  },
  "pools": [
   {
