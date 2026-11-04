@@ -329,6 +329,16 @@ Inherited rails bind unchanged: forecasts valid only pre-outcome (F1) · explici
 
 Output: **CONTRACT** (a draft subject in Book shape, §13.3) or **NONE FOUND** (§13.2).
 
+### 13.1A Intake quarantine gate (Q1–Q7 — DoE leg)
+
+- **Q1** Quarantine is a verbatim-keyed stamped state, unscored in fact: no positions, no `p` elicited, collected, or stored; rendering is existence-only.
+- **Q2** The doctrine-fit stamp is the contract-path exit receipt: {per-criterion S1–S4 PASS|FAIL · subject / record_of_record / deadline verbatim · proof-obligation ref · stamper · ts · Q&A ref}.
+- **Q3** Stamper independence is a reviewer duty: a self-stamp is void and raises an integrity finding.
+- **Q4** Exactly four receipted exits exist: {contract · N1 · N2 · N3} — each carrying the criterion→class derivation on the receipt.
+- **Q5** Already-knowable outcomes never form contracts (F1): exit N3, or refuse.
+- **Q6** Transition receipts carry {proposal · from · to · actor+role · ts · basis_ref}, append-only. The settlement replay reads this birth chain as B2/B4 evidence; gaps are HELD at settlement.
+- **Q7** Duplicates resolve inside quarantine by link receipt — never deletion, never double-stamp.
+
 ### 13.2 NONE FOUND taxonomy (v0 — DoE leg)
 
 NONE FOUND is a first-class terminal state, never an error and never a silent drop. Every NONE closes with **exactly one primary class** (a secondary reason note is optional), assigned from the Q&A record — the classification IS the feedback loop. A NONE with no class is an INCOMPLETE record, under the same rule as a contract missing its proof obligation.
