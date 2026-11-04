@@ -51,6 +51,83 @@
      "cost_estimate": "~$19.80 @ 2c-4gb plans-API rate / ~$39.60 @ 4c-8gb",
      "priority": "outranks discretionary burn — a dead demo during judging is a delta-p cliff"
     }
+   },
+   "exercise_entry": {
+    "kind": "D2 exercise run-1 SCORING entry (close leg 6) — the exercise's owed final leg, booked independent of any pick",
+    "pick_state": "OWNER-HELD ⛏️ — NO PICK EXECUTED. The 2026-11-03 23:16 PT 'D2 BUILD / pick executed' interpretation was RESCINDED by owner correction (via main, 2026-11-03 23:18 PT). This entry's earlier booking as an executed pick (PR #4785) is superseded by this correction.",
+    "record_of_record": "D2 exercise run-1 (workspace/d2-exercise/run-2026-11-03.md; slate PRs #4486-#4491, #4531, #4536)",
+    "scoring_axes": "Delphi-shaped, advisory (Tech · Presentation · Business · Originality · Buildability · FieldRoom, 0-10 each; raw = sum/60) — filed beside, never merged; NOT the MoneyBall participant axes",
+    "slate": [
+     {
+      "id": "A",
+      "candidate": "Canary Patch Gauntlet",
+      "class": "C1",
+      "raw_initial": 46,
+      "raw_revised": 45
+     },
+     {
+      "id": "B",
+      "candidate": "Quarantine Browser Clerk",
+      "class": "C1",
+      "raw_initial": 48,
+      "raw_revised": 46
+     },
+     {
+      "id": "C",
+      "candidate": "Dependency Detox Chamber",
+      "class": "C1",
+      "raw_initial": 45,
+      "raw_revised": 45
+     },
+     {
+      "id": "D",
+      "candidate": "Pipeline Rescue Desk",
+      "class": "C2",
+      "raw_initial": 40,
+      "raw_revised": 42
+     },
+     {
+      "id": "E",
+      "candidate": "Three-Way Match Room",
+      "class": "C2",
+      "raw_initial": 45,
+      "raw_revised": 46
+     },
+     {
+      "id": "F",
+      "candidate": "Renewal Risk Desk",
+      "class": "C2",
+      "raw_initial": 41,
+      "raw_revised": 42
+     }
+    ],
+    "advisory_rankings": {
+     "raw_revised": "B = E (46) > A = C (45) > F = D (42) — B raw-ranked first among C1, tied-first overall",
+     "risk_adjusted_delivered": "A > C > B > E > F > D"
+    },
+    "B_note": "B = advisory-ranked first on revised raw — NOT picked. Differentiation (lookalike-domain page attacking the AGENT = the unoccupied angle) survives the depth-recon best of the C1 trio.",
+    "field_denominator": {
+     "participants": 2308,
+     "source": "2026-11-03 official dashboard — supersedes the stale 1,617 (context only; no probability derived or republished, B5)"
+    },
+    "wager_model": "unchanged — POS-001 as opened and amended (stake = use of the $200 expiring Vultr house credit; payout FIXED $14k pool, 1st $5k cash + $3k credits; burn past marginal delta-p ~0 dilutes; expiry salvage $0 => deploy where delta-p > 0, demo-uptime reserve first). POS-001 settles at the D2 wall 2026-11-08 15:00 PT on official lablab results — a subject term, not a build clock.",
+    "dormant_repo": {
+     "repo": "timerloggedout-spec/quarantine-browser-clerk",
+     "id": 1445293810,
+     "state": "DORMANT — created inside the rescinded sequence; explicitly NOT a build fact for this book"
+    },
+    "planning_clocks": {
+     "classification": "EXERCISE PLANNING clocks — NOT build commitments (no build exists; pick OWNER-HELD)",
+     "T1_core": "<= 2026-11-04 EOD",
+     "signature_moment": "<= 2026-11-05",
+     "landing": "2026-11-07",
+     "note": "carried from the exercise run record as planning tiers only; the D2 wall 2026-11-08 15:00 PT is POS-001's subject term, not a clock in this set"
+    }
+   },
+   "entry_pick": {
+    "candidate": "B — Quarantine Browser Clerk (C1·B)",
+    "state": "OWNER-HELD ⛏️ — B NOT picked",
+    "history": "booked as EXECUTED 2026-11-03 23:16 PT under the 'D2 BUILD' reading (PR #4785) → RESCINDED 2026-11-03 23:18 PT by owner countermand via main; coordinator of record corrected to OWNER-HELD (PR #4786 merged 1d1dbb3012a9). This stamp preserves that history per append-only discipline; the live entry is POS-001.exercise_entry (PR #4793)."
    }
   }
  ],
@@ -281,10 +358,14 @@
      {
       "ref": "D2 seat relay 2026-11-03 (owner framing + field correction)",
       "note": "house-stake position POS-001 opened on this subject (stake = $200 Vultr house credit, deployed by burn). Field denominator of record corrected: 2,308 participants (2026-11-03 dashboard) vs stale 1,617 in the coordinator prior — context only; no probability is derived or republished in the book (B5)."
+     },
+     {
+      "ref": "D2 exercise run-1 (PRs #4486-#4491/#4531/#4536) + D2 seat correction 2026-11-03 23:18 PT (owner correction via main)",
+      "note": "EXERCISE SCORING ENTRY BOOKED (leg 6): slate of 6 scored (Delphi-shaped advisory, beside never merged). Pick state = OWNER-HELD — NO PICK EXECUTED; the 'D2 BUILD / pick executed' reading was rescinded by owner correction. B advisory-ranked first on revised raw (46), not picked. Repo 1445293810 (quarantine-browser-clerk), created in the rescinded sequence, stands dormant — not a build fact. Evidence leg only — posterior unchanged, no probability derived (B5)."
      }
     ],
     "posterior": {
-     "n_evidence": 1,
+     "n_evidence": 2,
      "range": null,
      "value": null
     },
@@ -1651,6 +1732,41 @@
    "pct_consumed": null,
    "pct_remaining": null,
    "pct_note": "no wall — window open-ended until the instance's run record lands; no honest percentage"
+  },
+  {
+   "id": "PROP-01-fireworks-ai",
+   "group": "Proposals — §13 pipeline (stage-0 contracts)",
+   "subject": "Hunt finds new Fireworks AI by 2026-12-31 {Y/N}",
+   "proposal_ref": "moneyball prop-0001 (data/proposals/prop-0001.json; proposal chain data/proposal-log.jsonl, 10 receipts, chain valid; doctrine-fit stamp = Web3 seat seq9; Book intake handoff seq10, 2026-11-04T09:45:50Z)",
+   "record_of_record": "provider/quota registry — termux-monorepo ops/quota/registry.json @master (blob f60b9e22d9c7 at listing; Fireworks AI verified ABSENT at listing, firsthand)",
+   "knowable": "2026-12-31T23:59:59-08:00",
+   "anchors": null,
+   "anchors_note": "no fleet deadline-reminders register entry for this subject; knowable_at carried from the derived contract verbatim (prop-0001 stamp)",
+   "settle": {
+    "field": "resolution per the derived contract's resolution rule (carried verbatim in resolution_rule)",
+    "source": "ops/quota/registry.json @master — only landed, PR-stamped additions settle (B3); settling receipt = a registry addition entry for Fireworks AI present in the registry blob whose history carries the merging PR's stamp (PR number + merge SHA), carrying hunt attribution",
+    "value": null
+   },
+   "resolution_rule": "Y iff a landed, PR-stamped registry addition for Fireworks AI first appears in the provider/quota registry at or before knowable_at carrying hunt attribution; otherwise N (§13.4 derived contract)",
+   "proof_obligation_ref": "prop-0001#proof-obligation (5 fields: record_of_record_ref · settling_receipt_shape · stamping_role = MoneyBall seat, B3 · corroboration_leg = DoE settlement replay/audit check, single-leg settlement HELD not final · dispute_rule = correction only by receipted appended act, unresolved dispute reads as a gap)",
+   "expectation_record": {
+    "quantity": "P(subject resolves Y)",
+    "prior": {
+     "value": null,
+     "basis": "NOT_ESTABLISHED at listing — no cited record supports a value; cited-record-only discipline (B1)"
+    },
+    "evidence": [],
+    "posterior": {
+     "value": null,
+     "range": null,
+     "n_evidence": 0
+    }
+   },
+   "window": {
+    "window_start": "2026-11-04",
+    "window_start_basis": "book listing (intake) date",
+    "wall": "2026-12-31T23:59:59-08:00"
+   }
   }
  ]
 }
