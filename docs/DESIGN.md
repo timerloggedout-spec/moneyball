@@ -385,7 +385,7 @@ State machine: `PROPOSED → QUARANTINED → IN_Q&A → CONTRACT_DERIVED → LIS
 
 ### 13.4 Worked example — the Hunt question, end-to-end
 
-Proposal as posed: *"Will Hunt find new <[service]> by <[time]>?"* — instantiated in Q&A with <[service]> = a named service not in the provider registry at intake, <[time]> = a stated future date. **This example is a live subject class, not a hypothetical** (owner grounding, 2026-11-04).
+Proposal as posed: *"Will Hunt find new <[service]> by <[time]>?"* — instantiated in Q&A with <[service]> = a named service not in the provider registry at intake, <[time]> = a stated future date. **This example is a live subject class, not a hypothetical** (owner grounding as corrected, 2026-11-04).
 
 - **Actor / subject of record**: the subject class is **seeker/discovery functions broadly** — systems whose work is finding and landing new entries in a record. Provisioning search (Providers Recon + the provisioning lane, the machinery that adds providers and services to the registry) is **instance ① of the class, not its definition**. "Hunt" was the owner's quip (correction, 2026-11-04): it stands as the quip-placeholder **in this worked example only**, never a hard-stamped proper noun; if the class ever needs a formal name it goes through the naming flow. For this instance the subject of record is the provisioning search system; `find` is its verb of record.
 - **Predicate operationalized**: "find" settles only in its recorded form — a new service entry **attributable to Hunt's hunt** appearing in the record of record. An unrecorded find does not settle anything (S2).
