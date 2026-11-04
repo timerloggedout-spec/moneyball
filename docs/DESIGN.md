@@ -377,6 +377,8 @@ A proposals surface on the moneyball site (page name settled at build against th
 
 Web3 seat = lead (spec · surface · pre-serve verify) · MoneyBall seat = Book intake + listing · DoE = settleability/proof-obligation doctrine (this §13.1–13.2 leg) + the settlement-side verifier the proof obligation names (replay B1–B5 + F1 + exit check) · Speculators-build = no leg at proposal stage (booktally moves only via Book positions after listing).
 
-### 13.7 Open questions (owner/main)
+### 13.7 Calls (owner, 2026-11-04 — under the Do-it-Best rule; owner override stands)
 
-(i) Proposer class for tranche 1 — any Web3 user, or fleet seats first? (ii) Q&A depth at build — fully system-generated questions, or custodian-reviewed derivations for the first tranche? (iii) ESCALATE routing home — where do system-upgrade candidates land?
+(i) **Proposer class, tranche 1 = fleet-first.** Public intake opens only after the loop proves — the same G0→G1 pattern as the Book itself.
+(ii) **Q&A depth = custodian-reviewed first tranche.** The derivation is the load-bearing novelty; system-generated derivations only on classifier evidence.
+(iii) **ESCALATE home = the DoE upgrade backlog.** N1 candidates live with the gap register (failing criterion named on each, per §13.2).
