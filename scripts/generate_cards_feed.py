@@ -92,7 +92,7 @@ def base_mechanics(mechanics_records, card_id, receipts):
     a mechanics record of record carrying its own receipt."""
     mech = {"allocation_algorithm": None, "allocation_snapshot": None, "terms": None}
     states = {
-        "allocation_algorithm": "NOT_ESTABLISHED - no per-card allocation-algorithm record of record; the strategies registry covers campaign instances (6 strategies x 2 verifiers, factorial), not card agents",
+        "allocation_algorithm": "NOT_ESTABLISHED for this card - a per-INSTANCE allocation record exists (Speculators-build source mapping, 2026-11-03: the 12 token-strategies-1 instances map to strategy ids {baseline, eagle3, peagle, dflash, dspark, mtp} x verifiers {Qwen/Qwen3-8B, meta-llama/Llama-3.1-8B-Instruct}; algorithm version NOT_RECORDED for all - the registry's only pin is the registry-wide FORK_REF) but it keys instances (instance_key / wallet), not cards; no card-to-instance binding record exists, so no value renders on any card. Instance cards, when that population lands, render from that mapping receipt-cited",
         "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
         "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist",
     }
