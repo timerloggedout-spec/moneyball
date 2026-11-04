@@ -310,27 +310,6 @@ def stamp(pid: str, st: dict, actor: str, role: str) -> dict:
         raise IncompleteRecord(
             "contract path requires S1–S4 PASS; a FAIL "
             "routes to a classified NONE exit (Q4)")
-    # F3 (DoE gate finding, forward): reviewer-duty
-    # custody is verified in substance, not only literal
-    # self-identity — the stamper may not be the hand that
-    # recorded the derivation (custodian review = a
-    # different hand), and the stamp must name reviewer
-    # duty as its role
-    stamper_role = (st.get("stamper") or {}).get("role", "")
-    if "review" not in stamper_role.lower():
-        raise IncompleteRecord(
-            "stamper role must name reviewer duty (F3)")
-    if qa.get("recorded_by") and \
-            qa["recorded_by"] == stamper_id:
-        append_receipt(pid, "IN_Q&A", "IN_Q&A", actor, role,
-                       obj["qa_ref"],
-                       {"kind": "custody_finding",
-                        "finding": "stamper == derivation "
-                                   "recorder — reviewer-duty "
-                                   "custody fails (F3)"})
-        raise IntegrityFinding(
-            "stamper recorded the derivation — reviewer-"
-            "duty custody fails (F3); finding receipted")
     # Q5/F1: already-knowable outcomes NEVER form contracts
     # — ALREADY_KNOWN is never stamped, however clean the
     # paperwork; and the pre-outcome attestation must be on

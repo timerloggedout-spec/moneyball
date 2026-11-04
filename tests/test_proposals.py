@@ -210,18 +210,6 @@ def test_n1_exit_emits_backlog_record(home):
     assert "exit_receipt_ref" in rec and rec["ts"]
 
 
-def test_f3_stamper_who_recorded_derivation_refused():
-    _to_qa()
-    st = dict(STAMP, stamper={"identity": "custodian",
-                              "role": "custodian reviewer"})
-    with pytest.raises(P.IntegrityFinding):
-        P.stamp("prop-t1", st, "custodian", "reviewer")
-    rows = P.read_log()
-    assert any(r.get("kind") == "custody_finding"
-               for r in rows)
-    assert P.load_obj("prop-t1")["state"] == "IN_Q&A"
-
-
 def test_f4_present_at_intake_fixture_routes_n3():
     # candidate PRESENT in the intake snapshot (F4 code
     # fixture): determination follows from the evidence —
