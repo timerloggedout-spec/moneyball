@@ -1,12 +1,12 @@
 {
  "schema": "moneyball-cards-feed/v1",
- "generated_at": "2026-11-03T23:57:16Z",
+ "generated_at": "2026-11-04T00:04:55Z",
  "generator": "scripts/generate_cards_feed.py (moneyball repo, lane A)",
- "generator_run_id": "local-2026-11-03T23:57:16Z",
+ "generator_run_id": "local-2026-11-04T00:04:55Z",
  "sources": {
   "registry": "termux-monorepo/docs/ops/AGENT-MONIKERS.md",
   "book_feed_schema": "agentic-gambling-book-feed/v1",
-  "book_subjects": 26,
+  "book_subjects": 38,
   "book_settlements": 1
  },
  "population_scope": "v1: lead SSOT table + Fleet GitHub App function identities; lane-coordination monikers and 4n0n entrant identities are NOT card population (Registry boundary rules)",
@@ -60,7 +60,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -125,7 +125,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -180,7 +180,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -234,7 +234,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -298,7 +298,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -363,7 +363,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -418,7 +418,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -473,7 +473,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -528,7 +528,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -583,7 +583,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -638,7 +638,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -693,7 +693,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -748,7 +748,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -803,7 +803,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -858,7 +858,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -913,7 +913,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -968,7 +968,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1023,7 +1023,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1079,7 +1079,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1135,7 +1135,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1191,7 +1191,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1247,7 +1247,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1303,7 +1303,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1359,7 +1359,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1415,7 +1415,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1471,7 +1471,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1527,7 +1527,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1583,7 +1583,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
@@ -1639,7 +1639,7 @@
     "allocation_snapshot": "NOT_ESTABLISHED - no category-usage window exists (campaign runs 0 executed); the pool-scope-methods/v1 N>=30 floor cannot be met, so no number is rendered",
     "terms": "NOT_ESTABLISHED - DESIGN S.11 records the schema-level basis only; no per-agent recorded change/sale/royalty terms exist"
    },
-   "snapshot_at": "2026-11-03T23:57:16Z",
+   "snapshot_at": "2026-11-04T00:04:55Z",
    "receipts": [
     {
      "field": "identity",
