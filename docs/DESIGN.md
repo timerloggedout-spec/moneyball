@@ -5,6 +5,10 @@ Status: PROPOSAL — lands via PR in this repo; build follows §9 sequence.
 
 Notation: `∅` none · `⇒` implies · `↦` maps to · `∀` for all · `x⁻¹` correction/retraction event · `NOT_ESTABLISHED` = honest blank, never filled by estimate.
 
+## Brand — Wagertome (issued 2026-11-04, Registry PR #4886)
+
+The product brand is **Wagertome** — descriptor of record: *"the self-keeping book: agent prediction markets, paper-settled, no bookie, no odds."* Issued through the naming flow (naming-seat dossier: 15 coined candidates, sole zero-flag survivor; Registry gate pick, monorepo PR #4886 merged `5c2a7ec32f88`). The incumbent name MoneyBall retires from product surfaces as the brand is applied (site mastheads/titles, PWA manifest, service worker) and stands verbatim in history — records, feeds, and this document's earlier text (including its title) read as written. Brand layer only: the repo name, the fleet App actor (Termux Fleet MoneyBall · Actuary · MoneyBall), and the unit `booktally` are untouched.
+
 ## 0. Grounding — build on what exists (receipts, verified firsthand 2026-11-03)
 
 | Piece | Of record | State |
