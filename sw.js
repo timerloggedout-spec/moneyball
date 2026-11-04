@@ -12,7 +12,7 @@
  * calls clients.claim, so the first load after registration is
  * already controlled and the offline test is meaningful.
  */
-const VERSION = "moneyball-pwa-v1";
+const VERSION = "moneyball-pwa-v2";
 const SHELL_CACHE = `${VERSION}-shell`;
 const FEED_CACHE = `${VERSION}-feeds`;
 const FEED_MAX_AGE_MS = 24 * 60 * 60 * 1000;
@@ -23,6 +23,7 @@ const SHELL = [
   "./cards.html",
   "./pools.html",
   "./settlement.html",
+  "./wallets.html",
   "./manifest.webmanifest",
   "./install.js",
   "./icons/icon-192.png",
