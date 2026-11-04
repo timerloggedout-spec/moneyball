@@ -46,6 +46,10 @@ else (e.g. `WALLETS.json`) are snapshot caches only.
 | `pool_distribution` | pool pays members after a pool position settles | pro-rata by shares held at settlement `seq` |
 | `cull_transferred` | cull waterfall | balance moves to pooled-buckets in one paired event; culling never destroys value; the cull record names `{culled_participant, wallet_balance_at_cull, pool_destination}` |
 | `adjustment` | correction only | cites the prior event it corrects (`ref` = that event's `receipt_id`); never an edit or delete — `x⁻¹` semantics in derived state |
+| `sweep_transferred` | custodial sweep to a pool | paired debit+credit (see §Sweep events) |
+| `participation_set` | DoE countersign sets/revokes participation eligibility | `delta` = 0 exactly; see §Plane-6 vocabulary |
+| `ante_drawn` | a pool antes toward a QUE task | `delta` = −amount (obligation); see §Plane-6 vocabulary |
+| `ante_settled` | an ante closes on the task's resolution receipt | cites the draw via `ref.draw`; see §Plane-6 vocabulary |
 
 ## Receipts (hash chain)
 
@@ -91,3 +95,55 @@ per-ledger, never assume one vocabulary.
 ## Sweep events (`sweep_transferred`) — 6REA7 paper analogue (2026-11-03)
 
 The sweep engine (monorepo `wallet_ledger.py` mode `sweep`, PR #4695) consolidates wallet balances to pools as paired `sweep_transferred` debit+credit events (the `cull_transferred` pattern), fold-derived triggers: {threshold ⇒ excess} ∨ {settlement ⇒ full} ∨ {manual ⇒ named}. Threshold configuration: `ops/agentic-gambling/site/sweep-thresholds.json` — **all values NOT_ESTABLISHED (unruled)**; the engine invents no defaults and an unruled class never fires (live run at landing: 0/0 no-op). Testnet sweep execution = NOT_ESTABLISHED in every leg.
+
+## Plane-6 vocabulary (`participation_set` · `ante_drawn` · `ante_settled`) — DoE amendment (2026-11-04)
+
+Participation states are folds over ledger events, never free fields (Admin Desk Plane 6;
+Desk operates, DoE holds oversight semantics, Speculators-build stewards the ledger).
+Landed by the steward's hand per the DoE vocabulary amendment (flags filed pre-fold by the
+steward; all three sustained — `pool_contribution` reuse for antes was REJECTED on the
+record: share-issuance-at-NAV semantics ≠ ante obligation).
+
+### `participation_set`
+
+`{type: participation_set · wallet_id = subject pool · delta = 0 exactly · state = target
+state · ref{kind: "participation_countersign", source: DoE countersign receipt id} REQUIRED
+∧ resolvable}`. Eligibility creates no economic fact (balance/members untouched). Fold:
+latest `participation_set` per wallet wins; `state` values are `"PARTICIPATION_ELIGIBLE"`
+(entry, on DoE countersign) or `"PROVISIONED"` (revocation — `ref` = the re-check/finding
+record). An unresolvable countersign ref ⇒ the event changes no state (fail-closed) ∧
+flags. Appended by the steward's hand only, on the countersign receipt; DoE never appends.
+`adjustment` stays correction-only — never eligibility.
+
+### `ante_drawn` / `ante_settled`
+
+`ante_drawn`: `{type: ante_drawn · wallet_id = pool (the pool antes from itself; no separate
+source_wallet in this version) · amount > 0 as recorded · delta = −amount · actor · ts ·
+state_vintage_seq = ledger head seq the draw cites (eligibility read at that vintage) ·
+ref.task = QUE task of record · ref.rule REQUIRED whenever delta < 0 (clause (e)) — at
+current zero balances that is every draw}`. No paired credit: an ante is the pool's
+obligation toward the task; the credit side lives in the task record, not the wallet ledger.
+
+Fold validity (not append-rejection — history cannot be refused): missing
+`state_vintage_seq`, or missing `ref.rule` on a negative draw ⇒ the draw is INVALID
+(ante.review flag naming the clause) and does not settle. Unclosed `ante_drawn` per
+(`ref.task` × `wallet_id`) ≤ 1 unless the task record states otherwise (clause (f)). The
+first VALID `ante_drawn` on a pool is its ACTIVE-entry participation event (fold-derived;
+no activation event exists).
+
+`ante_settled`: `{type: ante_settled · wallet_id = pool · ref.draw = the ante_drawn event's
+receipt ref · delta as recorded by the task's resolution receipt · ref.resolution =
+task-record receipt}`. DRAWN→SETTLED derives from its presence; STALE stays auto-derived at
+deadline (no event).
+
+### Cull record spelling (canonical)
+
+The cull record keys on the long forms **exactly** — `{culled_participant ·
+wallet_balance_at_cull · pool_destination}` (#3748 of record, PRs #3748/#3762). The
+shorthand `{culled · balance_at_cull}` is NOT a valid record spelling: shorthand-keyed
+records read INCOMPLETE, and complete long-form culls must never read incomplete.
+
+### HELD is not a ledger state
+
+HELD is an oversight-overlay state receipted in the OVERSIGHT record `{finding ref · review
+deadline}` — never a wallet-ledger event. No ledger type exists or is wanted for it.
