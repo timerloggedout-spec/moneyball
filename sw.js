@@ -1,4 +1,4 @@
-/* MoneyBall service worker — hand-rolled (Dispatch #2, annex §1).
+/* Wagertome service worker — hand-rolled (Dispatch #2, annex §1).
  *
  * Shell: precache-first (pages, manifest, icons, install kit,
  * and the small feeds). Feed JSON: stale-while-revalidate with
@@ -12,7 +12,7 @@
  * calls clients.claim, so the first load after registration is
  * already controlled and the offline test is meaningful.
  */
-const VERSION = "moneyball-pwa-v3";
+const VERSION = "wagertome-pwa-v4";
 const SHELL_CACHE = `${VERSION}-shell`;
 const FEED_CACHE = `${VERSION}-feeds`;
 const FEED_MAX_AGE_MS = 24 * 60 * 60 * 1000;
