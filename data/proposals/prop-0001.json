@@ -39,9 +39,9 @@
   "handoff": {
    "to": "MoneyBall Book intake",
    "state": "HANDED_OFF",
-   "at": "2026-11-04T09:39:43Z",
-   "receipt_seq": 6,
-   "receipt_hash": "cdfed593ef7748b6da5cca13"
+   "at": "2026-11-04T09:45:50Z",
+   "receipt_seq": 10,
+   "receipt_hash": "e8f6a9bec5968bf360ef3276"
   }
  },
  "qa_ref": "prop-0001.qa",
@@ -59,7 +59,7 @@
   "s3": "PASS",
   "s4": "PASS",
   "stamper": {
-   "identity": "[MUSEai]@{role:{optimizations-assurance}}",
+   "identity": "[MUSEai]@{role:{web3-moneyball}}",
    "role": "custodian reviewer \u2014 tranche 1 reviewer duty (\u00a713.7 call ii); \u2260 proposer, no position interest in the would-be contract"
   },
   "subject": "the provisioning search system (Providers Recon + the provisioning lane)",
