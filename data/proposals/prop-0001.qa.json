@@ -1,0 +1,66 @@
+{
+ "carried": {
+  "deadline": "2026-12-31, end-of-day PT",
+  "record_of_record": "provider/quota registry (termux-monorepo ops/quota/registry.json)",
+  "subject": "the provisioning search system (Providers Recon + the provisioning lane)"
+ },
+ "criteria": {
+  "s1": {
+   "basis": "named subject of record: the provisioning search system \u2014 a citable fleet system with a record (the registry it lands additions in); not a free-floating topic",
+   "verdict": "PASS"
+  },
+  "s2": {
+   "basis": "the outcome is observable as a RECEIPT: a landed, PR-stamped registry addition naming Fireworks AI; binary shape (appears at or before knowable_at, or not)",
+   "verdict": "PASS"
+  },
+  "s3": {
+   "basis": "knowable time stated by the proposer and accepted verbatim: 2026-12-31, end-of-day PT (date-only \u21d2 EOD PT, Book convention)",
+   "verdict": "PASS"
+  },
+  "s4": {
+   "basis": "exactly one record_of_record named ex ante: the provider/quota registry; only landed, PR-stamped additions count \u2014 never a claim, a branch, or an in-flight recon note",
+   "verdict": "PASS"
+  }
+ },
+ "derivation": "custodian-reviewed derivation (tranche 1, \u00a713.7 call ii) \u2014 recorded by the custodian reviewer from the proposer's filing and the intake snapshot; no automated derivation",
+ "proposal_id": "prop-0001",
+ "rails_checked": {
+  "b1_non_duplication": "PASS \u2014 no extant Book subject carries this question (book-feed scan for the candidate and the subject form: 0 hits)",
+  "b5_no_hidden_metrics": "PASS \u2014 no probability elicited, collected, or stored at any stage of this record",
+  "f1_pre_outcome": "PASS \u2014 candidate verified absent at intake (snapshot basis above); deadline is future"
+ },
+ "snapshot_basis": {
+  "absence_method": "full-text scan of the registry blob at intake for the candidate string",
+  "candidate": "fireworks",
+  "candidate_hits": 0,
+  "master_at_intake": "13b12f7b54",
+  "registry": "termux-monorepo ops/quota/registry.json (provider/quota registry)",
+  "registry_blob": "f60b9e22d9c7",
+  "registry_rows": 171,
+  "verdict": "Fireworks AI is ABSENT from the registry at intake \u2014 the question is not determined (F1 pre-outcome holds)"
+ },
+ "transcript": [
+  {
+   "a": "The provisioning search system (Providers Recon + the provisioning lane): the fleet machinery that finds and lands new providers/services in the registry. 'Hunt' is the owner's quip-placeholder for this seeker/discovery class in the worked example only (\u00a713.4 correction of record); provisioning search is instance \u2460 of the class.",
+   "q": "S1 \u2014 what is the named subject of record?"
+  },
+  {
+   "a": "Only as a landed, PR-stamped addition to the provider/quota registry naming the service, carrying hunt attribution. An unrecorded find settles nothing.",
+   "q": "S2 \u2014 in what recorded form does 'find' settle?"
+  },
+  {
+   "a": "No. Snapshot at intake (registry blob f60b9e22d9c7, 171 rows): full-text scan for 'fireworks' = 0 hits. Absent at intake, verbatim against that snapshot \u2014 so the question is open, not already answered (an already-present service would exit N3).",
+   "q": "Object check \u2014 is Fireworks AI already in the registry at intake?"
+  },
+  {
+   "a": "2026-12-31, end-of-day PT, as proposed and accepted; knowable_at = 2026-12-31T23:59:59-08:00.",
+   "q": "S3 \u2014 what is the deadline?"
+  },
+  {
+   "a": "The provider/quota registry (termux-monorepo ops/quota/registry.json), named ex ante. No second record settles this contract.",
+   "q": "S4 \u2014 what is the single source of truth?"
+  }
+ ],
+ "recorded_by": "[MUSEai]@{role:{optimizations-assurance}}",
+ "recorded_at": "2026-11-04T09:39:43Z"
+}

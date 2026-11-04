@@ -1,0 +1,69 @@
+{
+ "schema": "moneyball-proposal/v1",
+ "proposal_id": "prop-0001",
+ "proposer": "Providers Recon + provisioning lane (fleet seat)",
+ "posed_at": "2026-11-04T09:39:15Z",
+ "question": "Will Hunt find new Fireworks AI by 2026-12-31?",
+ "proposed_deadline": "2026-12-31",
+ "suggested_record_of_record": "provider/quota registry (termux-monorepo ops/quota/registry.json)",
+ "slots": {
+  "actor": "the provisioning search system (Providers Recon + the provisioning lane) \u2014 seeker/discovery class instance \u2460; subject of record for this instance (\u00a713.4)",
+  "deadline": "2026-12-31, end-of-day PT",
+  "evidence": "a landed, PR-stamped addition to the provider/quota registry naming Fireworks AI, carrying hunt attribution",
+  "object": "Fireworks AI \u2014 a named service verified absent from the provider/quota registry at intake (snapshot basis on the Q&A record)",
+  "predicate": "find \u2014 settles only in its recorded form: a new service entry attributable to the hunt appearing in the record of record; an unrecorded find settles nothing"
+ },
+ "proof_obligation": {
+  "record_of_record_ref": "termux-monorepo ops/quota/registry.json (the provider/quota registry)",
+  "settling_receipt_shape": "a registry addition entry for Fireworks AI landed via a merged PR \u2014 the addition present in the registry blob whose history carries the merging PR's stamp (PR number + merge SHA)",
+  "stamping_role": "the Book's settlement stamper of record (MoneyBall seat) \u2014 settlement only ever from the named record (B3)",
+  "corroboration_leg": "the DoE settlement replay/audit check (replay B1\u2013B5 + F1 + exit check) as the second, weight-bearing leg; a single-leg settlement is HELD, not final",
+  "dispute_rule": "correction only by a receipted act appended to the record; an unresolved dispute reads as a gap \u2014 never averaged, never silently edited"
+ },
+ "state": "CONTRACT_DERIVED",
+ "decision": {
+  "contract": {
+   "subject": "Hunt finds new Fireworks AI by 2026-12-31 {Y/N}",
+   "knowable_at": "2026-12-31T23:59:59-08:00",
+   "record_of_record": "provider/quota registry (termux-monorepo ops/quota/registry.json)",
+   "resolution_rule": "Y iff a landed, PR-stamped registry addition for Fireworks AI first appears in the provider/quota registry at or before knowable_at carrying hunt attribution; otherwise N (\u00a713.4 derived contract)",
+   "proposer_attribution": "Providers Recon + provisioning lane (fleet seat)",
+   "proof_obligation": {
+    "record_of_record_ref": "termux-monorepo ops/quota/registry.json (the provider/quota registry)",
+    "settling_receipt_shape": "a registry addition entry for Fireworks AI landed via a merged PR \u2014 the addition present in the registry blob whose history carries the merging PR's stamp (PR number + merge SHA)",
+    "stamping_role": "the Book's settlement stamper of record (MoneyBall seat) \u2014 settlement only ever from the named record (B3)",
+    "corroboration_leg": "the DoE settlement replay/audit check (replay B1\u2013B5 + F1 + exit check) as the second, weight-bearing leg; a single-leg settlement is HELD, not final",
+    "dispute_rule": "correction only by a receipted act appended to the record; an unresolved dispute reads as a gap \u2014 never averaged, never silently edited"
+   }
+  },
+  "handoff": {
+   "to": "MoneyBall Book intake",
+   "state": "HANDED_OFF",
+   "at": "2026-11-04T09:39:43Z",
+   "receipt_seq": 6,
+   "receipt_hash": "cdfed593ef7748b6da5cca13"
+  }
+ },
+ "qa_ref": "prop-0001.qa",
+ "stamp": {
+  "contract_subject": "Hunt finds new Fireworks AI by 2026-12-31 {Y/N}",
+  "deadline": "2026-12-31, end-of-day PT",
+  "knowable_at": "2026-12-31T23:59:59-08:00",
+  "proof_obligation_ref": "prop-0001#proof-obligation",
+  "proposal_id": "prop-0001",
+  "qa_ref": "prop-0001.qa",
+  "record_of_record": "provider/quota registry (termux-monorepo ops/quota/registry.json)",
+  "resolution_rule": "Y iff a landed, PR-stamped registry addition for Fireworks AI first appears in the provider/quota registry at or before knowable_at carrying hunt attribution; otherwise N (\u00a713.4 derived contract)",
+  "s1": "PASS",
+  "s2": "PASS",
+  "s3": "PASS",
+  "s4": "PASS",
+  "stamper": {
+   "identity": "[MUSEai]@{role:{optimizations-assurance}}",
+   "role": "custodian reviewer \u2014 tranche 1 reviewer duty (\u00a713.7 call ii); \u2260 proposer, no position interest in the would-be contract"
+  },
+  "subject": "the provisioning search system (Providers Recon + the provisioning lane)",
+  "ts": "2026-11-04T09:39:15Z"
+ },
+ "exit": null
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#161b22">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MoneyBall">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>MoneyBall — Proposals</title>
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--tx:#e6edf3;--dim:#8b949e;--acc:#3fb950;--warn:#d29922}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  header,main,footer{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{padding-top:28px} h1{margin:0 0 4px;font-size:28px} h2{margin:28px 0 10px;font-size:19px}
+  .sub{color:var(--dim)} a{color:#58a6ff}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0}
+  .card .id{font-family:ui-monospace,Menlo,monospace;color:var(--acc);font-size:13px}
+  .card .q{font-weight:600;margin:2px 0}
+  .meta{color:var(--dim);font-size:13px} .meta b{color:var(--tx)}
+  .chip{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:1px 9px;font-size:12px;margin-right:6px}
+  .warn{color:var(--warn);font-weight:600}
+  .strip{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 14px;min-width:130px}
+  .stat b{display:block;font-size:20px} .stat span{color:var(--dim);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  details{margin-top:6px} summary{cursor:pointer;color:var(--dim);font-size:13px}
+  pre{white-space:pre-wrap;word-break:break-word;font-size:12.5px;color:var(--tx)}
+  label{display:block;margin:10px 0 4px;font-weight:600}
+  input,textarea{width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--line);border-radius:6px;padding:8px;font:inherit}
+  footer{color:var(--dim);font-size:13px;padding-bottom:32px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Proposals</h1>
+  <div class="sub">User-proposed questions, derived into settleable contracts — or NONE FOUND — under DESIGN §13. A proposal is a stage-0 decision object: it creates no position, moves no balance, and scores nothing. Paper/test points only.</div>
+  <nav style="margin:10px 0"><a href="index.html">The Book</a> · <a href="cards.html">Agent Cards</a> · <a href="pools.html">Card Pools</a> · <a href="wallets.html">Wallets</a> · <a href="settlement.html">Settlement replay</a></nav>
+  <div class="strip" id="strip"></div>
+</header>
+<main>
+  <div class="card" style="border-color:var(--warn);background:#221a08">
+    <b class="warn">PAPER / TEST — NOT REAL MONEY.</b> Proposals sit in intake quarantine — held, unscored, unlisted — until the derivation completes. While quarantined they render existence-only: state and counts, no outcome framing. No odds, no implied probability, no entry path from this surface (R3).
+  </div>
+
+  <h2>Propose a question</h2>
+  <div class="card">
+    <p class="meta" style="margin-top:0">Intake shape of record (§13.5): {question · proposed deadline · suggested record of record (optional)}. A filed proposal must carry its proof obligation {record of record ref · settling-receipt shape · stamping role · corroboration leg · dispute rule} — without one it is malformed at intake and stays in quarantine. <b>Tranche 1 is fleet-first (§13.7): intake is fleet-seat mediated and derivations are custodian-reviewed; public submission opens only after the loop proves.</b> This form is the shape of record — it submits nowhere from this static surface.</p>
+    <form id="propose-form">
+      <label for="f-question">Question</label>
+      <textarea id="f-question" rows="2" placeholder="Will &lt;subject&gt; … by &lt;date&gt;?"></textarea>
+      <label for="f-deadline">Proposed deadline</label>
+      <input id="f-deadline" type="text" placeholder="YYYY-MM-DD">
+      <label for="f-ror">Suggested record of record (optional)</label>
+      <input id="f-ror" type="text" placeholder="the one record that would settle it">
+      <p class="meta" id="form-note">Fleet seats file through the proposals machinery (scripts/proposals.py); the receipt chain is the proposal's only narrative.</p>
+    </form>
+  </div>
+
+  <h2>Proposal log — the receipt chain, rendered verbatim</h2>
+  <div id="proposals">Loading proposals feed…</div>
+</main>
+<footer>
+  <p>Render rules (B4/R1–R3): published values = record values verbatim, this page computes nothing · a proposal is not a position · hidden internal win-probability is never published here (B5) — none is elicited, collected, or stored at intake (Q1).</p>
+  <p>Doctrine: <a href="https://github.com/timerloggedout-spec/moneyball/blob/main/docs/DESIGN.md">DESIGN §13</a> · Feed: <span id="src"></span></p>
+  <p id="stamp"></p>
+</footer>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.getElementById('propose-form').addEventListener('submit', e => {
+  e.preventDefault();
+  document.getElementById('form-note').innerHTML = '<b>Tranche 1 is fleet-first:</b> this static surface accepts no submissions. Fleet seats file via the proposals machinery; public intake opens after the loop proves (§13.7).';
+});
+fetch('data/proposals-feed.json').then(r => r.json()).then(f => {
+  document.getElementById('src').textContent = f.schema + ' · generated ' + (f.generated_at || '');
+  const counts = f.counts || {};
+  document.getElementById('strip').innerHTML = [
+    [counts.proposals ?? 0, 'proposals'],
+    [(counts.by_state || {}).QUARANTINED ?? 0, 'quarantined'],
+    [(counts.by_state || {})['IN_Q&A'] ?? 0, 'in Q&A'],
+    [(counts.by_state || {}).CONTRACT_DERIVED ?? 0, 'contracts derived'],
+    [(counts.by_state || {}).NONE_FOUND ?? 0, 'none found'],
+  ].map(([v,l]) => `<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join('');
+  document.getElementById('stamp').textContent = 'Receipt chain: ' + ((f.chain || {}).receipts ?? 0) + ' receipts · head ' + ((f.chain || {}).head_hash || '') + ' · valid: ' + ((f.chain || {}).valid === true);
+  document.getElementById('proposals').innerHTML = (f.proposals || []).map(row => {
+    const p = row.proposal || {}, qa = row.qa || {}, st = p.stamp, ex = p.exit, c = (p.decision || {}).contract, ho = (p.decision || {}).handoff;
+    const slots = p.slots || {}, ob = p.proof_obligation || {};
+    const transcript = (qa.transcript || []).map(t => `<div class="meta" style="margin:4px 0"><b>Q:</b> ${esc(t.q)}<br><b>A:</b> ${esc(t.a)}</div>`).join('');
+    return `<div class="card">
+      <div class="id">${esc(p.proposal_id)} · ${esc(p.state)}</div>
+      <div class="q">${esc(p.question)}</div>
+      <div class="meta">Proposer: <b>${esc(p.proposer)}</b> · Posed: <b>${esc(p.posed_at)}</b> · Proposed deadline: <b>${esc(p.proposed_deadline)}</b></div>
+      <div style="margin-top:6px"><span class="chip">actor: ${esc(slots.actor || '—')}</span><span class="chip">object: ${esc(slots.object || '—')}</span><span class="chip">deadline: ${esc(slots.deadline || '—')}</span></div>
+      <div class="meta" style="margin-top:6px">Predicate: ${esc(slots.predicate || '—')}<br>Evidence: ${esc(slots.evidence || '—')}</div>
+      <details><summary>Proof obligation (as filed at creation)</summary>
+        <div class="meta">Record of record ref: ${esc(ob.record_of_record_ref)}<br>Settling-receipt shape: ${esc(ob.settling_receipt_shape)}<br>Stamping role: ${esc(ob.stamping_role)}<br>Corroboration leg: ${esc(ob.corroboration_leg)}<br>Dispute rule: ${esc(ob.dispute_rule)}</div>
+      </details>
+      ${transcript ? `<details><summary>Q&amp;A transcript (verbatim)</summary>${transcript}<div class="meta">Criteria: ${esc(Object.entries(qa.criteria || {}).map(([k,v]) => k.toUpperCase() + ' ' + (v.verdict || '')).join(' · '))}</div></details>` : ''}
+      ${st ? `<details><summary>Doctrine-fit stamp (quarantine-exit receipt)</summary><pre>${esc(JSON.stringify(st, null, 1))}</pre></details>` : ''}
+      ${ex ? `<div class="meta" style="margin-top:6px">NONE FOUND — class <b>${esc(ex.class)}</b> · ${esc(ex.derivation)}</div>` : ''}
+      ${c ? `<div class="meta" style="margin-top:6px">Derived contract: <b>${esc(c.subject)}</b> · Knowable: <b>${esc(c.knowable_at)}</b> · Record of record: ${esc(c.record_of_record)}<br>Resolution: ${esc(c.resolution_rule)}${ho ? `<br>Book intake: <b>${esc(ho.state)}</b> → ${esc(ho.to)}</div>` : '</div>'}
+    </div>`; }).join('') || '<div class="meta">∅ proposals filed.</div>';
+}).catch(e => { document.getElementById('proposals').textContent = 'Proposals feed failed to load — state NOT_ESTABLISHED, nothing estimated.'; });
+</script>
+<script src="install.js"></script>
+</body>
+</html>
