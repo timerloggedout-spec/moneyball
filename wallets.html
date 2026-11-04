@@ -39,6 +39,9 @@
   <nav style="margin:10px 0"><a href="index.html">The Book</a> · <a href="cards.html">Agent Cards</a> · <a href="pools.html">Card Pools</a> · <a href="settlement.html">Settlement replay</a> · <a href="wallets.html">Wallets</a></nav>
 </header>
 <main>
+  <div class="card" style="border-color:var(--warn);background:#221a08">
+    <b class="warn">PAPER / TEST — NOT REAL MONEY.</b> Every figure on this page — every balance, every population count — is paper/test points: unit <span class="mono">soft_quota_token</span> (observational). No wallet here holds, represents, or implies real-money value; balances are observational accounting rendered only as the wallet-ledger fold proves them.
+  </div>
   <div id="stamp">Loading wallets feed…</div>
 
   <h2>Foundation population — the genesis 12</h2>
@@ -78,14 +81,14 @@ fetch('data/wallets-feed.json').then(r => r.json()).then(f => {
   const deltas = (rc.deltas || []).length === 0 ? '∅ — feed fold and ledger fold agree' : esc(JSON.stringify(rc.deltas));
   document.getElementById('stamp').innerHTML = `<div class="card">
     <div><span class="chip">wallets in feed: <b id="n-feed">${fmt(rc.feed_wallets)}</b></span><span class="chip">distinct in fold: <b>${fmt(rc.fold_distinct_wallets)}</b></span><span class="chip">paper wallets: <b id="n-paper">${fmt(rc.paper_wallets)}</b></span><span class="chip">pool wallets: <b id="n-pool">${fmt(rc.pool_wallets)}</b></span></div>
-    <p class="meta" style="margin:8px 0 2px">Reconciliation deltas: <b>${deltas}</b> · Balance rule: ${esc(rc.balance_rule || '')}</p>
+    <p class="meta" style="margin:8px 0 2px">All counts and balances above are <b>paper/test points</b> (soft_quota_token, observational) — see the banner. Reconciliation deltas: <b>${deltas}</b> · Balance rule: ${esc(rc.balance_rule || '')}</p>
     <p class="meta" style="margin:2px 0 0">${esc(cc.population_labelling || '')}</p>
   </div>`;
   const rows = f.wallets || [];
   const paper = rows.filter(w => w.wallet_id.startsWith('paper:'));
   const pools = rows.filter(w => w.wallet_id.startsWith('pool:'));
   const bal = w => Number(w.balance) === 0
-    ? '<span class="bal">0</span> <span class="meta">— measured zero, fold-proven</span>'
+    ? `<span class="bal">0</span> <span class="meta">${esc(w.unit)} — measured zero, fold-proven</span>`
     : `<span class="bal">${fmt(w.balance)}</span> <span class="meta">${esc(w.unit)}</span>`;
   const receipt = w => w.receipt ? `receipt: ${esc(w.receipt.ref)} · payload ${esc(String(w.receipt.payload_hash || '').slice(0, 12))}…` : 'receipt: none';
   document.getElementById('genesis').innerHTML = '<div class="card">' + paper.map(w => `<div class="row">
@@ -99,9 +102,10 @@ fetch('data/wallets-feed.json').then(r => r.json()).then(f => {
   pools.forEach(w => { (groups[clsOf(w.wallet_id)] = groups[clsOf(w.wallet_id)] || []).push(w); });
   document.getElementById('pools').innerHTML = Object.keys(groups).sort().map(c => {
     const list = groups[c].slice().sort((a, b) => a.wallet_id.localeCompare(b.wallet_id));
-    return `<details><summary>${esc(c)} — ${list.length} pool wallet${list.length === 1 ? '' : 's'}</summary><div class="card">` + list.map(w => `<div class="row">
+    return `<details><summary>${esc(c)} — ${list.length} pool wallet${list.length === 1 ? '' : 's'} (paper/test)</summary><div class="card">` + list.map(w => `<div class="row">
       <span class="wid" style="min-width:340px">${esc(w.wallet_id)}</span>
       <span>${bal(w)}</span>
+      <span class="chip">${esc(w.paper_test_label)}</span>
       <span class="meta">last event: ${esc(w.last_event_type)} · seq ${esc(w.last_event_seq)} · ${receipt(w)}</span>
     </div>`).join('') + '</div></details>';
   }).join('');

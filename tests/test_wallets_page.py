@@ -70,6 +70,21 @@ def main() -> int:
             body = page.inner_text("body")
             check("no numeric-% figure anywhere (Amendment 6)",
                   not re.search(r"\d\s?%", body))
+            # User-facing claims ceiling (POPULATE amendment, owner via main):
+            check("prominent PAPER / TEST banner above the figures",
+                  "PAPER / TEST — NOT REAL MONEY" in body
+                  and body.index("PAPER / TEST — NOT REAL MONEY") < body.index("genesis"))
+            page.evaluate("() => document.querySelectorAll('details').forEach(d => d.open = true)")
+            all_rows = page.query_selector_all("#genesis .row, #pools .row")
+            check("every rendered row carries its paper/test label",
+                  all("PAPER / TEST" in (r.text_content() or "") for r in all_rows),
+                  f"{len(all_rows)} rows")
+            check("every balance carries the soft_quota_token unit framing",
+                  all("soft_quota_token" in (r.text_content() or "") for r in all_rows))
+            src = (ROOT / "wallets.html").read_text().lower()
+            check("no winprob / metrics_internal in page source, any encoding",
+                  "winprob" not in src and "metrics_internal" not in src
+                  and "win_prob" not in src and "win-prob" not in src)
             check("substrate summary names all 5 basis points",
                   all(s in body for s in [
                       "required to wager on QUE tasks", "per agent contract",
