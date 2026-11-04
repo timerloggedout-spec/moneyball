@@ -74,6 +74,41 @@ if errs:
     print("FEED VALIDATION FAILED:"); [print(" -", e) for e in errs]; sys.exit(1)
 print(f"feed ok: {len(subs)} subjects, {len(feed.get('positions', []))} positions, {len(feed.get('settlements', []))} settlements, B5 clean")
 
+# --- proposals feed (DESIGN §13): chain valid, obligations
+# complete, NONE exits classified, no probability-shaped data
+proposals_path = root / "data" / "proposals-feed.json"
+if proposals_path.exists():
+    pf = json.loads(proposals_path.read_text())
+    if pf.get("schema") != "moneyball-proposals-feed/v1":
+        errs.append(f"proposals schema mismatch: {pf.get('schema')!r}")
+    if not (pf.get("chain") or {}).get("valid"):
+        errs.append("proposals feed chain not verified valid")
+    for row in pf.get("proposals", []):
+        p = row.get("proposal", {})
+        ob = p.get("proof_obligation") or {}
+        for f in ("record_of_record_ref", "settling_receipt_shape",
+                  "stamping_role", "corroboration_leg", "dispute_rule"):
+            if not ob.get(f):
+                errs.append(f"proposal {p.get('proposal_id')}: proof obligation missing {f}")
+        if p.get("state") == "NONE_FOUND":
+            if (p.get("exit") or {}).get("class") not in ("N1", "N2", "N3"):
+                errs.append(f"proposal {p.get('proposal_id')}: NONE_FOUND without exactly one primary class")
+        if p.get("state") == "CONTRACT_DERIVED" and not p.get("stamp"):
+            errs.append(f"proposal {p.get('proposal_id')}: CONTRACT_DERIVED without the doctrine-fit stamp")
+    def pscan(o, path="$"):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k in ("p", "odds") or "win_probability" in k:
+                    errs.append(f"§13/Q1 violation: probability-shaped field at {path}.{k}")
+                pscan(v, f"{path}.{k}")
+        elif isinstance(o, list):
+            for i, v in enumerate(o):
+                pscan(v, f"{path}[{i}]")
+    pscan({"proposals": pf.get("proposals", [])})
+    if errs:
+        print("FEED VALIDATION FAILED:"); [print(" -", e) for e in errs]; sys.exit(1)
+    print(f"proposals feed checked: {len(pf.get('proposals', []))} proposals, chain valid")
+
 # --- pools feed (DESIGN §3): pools must reference real cards, styles stated ---
 pools_path = root / "data" / "pools-feed.json"
 if pools_path.exists():

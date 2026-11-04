@@ -1,0 +1,238 @@
+{
+ "schema": "moneyball-proposals-feed/v1",
+ "generated_at": "2026-11-04T09:39:43Z",
+ "generator": "scripts/generate_proposals_feed.py (DESIGN \u00a713.5)",
+ "claims_ceiling": {
+  "labelling": "PAPER / TEST \u2014 proposals are stage-0 decision objects: they create no position, move no balance, and score nothing.",
+  "quarantine_rendering": "existence-only while QUARANTINED or IN_Q&A \u2014 state and counts, no outcome framing (Q1).",
+  "probability_rail": "no probability is elicited, collected, stored, or rendered anywhere in this feed (Q1/B5).",
+  "entry_path": "none \u2014 a proposal is not a position; this feed offers no entry path (R3)."
+ },
+ "counts": {
+  "proposals": 1,
+  "by_state": {
+   "CONTRACT_DERIVED": 1
+  },
+  "none_by_class": {}
+ },
+ "chain": {
+  "receipts": 6,
+  "head_hash": "cdfed593ef7748b6da5cca13",
+  "valid": true
+ },
+ "proposals": [
+  {
+   "proposal": {
+    "schema": "moneyball-proposal/v1",
+    "proposal_id": "prop-0001",
+    "proposer": "Providers Recon + provisioning lane (fleet seat)",
+    "posed_at": "2026-11-04T09:39:15Z",
+    "question": "Will Hunt find new Fireworks AI by 2026-12-31?",
+    "proposed_deadline": "2026-12-31",
+    "suggested_record_of_record": "provider/quota registry (termux-monorepo ops/quota/registry.json)",
+    "slots": {
+     "actor": "the provisioning search system (Providers Recon + the provisioning lane) \u2014 seeker/discovery class instance \u2460; subject of record for this instance (\u00a713.4)",
+     "deadline": "2026-12-31, end-of-day PT",
+     "evidence": "a landed, PR-stamped addition to the provider/quota registry naming Fireworks AI, carrying hunt attribution",
+     "object": "Fireworks AI \u2014 a named service verified absent from the provider/quota registry at intake (snapshot basis on the Q&A record)",
+     "predicate": "find \u2014 settles only in its recorded form: a new service entry attributable to the hunt appearing in the record of record; an unrecorded find settles nothing"
+    },
+    "proof_obligation": {
+     "record_of_record_ref": "termux-monorepo ops/quota/registry.json (the provider/quota registry)",
+     "settling_receipt_shape": "a registry addition entry for Fireworks AI landed via a merged PR \u2014 the addition present in the registry blob whose history carries the merging PR's stamp (PR number + merge SHA)",
+     "stamping_role": "the Book's settlement stamper of record (MoneyBall seat) \u2014 settlement only ever from the named record (B3)",
+     "corroboration_leg": "the DoE settlement replay/audit check (replay B1\u2013B5 + F1 + exit check) as the second, weight-bearing leg; a single-leg settlement is HELD, not final",
+     "dispute_rule": "correction only by a receipted act appended to the record; an unresolved dispute reads as a gap \u2014 never averaged, never silently edited"
+    },
+    "state": "CONTRACT_DERIVED",
+    "decision": {
+     "contract": {
+      "subject": "Hunt finds new Fireworks AI by 2026-12-31 {Y/N}",
+      "knowable_at": "2026-12-31T23:59:59-08:00",
+      "record_of_record": "provider/quota registry (termux-monorepo ops/quota/registry.json)",
+      "resolution_rule": "Y iff a landed, PR-stamped registry addition for Fireworks AI first appears in the provider/quota registry at or before knowable_at carrying hunt attribution; otherwise N (\u00a713.4 derived contract)",
+      "proposer_attribution": "Providers Recon + provisioning lane (fleet seat)",
+      "proof_obligation": {
+       "record_of_record_ref": "termux-monorepo ops/quota/registry.json (the provider/quota registry)",
+       "settling_receipt_shape": "a registry addition entry for Fireworks AI landed via a merged PR \u2014 the addition present in the registry blob whose history carries the merging PR's stamp (PR number + merge SHA)",
+       "stamping_role": "the Book's settlement stamper of record (MoneyBall seat) \u2014 settlement only ever from the named record (B3)",
+       "corroboration_leg": "the DoE settlement replay/audit check (replay B1\u2013B5 + F1 + exit check) as the second, weight-bearing leg; a single-leg settlement is HELD, not final",
+       "dispute_rule": "correction only by a receipted act appended to the record; an unresolved dispute reads as a gap \u2014 never averaged, never silently edited"
+      }
+     },
+     "handoff": {
+      "to": "MoneyBall Book intake",
+      "state": "HANDED_OFF",
+      "at": "2026-11-04T09:39:43Z",
+      "receipt_seq": 6,
+      "receipt_hash": "cdfed593ef7748b6da5cca13"
+     }
+    },
+    "qa_ref": "prop-0001.qa",
+    "stamp": {
+     "contract_subject": "Hunt finds new Fireworks AI by 2026-12-31 {Y/N}",
+     "deadline": "2026-12-31, end-of-day PT",
+     "knowable_at": "2026-12-31T23:59:59-08:00",
+     "proof_obligation_ref": "prop-0001#proof-obligation",
+     "proposal_id": "prop-0001",
+     "qa_ref": "prop-0001.qa",
+     "record_of_record": "provider/quota registry (termux-monorepo ops/quota/registry.json)",
+     "resolution_rule": "Y iff a landed, PR-stamped registry addition for Fireworks AI first appears in the provider/quota registry at or before knowable_at carrying hunt attribution; otherwise N (\u00a713.4 derived contract)",
+     "s1": "PASS",
+     "s2": "PASS",
+     "s3": "PASS",
+     "s4": "PASS",
+     "stamper": {
+      "identity": "[MUSEai]@{role:{optimizations-assurance}}",
+      "role": "custodian reviewer \u2014 tranche 1 reviewer duty (\u00a713.7 call ii); \u2260 proposer, no position interest in the would-be contract"
+     },
+     "subject": "the provisioning search system (Providers Recon + the provisioning lane)",
+     "ts": "2026-11-04T09:39:15Z"
+    },
+    "exit": null
+   },
+   "qa": {
+    "carried": {
+     "deadline": "2026-12-31, end-of-day PT",
+     "record_of_record": "provider/quota registry (termux-monorepo ops/quota/registry.json)",
+     "subject": "the provisioning search system (Providers Recon + the provisioning lane)"
+    },
+    "criteria": {
+     "s1": {
+      "basis": "named subject of record: the provisioning search system \u2014 a citable fleet system with a record (the registry it lands additions in); not a free-floating topic",
+      "verdict": "PASS"
+     },
+     "s2": {
+      "basis": "the outcome is observable as a RECEIPT: a landed, PR-stamped registry addition naming Fireworks AI; binary shape (appears at or before knowable_at, or not)",
+      "verdict": "PASS"
+     },
+     "s3": {
+      "basis": "knowable time stated by the proposer and accepted verbatim: 2026-12-31, end-of-day PT (date-only \u21d2 EOD PT, Book convention)",
+      "verdict": "PASS"
+     },
+     "s4": {
+      "basis": "exactly one record_of_record named ex ante: the provider/quota registry; only landed, PR-stamped additions count \u2014 never a claim, a branch, or an in-flight recon note",
+      "verdict": "PASS"
+     }
+    },
+    "derivation": "custodian-reviewed derivation (tranche 1, \u00a713.7 call ii) \u2014 recorded by the custodian reviewer from the proposer's filing and the intake snapshot; no automated derivation",
+    "proposal_id": "prop-0001",
+    "rails_checked": {
+     "b1_non_duplication": "PASS \u2014 no extant Book subject carries this question (book-feed scan for the candidate and the subject form: 0 hits)",
+     "b5_no_hidden_metrics": "PASS \u2014 no probability elicited, collected, or stored at any stage of this record",
+     "f1_pre_outcome": "PASS \u2014 candidate verified absent at intake (snapshot basis above); deadline is future"
+    },
+    "snapshot_basis": {
+     "absence_method": "full-text scan of the registry blob at intake for the candidate string",
+     "candidate": "fireworks",
+     "candidate_hits": 0,
+     "master_at_intake": "13b12f7b54",
+     "registry": "termux-monorepo ops/quota/registry.json (provider/quota registry)",
+     "registry_blob": "f60b9e22d9c7",
+     "registry_rows": 171,
+     "verdict": "Fireworks AI is ABSENT from the registry at intake \u2014 the question is not determined (F1 pre-outcome holds)"
+    },
+    "transcript": [
+     {
+      "a": "The provisioning search system (Providers Recon + the provisioning lane): the fleet machinery that finds and lands new providers/services in the registry. 'Hunt' is the owner's quip-placeholder for this seeker/discovery class in the worked example only (\u00a713.4 correction of record); provisioning search is instance \u2460 of the class.",
+      "q": "S1 \u2014 what is the named subject of record?"
+     },
+     {
+      "a": "Only as a landed, PR-stamped addition to the provider/quota registry naming the service, carrying hunt attribution. An unrecorded find settles nothing.",
+      "q": "S2 \u2014 in what recorded form does 'find' settle?"
+     },
+     {
+      "a": "No. Snapshot at intake (registry blob f60b9e22d9c7, 171 rows): full-text scan for 'fireworks' = 0 hits. Absent at intake, verbatim against that snapshot \u2014 so the question is open, not already answered (an already-present service would exit N3).",
+      "q": "Object check \u2014 is Fireworks AI already in the registry at intake?"
+     },
+     {
+      "a": "2026-12-31, end-of-day PT, as proposed and accepted; knowable_at = 2026-12-31T23:59:59-08:00.",
+      "q": "S3 \u2014 what is the deadline?"
+     },
+     {
+      "a": "The provider/quota registry (termux-monorepo ops/quota/registry.json), named ex ante. No second record settles this contract.",
+      "q": "S4 \u2014 what is the single source of truth?"
+     }
+    ],
+    "recorded_by": "[MUSEai]@{role:{optimizations-assurance}}",
+    "recorded_at": "2026-11-04T09:39:43Z"
+   },
+   "receipts": [
+    {
+     "seq": 1,
+     "ts": "2026-11-04T09:39:43Z",
+     "proposal_id": "prop-0001",
+     "from_state": "\u2205",
+     "to_state": "PROPOSED",
+     "actor": "Providers Recon + provisioning lane (fleet seat)",
+     "role": "proposer",
+     "basis_ref": "intake filing",
+     "prev_hash": "GENESIS",
+     "hash": "5f78d426e6646b7b7e4049c4"
+    },
+    {
+     "seq": 2,
+     "ts": "2026-11-04T09:39:43Z",
+     "proposal_id": "prop-0001",
+     "from_state": "PROPOSED",
+     "to_state": "QUARANTINED",
+     "actor": "Providers Recon + provisioning lane (fleet seat)",
+     "role": "proposer",
+     "basis_ref": "intake quarantine gate (\u00a713.1A)",
+     "prev_hash": "5f78d426e6646b7b7e4049c4",
+     "hash": "967b8604a23bfcc6654dc413"
+    },
+    {
+     "seq": 3,
+     "ts": "2026-11-04T09:39:43Z",
+     "proposal_id": "prop-0001",
+     "from_state": "QUARANTINED",
+     "to_state": "IN_Q&A",
+     "actor": "[MUSEai]@{role:{optimizations-assurance}}",
+     "role": "custodian reviewer",
+     "basis_ref": "prop-0001.qa",
+     "prev_hash": "967b8604a23bfcc6654dc413",
+     "hash": "3f3943fcc58bd32544abf5e3"
+    },
+    {
+     "seq": 4,
+     "ts": "2026-11-04T09:39:43Z",
+     "proposal_id": "prop-0001",
+     "from_state": "IN_Q&A",
+     "to_state": "IN_Q&A",
+     "actor": "[MUSEai]@{role:{optimizations-assurance}}",
+     "role": "custodian reviewer",
+     "basis_ref": "prop-0001.qa",
+     "prev_hash": "3f3943fcc58bd32544abf5e3",
+     "kind": "qa_recorded",
+     "hash": "a629f5786ef3e3bd3f80548c"
+    },
+    {
+     "seq": 5,
+     "ts": "2026-11-04T09:39:43Z",
+     "proposal_id": "prop-0001",
+     "from_state": "IN_Q&A",
+     "to_state": "CONTRACT_DERIVED",
+     "actor": "[MUSEai]@{role:{optimizations-assurance}}",
+     "role": "custodian reviewer",
+     "basis_ref": "prop-0001#doctrine-fit-stamp",
+     "prev_hash": "a629f5786ef3e3bd3f80548c",
+     "hash": "aeed7ee2b609bb52b799e155"
+    },
+    {
+     "seq": 6,
+     "ts": "2026-11-04T09:39:43Z",
+     "proposal_id": "prop-0001",
+     "from_state": "CONTRACT_DERIVED",
+     "to_state": "CONTRACT_DERIVED",
+     "actor": "[MUSEai]@{role:{optimizations-assurance}}",
+     "role": "custodian reviewer",
+     "basis_ref": "prop-0001#doctrine-fit-stamp",
+     "prev_hash": "aeed7ee2b609bb52b799e155",
+     "kind": "book_intake_handoff",
+     "hash": "cdfed593ef7748b6da5cca13"
+    }
+   ]
+  }
+ ]
+}
