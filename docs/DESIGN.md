@@ -409,4 +409,4 @@ Web3 seat = lead (spec · surface · pre-serve verify) · MoneyBall seat = Book 
 
 (i) **Proposer class, tranche 1 = fleet-first.** Public intake opens only after the loop proves — the same G0→G1 pattern as the Book itself.
 (ii) **Q&A depth = custodian-reviewed first tranche.** The derivation is the load-bearing novelty; system-generated derivations only on classifier evidence.
-(iii) **ESCALATE home = the DoE upgrade backlog.** N1 candidates live with the gap register (failing criterion named on each, per §13.2).
+(iii) **N1 home = the DoE upgrade backlog.** N1 candidates live with the gap register (failing criterion named on each, per §13.2). In §13's own terms there is no ESCALATE class: an "escalated" proposal is an N1 whose upgrade candidate got commissioned — the NONE exit stays terminal and classified, and the waiting lives in the backlog's state, not the proposal's.
