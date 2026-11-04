@@ -327,6 +327,8 @@ The Q&A interrogates the proposal into five slots — {actor · predicate · obj
 
 Inherited rails bind unchanged: forecasts valid only pre-outcome (F1) · explicit probability or NOT_SCORED · paper/test layer only · bookmaker absent (parimutuel) · no hidden metrics (B5) · non-duplication against extant Book subjects (B1) · issued vocabulary only (naming record PR #4834).
 
+Coverage mapping (composition G-set → DoE criteria, verified at the DoE gate read of §13, PR #55): G1 binary-decidable → S2 (the binary/enumerable outcome shape) · G2 pre-outcome + deadline → S3 + the F1 rail · G3 record-of-record ex ante → S4 · G4 observable-in-record → S2 ∧ S4 (readable from the named record's own fields) · G5 non-duplicate → the B1 rail · G6 vocabulary/claims → the claims rail. The four criteria + the F1 and non-duplication gates are fully covered; nothing in the retired G-set is unmapped.
+
 Output: **CONTRACT** (a draft subject in Book shape, §13.3) or **NONE FOUND** (§13.2).
 
 ### 13.1A Intake quarantine gate (Q1–Q7 — DoE leg)
@@ -377,7 +379,7 @@ State machine: `PROPOSED → QUARANTINED → IN_Q&A → CONTRACT_DERIVED → LIS
 
 **Receipt per transition.** Every state change emits its receipt on the QUE T1 events pattern: {proposal_id · from_state · to_state · actor + role · ts · basis_ref (stamp id ∨ Q&A record id ∨ classification record id)}, append-only. The proposal log **is** that receipt chain — there is no second narrative of the proposal's life. Scoring integrity downstream reads the chain: the settlement replay takes the contract's birth receipt + doctrine-fit stamp as B2/B4 evidence, and a contract whose intake chain has a gap is HELD at settlement until the gap is receipted, or the settlement reads NOT_SCORED-adjacent with the gap stated.
 
-**Exits are exactly the receipted set.** From quarantine there are no silent exits, no deletions, and no expiry-by-neglect: an object leaves as CONTRACT_DERIVED (via the stamp) or as NONE_FOUND with exactly one primary class (N1/N2/N3) + its criterion→class derivation on the exit receipt (criterion-fail → N1 where the system lacks the subject/record/instrument · → N2 on bad-faith shape · Q&A resolved the need from existing records → N3 regardless of criterion state). An exit without a class is an INCOMPLETE record — the receipt chain refuses a classless NONE exactly as it refuses a missing receipt.
+**Exits are exactly the receipted set.** From quarantine there are no silent exits, no deletions, and no expiry-by-neglect: an object leaves as CONTRACT_DERIVED (via the stamp) or as NONE_FOUND with exactly one primary class (N1/N2/N3) carried as an **explicit field on the exit receipt** (the ESCALATE/N1 exit included — class-rate accounting reads the field, never prose) + its criterion→class derivation on the exit receipt (criterion-fail → N1 where the system lacks the subject/record/instrument · → N2 on bad-faith shape · Q&A resolved the need from existing records → N3 regardless of criterion state). An exit without a class is an INCOMPLETE record — the receipt chain refuses a classless NONE exactly as it refuses a missing receipt.
 
 **Entry-subjects.** For proposals about challenge entries, the S4 source of truth is the coordinator/entry record of record, cited by its ref (the D1-1 settlement-stamp pattern) — the desk's records are the source of truth named ex ante, and the stamp carries that citation verbatim.
 
