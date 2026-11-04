@@ -11,6 +11,8 @@ The product brand is **Wagertome** — descriptor of record: *"the self-keeping 
 
 **Arena mark — WagerDome (issued 2026-11-04, Registry PR #4887).** Sibling marketing mark for the ARENA layer only {seasons · slates · live contests}: canonical `WagerDome`, mark form **`WagerD0me`**. Pair rule (binding): **Wagertome = the record · WagerDome = the venue** — the pair never substitutes (dome ¬ names the book/record; tome ¬ names the venue). Voice rule (binding): WagerDome is never referenced voice-only without the arena layer descriptor attached. Claims ceiling unchanged: the dome asserts venue only, ∅ bookie/odds frame imported, paper-settled discipline carries to arena surfaces. Re-screen trigger of record: a future dome-shaped wager product re-screens this mark. Application state: no arena surfaces exist yet — the first seasons/slates/live-contest surface carries the mark + arena descriptor from its build; the record surfaces (this site's Book/cards/pools/wallets/settlement pages) never take the dome.
 
+**Custody-plane name — Custodian (issued 2026-11-04, Registry PR #4903).** The custody plane of this system is named **Custodian** (owner-endorsed; first registration = the MoneyBall plane). The name ratifies the usage already of record in this design: the §9.1 custody pattern, the wallet-ledger custody flow, and §13's custodian-reviewed derivations. `steward` remains the role-class word at its own layer (undisturbed). Registration changes no mechanics — custody patterns, vault flow, and act splits stand exactly as specified.
+
 ## 0. Grounding — build on what exists (receipts, verified firsthand 2026-11-03)
 
 | Piece | Of record | State |
