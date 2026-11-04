@@ -1,6 +1,6 @@
 {
  "schema": "moneyball-proposals-feed/v1",
- "generated_at": "2026-11-04T09:53:15Z",
+ "generated_at": "2026-11-04T09:56:57Z",
  "generator": "scripts/generate_proposals_feed.py (DESIGN \u00a713.5)",
  "claims_ceiling": {
   "labelling": "PAPER / TEST \u2014 proposals are stage-0 decision objects: they create no position, move no balance, and score nothing.",
@@ -11,13 +11,13 @@
  "counts": {
   "proposals": 1,
   "by_state": {
-   "CONTRACT_DERIVED": 1
+   "LISTED": 1
   },
   "none_by_class": {}
  },
  "chain": {
-  "receipts": 10,
-  "head_hash": "e8f6a9bec5968bf360ef3276",
+  "receipts": 11,
+  "head_hash": "7b96e5596efa0cf7afae6cab",
   "valid": true
  },
  "proposals": [
@@ -44,7 +44,7 @@
      "corroboration_leg": "the DoE settlement replay/audit check (replay B1\u2013B5 + F1 + exit check) as the second, weight-bearing leg; a single-leg settlement is HELD, not final",
      "dispute_rule": "correction only by a receipted act appended to the record; an unresolved dispute reads as a gap \u2014 never averaged, never silently edited"
     },
-    "state": "CONTRACT_DERIVED",
+    "state": "LISTED",
     "decision": {
      "contract": {
       "subject": "Hunt finds new Fireworks AI by 2026-12-31 {Y/N}",
@@ -66,6 +66,11 @@
       "at": "2026-11-04T09:45:50Z",
       "receipt_seq": 10,
       "receipt_hash": "e8f6a9bec5968bf360ef3276"
+     },
+     "listed": {
+      "book_subject_id": "PROP-01-fireworks-ai",
+      "ref": "monorepo PR #4864 (f35cf93b040b)",
+      "expectation_record": "INTAKE"
      }
     },
     "qa_ref": "prop-0001.qa",
@@ -298,6 +303,18 @@
      "prev_hash": "ee93ed0ac7ad7791a07052a0",
      "kind": "book_intake_handoff",
      "hash": "e8f6a9bec5968bf360ef3276"
+    },
+    {
+     "seq": 11,
+     "ts": "2026-11-04T09:56:57Z",
+     "proposal_id": "prop-0001",
+     "from_state": "CONTRACT_DERIVED",
+     "to_state": "LISTED",
+     "actor": "[MUSEai]@{role:{moneyball-plane}}",
+     "role": "Book custodian \u2014 listing act (recorded by the Web3 composition hand)",
+     "basis_ref": "monorepo PR #4864 merged f35cf93b040b: subject PROP-01-fireworks-ai listed, one expectation record at INTAKE (B1), no position",
+     "prev_hash": "e8f6a9bec5968bf360ef3276",
+     "hash": "7b96e5596efa0cf7afae6cab"
     }
    ]
   }
