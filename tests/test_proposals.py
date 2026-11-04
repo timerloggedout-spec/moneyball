@@ -210,6 +210,39 @@ def test_n1_exit_emits_backlog_record(home):
     assert "exit_receipt_ref" in rec and rec["ts"]
 
 
+def test_f3_stamper_who_recorded_derivation_refused():
+    _to_qa()
+    st = dict(STAMP, stamper={"identity": "custodian",
+                              "role": "custodian reviewer"})
+    with pytest.raises(P.IntegrityFinding):
+        P.stamp("prop-t1", st, "custodian", "reviewer")
+    rows = P.read_log()
+    assert any(r.get("kind") == "custody_finding"
+               for r in rows)
+    assert P.load_obj("prop-t1")["state"] == "IN_Q&A"
+
+
+def test_f4_present_at_intake_fixture_routes_n3():
+    # candidate PRESENT in the intake snapshot (F4 code
+    # fixture): determination follows from the evidence —
+    # the stamp refuses and the lawful exit is N3
+    _to_qa()
+    qa = dict(QA, snapshot_basis={
+        "candidate": "cohere", "candidate_hits": 7,
+        "registry_rows": 171})
+    P.record_qa("prop-t1", qa, "custodian", "reviewer")
+    with pytest.raises(P.IncompleteRecord):
+        P.stamp("prop-t1", STAMP, "custodian", "reviewer")
+    rows = P.read_log()
+    assert any(r.get("kind") == "q5_refusal" for r in rows)
+    obj = P.close_none(
+        "prop-t1", "N3",
+        "F1 fail → N3 (candidate present at intake — "
+        "answer already in the records)", "custodian",
+        "reviewer")
+    assert obj["exit"]["class"] == "N3"
+
+
 def test_chain_tamper_detected():
     _to_qa()
     rows = P.read_log()
