@@ -3,6 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#161b22">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MoneyBall">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
 <title>MoneyBall — Speculator Markets over Fleet Outcomes</title>
 <style>
   :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--tx:#e6edf3;--dim:#8b949e;--acc:#3fb950;--warn:#d29922}
@@ -83,5 +90,6 @@ fetch('data/book-feed.json').then(r => r.json()).then(f => {
   document.getElementById('stamp').textContent = 'Feed: ' + f.schema + ' · computed ' + (subs[0] ? subs[0].computed_at : 'NOT_ESTABLISHED') + ' · ledger of record: ' + (f.ledger_of_record || '');
 }).catch(e => { document.getElementById('subjects').textContent = 'Book feed failed to load — state NOT_ESTABLISHED, nothing estimated.'; });
 </script>
+<script src="install.js"></script>
 </body>
 </html>

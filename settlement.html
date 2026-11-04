@@ -3,6 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#161b22">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MoneyBall">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
 <title>MoneyBall — Settlement Replay</title>
 <style>
   :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--tx:#e6edf3;--dim:#8b949e;--acc:#3fb950;--warn:#d29922}
@@ -61,5 +68,6 @@ fetch('data/settlement-report.json').then(r => r.json()).then(f => {
   document.getElementById('raw').textContent = JSON.stringify(f, null, 1);
 }).catch(e => { document.getElementById('invariants').textContent = 'Replay report failed to load — state NOT_ESTABLISHED, nothing estimated.'; });
 </script>
+<script src="install.js"></script>
 </body>
 </html>
