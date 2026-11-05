@@ -56,6 +56,22 @@ def main():
     ap.add_argument("--generator-note", default=None)
     a = ap.parse_args()
     events = [json.loads(l) for l in Path(a.ledger).read_text().splitlines() if l.strip()]
+
+    def _read_side_styles(styles):
+        # Records-hygiene conversion (PR #4969 rule): the state token is a
+        # chat/report marker only, never stored content. The ledger's sealed
+        # events keep their value (hash chain, forward-only); on READ the
+        # token renders as null. The writer emits null/absent henceforth.
+        if isinstance(styles, dict):
+            out = {}
+            for k, v in styles.items():
+                if isinstance(v, dict):
+                    v = dict(v)
+                    if v.get("state") == "NOT_ESTABLISHED":
+                        v["state"] = None
+                out[k] = v
+            return out
+        return styles
     last, prov = {}, {}
     for e in events:
         w = e.get("wallet_id")
@@ -86,7 +102,7 @@ def main():
             "distributions_total": 0,
             "members": [],
             "members_count": e.get("members", 0),
-            "styles": e.get("styles"),
+            "styles": _read_side_styles(e.get("styles")),
             "receipts": [{"type": "ledger", "ref": f"wallet-ledger.jsonl seq {e['seq']}",
                           "payload_hash": (e.get("receipt") or {}).get("payload_hash")}],
         }

@@ -173,7 +173,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -212,7 +212,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -249,7 +249,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -286,7 +286,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -323,7 +323,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -360,7 +360,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -399,7 +399,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -434,7 +434,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -469,7 +469,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -504,7 +504,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -539,7 +539,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -574,7 +574,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -609,7 +609,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -644,7 +644,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -679,7 +679,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -714,7 +714,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -749,7 +749,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -788,7 +788,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -823,7 +823,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -858,7 +858,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -893,7 +893,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -928,7 +928,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -963,7 +963,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -998,7 +998,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1033,7 +1033,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1068,7 +1068,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1103,7 +1103,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1138,7 +1138,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1173,7 +1173,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1208,7 +1208,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1243,7 +1243,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1278,7 +1278,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1313,7 +1313,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1348,7 +1348,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1383,7 +1383,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1418,7 +1418,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1453,7 +1453,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1488,7 +1488,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1523,7 +1523,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1558,7 +1558,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1593,7 +1593,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1628,7 +1628,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1663,7 +1663,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1698,7 +1698,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1733,7 +1733,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1768,7 +1768,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1803,7 +1803,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1838,7 +1838,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1873,7 +1873,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1908,7 +1908,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1943,7 +1943,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -1978,7 +1978,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2013,7 +2013,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2048,7 +2048,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2083,7 +2083,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2118,7 +2118,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2153,7 +2153,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2188,7 +2188,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2223,7 +2223,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2258,7 +2258,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2293,7 +2293,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2328,7 +2328,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2363,7 +2363,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2398,7 +2398,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2433,7 +2433,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2468,7 +2468,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2503,7 +2503,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2538,7 +2538,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2573,7 +2573,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2608,7 +2608,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2643,7 +2643,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2678,7 +2678,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2713,7 +2713,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2748,7 +2748,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2783,7 +2783,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2818,7 +2818,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2853,7 +2853,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2888,7 +2888,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2923,7 +2923,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2958,7 +2958,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -2993,7 +2993,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3028,7 +3028,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3063,7 +3063,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3098,7 +3098,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3133,7 +3133,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3168,7 +3168,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3203,7 +3203,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3238,7 +3238,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3273,7 +3273,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3308,7 +3308,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3343,7 +3343,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3378,7 +3378,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3413,7 +3413,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3448,7 +3448,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3483,7 +3483,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3518,7 +3518,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3553,7 +3553,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3588,7 +3588,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3623,7 +3623,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3658,7 +3658,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3693,7 +3693,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3728,7 +3728,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3763,7 +3763,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3798,7 +3798,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3833,7 +3833,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3868,7 +3868,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3903,7 +3903,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3938,7 +3938,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -3973,7 +3973,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4008,7 +4008,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4043,7 +4043,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4078,7 +4078,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4113,7 +4113,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4148,7 +4148,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4183,7 +4183,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4218,7 +4218,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4253,7 +4253,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4288,7 +4288,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4323,7 +4323,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4358,7 +4358,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4393,7 +4393,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4428,7 +4428,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4463,7 +4463,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4498,7 +4498,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4533,7 +4533,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4568,7 +4568,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4603,7 +4603,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4638,7 +4638,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4673,7 +4673,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4708,7 +4708,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4743,7 +4743,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4778,7 +4778,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4813,7 +4813,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4848,7 +4848,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4883,7 +4883,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4918,7 +4918,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4953,7 +4953,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -4988,7 +4988,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5023,7 +5023,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5058,7 +5058,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5093,7 +5093,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5128,7 +5128,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5163,7 +5163,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5198,7 +5198,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5233,7 +5233,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5268,7 +5268,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5303,7 +5303,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5338,7 +5338,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5373,7 +5373,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5408,7 +5408,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5443,7 +5443,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5478,7 +5478,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5513,7 +5513,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5548,7 +5548,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5583,7 +5583,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5618,7 +5618,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5653,7 +5653,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5688,7 +5688,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5723,7 +5723,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5758,7 +5758,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5793,7 +5793,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5828,7 +5828,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5863,7 +5863,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5898,7 +5898,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5933,7 +5933,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -5968,7 +5968,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6003,7 +6003,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6038,7 +6038,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6073,7 +6073,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6108,7 +6108,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6143,7 +6143,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6178,7 +6178,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6213,7 +6213,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6248,7 +6248,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6283,7 +6283,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6318,7 +6318,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6353,7 +6353,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6388,7 +6388,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6423,7 +6423,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6458,7 +6458,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6493,7 +6493,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6528,7 +6528,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6563,7 +6563,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6598,7 +6598,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6633,7 +6633,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6668,7 +6668,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6703,7 +6703,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6738,7 +6738,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6773,7 +6773,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6808,7 +6808,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6843,7 +6843,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6878,7 +6878,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6913,7 +6913,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6948,7 +6948,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -6983,7 +6983,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7018,7 +7018,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7053,7 +7053,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7088,7 +7088,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7123,7 +7123,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7158,7 +7158,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7193,7 +7193,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7228,7 +7228,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7263,7 +7263,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7298,7 +7298,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7333,7 +7333,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7368,7 +7368,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7403,7 +7403,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7438,7 +7438,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7473,7 +7473,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7508,7 +7508,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7543,7 +7543,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7578,7 +7578,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7613,7 +7613,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7648,7 +7648,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7683,7 +7683,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7718,7 +7718,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7753,7 +7753,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7788,7 +7788,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7823,7 +7823,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7858,7 +7858,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7893,7 +7893,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7928,7 +7928,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7963,7 +7963,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -7998,7 +7998,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8033,7 +8033,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8068,7 +8068,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8103,7 +8103,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8138,7 +8138,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8173,7 +8173,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8208,7 +8208,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8243,7 +8243,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8278,7 +8278,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8313,7 +8313,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8348,7 +8348,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8383,7 +8383,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8418,7 +8418,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8453,7 +8453,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8488,7 +8488,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8523,7 +8523,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8558,7 +8558,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8593,7 +8593,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8628,7 +8628,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8663,7 +8663,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8698,7 +8698,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8733,7 +8733,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8768,7 +8768,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8803,7 +8803,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8838,7 +8838,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8873,7 +8873,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8908,7 +8908,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8943,7 +8943,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -8978,7 +8978,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9013,7 +9013,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9048,7 +9048,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9083,7 +9083,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9118,7 +9118,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9153,7 +9153,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9188,7 +9188,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9223,7 +9223,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9258,7 +9258,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9293,7 +9293,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9328,7 +9328,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9363,7 +9363,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9398,7 +9398,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9433,7 +9433,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9468,7 +9468,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9503,7 +9503,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9538,7 +9538,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9573,7 +9573,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9608,7 +9608,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9643,7 +9643,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9678,7 +9678,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9713,7 +9713,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9752,7 +9752,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9787,7 +9787,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9822,7 +9822,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9857,7 +9857,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9892,7 +9892,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9927,7 +9927,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9962,7 +9962,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -9997,7 +9997,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10032,7 +10032,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10067,7 +10067,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10102,7 +10102,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10137,7 +10137,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10172,7 +10172,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10207,7 +10207,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10242,7 +10242,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10277,7 +10277,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10312,7 +10312,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10347,7 +10347,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10382,7 +10382,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10417,7 +10417,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10452,7 +10452,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10487,7 +10487,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10522,7 +10522,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10557,7 +10557,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10592,7 +10592,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10627,7 +10627,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10662,7 +10662,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10697,7 +10697,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10732,7 +10732,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10767,7 +10767,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10802,7 +10802,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10837,7 +10837,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10872,7 +10872,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10907,7 +10907,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10942,7 +10942,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -10977,7 +10977,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11012,7 +11012,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11047,7 +11047,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11082,7 +11082,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11117,7 +11117,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11152,7 +11152,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11187,7 +11187,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11222,7 +11222,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11257,7 +11257,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11292,7 +11292,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11327,7 +11327,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11362,7 +11362,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11397,7 +11397,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11432,7 +11432,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11467,7 +11467,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11502,7 +11502,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11537,7 +11537,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11572,7 +11572,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11607,7 +11607,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11642,7 +11642,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11677,7 +11677,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11712,7 +11712,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11747,7 +11747,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11782,7 +11782,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11817,7 +11817,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11852,7 +11852,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11887,7 +11887,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11922,7 +11922,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11957,7 +11957,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -11992,7 +11992,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12027,7 +12027,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12062,7 +12062,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12097,7 +12097,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12132,7 +12132,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12167,7 +12167,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12202,7 +12202,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12237,7 +12237,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12272,7 +12272,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12307,7 +12307,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12342,7 +12342,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12377,7 +12377,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12412,7 +12412,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12447,7 +12447,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12482,7 +12482,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12517,7 +12517,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12552,7 +12552,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12587,7 +12587,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12622,7 +12622,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12657,7 +12657,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12692,7 +12692,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12727,7 +12727,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12762,7 +12762,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12797,7 +12797,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12832,7 +12832,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12867,7 +12867,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12902,7 +12902,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12937,7 +12937,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -12972,7 +12972,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13007,7 +13007,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13042,7 +13042,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13077,7 +13077,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13112,7 +13112,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13147,7 +13147,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13182,7 +13182,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13217,7 +13217,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13252,7 +13252,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13287,7 +13287,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13322,7 +13322,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13357,7 +13357,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13392,7 +13392,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13427,7 +13427,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13462,7 +13462,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13497,7 +13497,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13532,7 +13532,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13567,7 +13567,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13602,7 +13602,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13637,7 +13637,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13672,7 +13672,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13707,7 +13707,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13742,7 +13742,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13777,7 +13777,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13812,7 +13812,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13847,7 +13847,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13882,7 +13882,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13917,7 +13917,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13952,7 +13952,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -13987,7 +13987,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14022,7 +14022,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14057,7 +14057,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14092,7 +14092,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14127,7 +14127,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14162,7 +14162,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14197,7 +14197,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14232,7 +14232,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14267,7 +14267,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14302,7 +14302,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14337,7 +14337,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14372,7 +14372,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14407,7 +14407,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14442,7 +14442,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14477,7 +14477,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14512,7 +14512,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14547,7 +14547,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14582,7 +14582,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14617,7 +14617,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14652,7 +14652,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14687,7 +14687,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14722,7 +14722,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14757,7 +14757,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14792,7 +14792,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14827,7 +14827,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14862,7 +14862,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14897,7 +14897,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14932,7 +14932,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -14967,7 +14967,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15002,7 +15002,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15037,7 +15037,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15072,7 +15072,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15107,7 +15107,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15142,7 +15142,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15177,7 +15177,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15212,7 +15212,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15247,7 +15247,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15282,7 +15282,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15317,7 +15317,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15352,7 +15352,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15387,7 +15387,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15422,7 +15422,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15457,7 +15457,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15492,7 +15492,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15527,7 +15527,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15562,7 +15562,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15597,7 +15597,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15632,7 +15632,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15667,7 +15667,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15702,7 +15702,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15737,7 +15737,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15772,7 +15772,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15807,7 +15807,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15842,7 +15842,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15877,7 +15877,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15912,7 +15912,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15947,7 +15947,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -15982,7 +15982,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16017,7 +16017,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16052,7 +16052,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16087,7 +16087,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16122,7 +16122,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16157,7 +16157,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16192,7 +16192,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16227,7 +16227,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16262,7 +16262,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16297,7 +16297,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16332,7 +16332,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16367,7 +16367,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16402,7 +16402,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16437,7 +16437,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16472,7 +16472,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16507,7 +16507,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16542,7 +16542,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16577,7 +16577,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16612,7 +16612,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16647,7 +16647,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16682,7 +16682,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16717,7 +16717,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16752,7 +16752,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16787,7 +16787,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16822,7 +16822,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16857,7 +16857,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16892,7 +16892,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16927,7 +16927,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16962,7 +16962,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -16997,7 +16997,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17032,7 +17032,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17067,7 +17067,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17102,7 +17102,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17137,7 +17137,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17172,7 +17172,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17207,7 +17207,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17242,7 +17242,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17277,7 +17277,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17312,7 +17312,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17347,7 +17347,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17382,7 +17382,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17417,7 +17417,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17452,7 +17452,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17487,7 +17487,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17522,7 +17522,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17557,7 +17557,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17592,7 +17592,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17627,7 +17627,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17662,7 +17662,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17697,7 +17697,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17732,7 +17732,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17767,7 +17767,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17802,7 +17802,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17837,7 +17837,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17872,7 +17872,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17907,7 +17907,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17942,7 +17942,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -17977,7 +17977,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18012,7 +18012,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18047,7 +18047,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18082,7 +18082,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18117,7 +18117,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18152,7 +18152,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18187,7 +18187,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18222,7 +18222,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18257,7 +18257,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18292,7 +18292,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18327,7 +18327,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18362,7 +18362,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18397,7 +18397,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18432,7 +18432,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18467,7 +18467,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18502,7 +18502,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18537,7 +18537,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18572,7 +18572,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18607,7 +18607,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18642,7 +18642,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18677,7 +18677,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18712,7 +18712,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18747,7 +18747,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18782,7 +18782,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18817,7 +18817,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18852,7 +18852,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18887,7 +18887,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18922,7 +18922,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18957,7 +18957,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -18992,7 +18992,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19027,7 +19027,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19062,7 +19062,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19097,7 +19097,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19132,7 +19132,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19167,7 +19167,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19202,7 +19202,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19237,7 +19237,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19272,7 +19272,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19307,7 +19307,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19342,7 +19342,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19377,7 +19377,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19412,7 +19412,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19447,7 +19447,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19482,7 +19482,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19517,7 +19517,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19552,7 +19552,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19587,7 +19587,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19622,7 +19622,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19657,7 +19657,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19692,7 +19692,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19727,7 +19727,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19762,7 +19762,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19797,7 +19797,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19832,7 +19832,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19867,7 +19867,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19902,7 +19902,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19937,7 +19937,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -19972,7 +19972,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20007,7 +20007,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20042,7 +20042,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20077,7 +20077,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20112,7 +20112,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20147,7 +20147,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20182,7 +20182,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20217,7 +20217,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20252,7 +20252,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20287,7 +20287,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20322,7 +20322,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20357,7 +20357,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20392,7 +20392,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20427,7 +20427,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20462,7 +20462,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20497,7 +20497,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20532,7 +20532,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20567,7 +20567,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20602,7 +20602,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20637,7 +20637,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20672,7 +20672,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20707,7 +20707,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20742,7 +20742,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20777,7 +20777,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20812,7 +20812,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20847,7 +20847,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20882,7 +20882,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20917,7 +20917,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20952,7 +20952,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -20987,7 +20987,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21022,7 +21022,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21057,7 +21057,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21092,7 +21092,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21127,7 +21127,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21162,7 +21162,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21197,7 +21197,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21232,7 +21232,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21267,7 +21267,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21302,7 +21302,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21337,7 +21337,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21372,7 +21372,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21407,7 +21407,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21442,7 +21442,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21477,7 +21477,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21512,7 +21512,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21547,7 +21547,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21582,7 +21582,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21617,7 +21617,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21652,7 +21652,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21687,7 +21687,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21722,7 +21722,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21757,7 +21757,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21792,7 +21792,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21827,7 +21827,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21862,7 +21862,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21897,7 +21897,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21932,7 +21932,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -21967,7 +21967,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22002,7 +22002,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22037,7 +22037,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22072,7 +22072,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22107,7 +22107,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22142,7 +22142,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22177,7 +22177,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22212,7 +22212,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22247,7 +22247,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22282,7 +22282,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22317,7 +22317,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22352,7 +22352,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22387,7 +22387,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22422,7 +22422,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22457,7 +22457,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22492,7 +22492,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22527,7 +22527,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22562,7 +22562,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22597,7 +22597,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22632,7 +22632,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22667,7 +22667,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22702,7 +22702,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22737,7 +22737,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22772,7 +22772,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22807,7 +22807,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22842,7 +22842,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22877,7 +22877,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22912,7 +22912,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22947,7 +22947,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -22982,7 +22982,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23017,7 +23017,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23052,7 +23052,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23087,7 +23087,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23122,7 +23122,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23157,7 +23157,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23192,7 +23192,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23227,7 +23227,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23262,7 +23262,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23297,7 +23297,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23332,7 +23332,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23367,7 +23367,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23402,7 +23402,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23437,7 +23437,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23472,7 +23472,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23507,7 +23507,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23542,7 +23542,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23577,7 +23577,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23612,7 +23612,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23647,7 +23647,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23682,7 +23682,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23717,7 +23717,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23752,7 +23752,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23787,7 +23787,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23822,7 +23822,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23857,7 +23857,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23892,7 +23892,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23927,7 +23927,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23962,7 +23962,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -23997,7 +23997,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24032,7 +24032,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24067,7 +24067,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24102,7 +24102,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24137,7 +24137,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24172,7 +24172,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24207,7 +24207,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24242,7 +24242,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24277,7 +24277,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24312,7 +24312,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24347,7 +24347,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24382,7 +24382,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24417,7 +24417,7 @@
    "styles": {
     "pro_rata": "active",
     "capped": {
-     "state": "NOT_ESTABLISHED",
+     "state": null,
      "note": "cap multiple unruled; activates when ruled (DESIGN §3.1)"
     },
     "first_loss": {
@@ -24433,5 +24433,11 @@
     }
    ]
   }
- ]
+ ],
+ "read_side_conversion": {
+  "rule": "records-hygiene conversion (PR #4969 rule: the state token is a chat/report marker only, never stored content)",
+  "field": "pools[].styles.capped.state",
+  "converted": 693,
+  "note": "the wallet-ledger events of record keep the sealed value (hash chain, forward-only, untouched); on READ the token is null — readers treat token == null. Generator enforces this mapping on every regen; the writer emits null/absent henceforth."
+ }
 }
