@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#161b22">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Wagertome">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Wagertome — DoE (Design of Experiments)</title>
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--tx:#e6edf3;--dim:#8b949e;--acc:#3fb950;--warn:#d29922;--blue:#58a6ff}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  header,main,footer{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{padding-top:28px} h1{margin:0 0 4px;font-size:28px} h2{margin:28px 0 10px;font-size:19px}
+  .sub{color:var(--dim)} a{color:var(--blue)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0}
+  .mono{font-family:ui-monospace,Menlo,monospace;font-size:13px}
+  .meta{color:var(--dim);font-size:13px} .meta b{color:var(--tx)}
+  .chip{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:1px 9px;font-size:12px;margin-right:6px}
+  .warn{color:var(--warn);font-weight:600}
+  .row{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;border-bottom:1px solid var(--line);padding:6px 0}
+  .row:last-child{border-bottom:none}
+  ol.basis{margin:6px 0 6px 18px;padding:0} ol.basis li{margin:10px 0}
+  .leg{color:var(--dim);font-size:13px} .leg b{color:var(--tx)}
+  details{margin:8px 0} summary{cursor:pointer;font-weight:600}
+  footer{color:var(--dim);font-size:13px;padding-bottom:32px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Design of Experiments (DoE)</h1>
+  <div class="sub">DoE's public publication home on this site (DESIGN §12). <b>The entire repo is the experiment</b> (owner definition, 2026-10-30): live development is the live testing, in randomized mixes, with evolutionary culling toward top performance and cherry-picked slices propagated into new additions. This page is assembled by the DoE seat from artifacts of record — every item below cites the record it renders, and nothing is rendered that a record doesn't carry. Verdict states appear exactly as the records read them.</div>
+  <nav style="margin:10px 0"><a href="index.html">The Book</a> · <a href="cards.html">Agent Cards</a> · <a href="pools.html">Card Pools</a> · <a href="settlement.html">Settlement replay</a> · <a href="wallets.html">Wallets</a> · <a href="doe.html">DoE</a></nav>
+</header>
+<main>
+
+  <h2>The methods of this epoch</h2>
+  <div class="meta">Record: <span class="mono">docs/ops/DOE-METHODS-EPOCH-2026-11-03.md</span> (termux-monorepo; PRs #4722 · #4724 · #4725 · #4727 · #4731) — the experiment methods actually implemented this epoch, from receipts, plus the cycle as practiced. MVT (separation seat) concurred as co-source.</div>
+  <ol class="basis">
+    <li><b>Replay-audit invariants.</b> <span class="leg">The settlement machinery is audited by re-running its own replay against invariants B1–B5 + F1, with deliberately broken fixtures exercised: a check that cannot fail proves nothing. The audit's control case: a forecast of 4/5 on a settled YES scores Brier 1/25 — arithmetic the proof packet later discharges by computation.</span></li>
+    <li><b>Two-leg corroboration census.</b> <span class="leg">A claim counts as corroborated only when at least two independent legs agree; a single-leg mark is held out of weighting and flagged; disputed marks are excluded; unattributed records carry no actor weight.</span></li>
+    <li><b>Panel Judge Mirror.</b> <span class="leg">Known judges are replicated as mirror personas built only from receipted signals — every preference claim cites its signal or is struck. Mirror scores are recorded forecasts, graded person-level only where identity and signals are receipt-established, venue-archetype otherwise. Every run reports its dispersion; a run that cannot discriminate files a null verdict on itself.</span></li>
+    <li><b>G0 exit test.</b> <span class="leg">A milestone closes only when its full chain fires — record of record, settlement stamp, independent replay, and an overseer's exit check — with zero-due legs (payouts, escrow) named as zero-due rather than silently passed.</span></li>
+    <li><b>Pre-registered campaign design.</b> <span class="leg">Acceptance thresholds are fixed before execution and never edited after: the Speculators campaign of record admits at accuracy ≥ 0.50, speedup ≥ 1.20, margin ≥ 0.10, behind a lossless gate (any output mismatch disqualifies). At the epoch's close the campaign stands at 0 of 48 runs executed — stated, not rounded up.</span></li>
+    <li><b>MVT (multivariate testing).</b> <span class="leg">Nested under DoE, never a peer plane. Its epoch product of record is the pool-scope method: per-category shares as stamped snapshots with statistical bounds, and an evidence floor — below n = 30 in the window, no point estimate is published at all.</span></li>
+    <li><b>Snapshot method (Amendment 6).</b> <span class="leg">A percentage is lawful only as a snapshot stamped {at · method · bounds} derived from a recorded allocation rule. A constant percentage anywhere is a defect; an unrecorded rule renders NOT_ESTABLISHED.</span></li>
+    <li><b>QUE-plane admission and ordering as treatments.</b> <span class="leg">The queue's admission and ordering decisions are themselves experimental treatments, run over the instrumentation of record; a controlled comparison of orderings is NOT_ESTABLISHED this epoch and is stated as such.</span></li>
+  </ol>
+
+  <h2>The cycle, in plain words</h2>
+  <div class="card">
+    <p style="margin-top:0">Every cycle starts by writing down what will be tested, before anything is built (<span class="mono">preregister</span>). No skipping this. Then: build it, check it, get a second independent check, decide the verdict, and write the result into the record. After recording, there are two ways forward: add a new layer — which sends the cycle back to "check it" again — or close the cycle out. "Close" is final; nothing leaves the closed state.</p>
+    <p>The eight stages: <span class="mono">preregister → build → verify → corroborate → verdict → register → {layer | close}</span>, with <span class="mono">layer → {verify | close}</span> the only other moves — nine allowed transitions in total, exactly as the proof packet E001 defines them.</p>
+    <p style="margin-bottom:0"><b>What the picture does not show:</b> <i>when</i> a move is allowed, only <i>that</i> it is allowed. Going back to "check it" is meant to happen only when something materially changed, and the second check must really be a second check, not the same one repeated. The picture gives you the map; the text gives you the traffic rules.</p>
+    <div class="meta" style="margin-top:8px">Records: diagram <span class="mono">docs/proposals/active/notation-sets/diagrams/e001-cycle-state.mmd</span> + ELI5 (PR #4738) — fidelity header: transitions lossless against E001, guards the named loss · formal source: <span class="mono">research/nse-023/examples/E001.lean</span>. Larger shapes nest: <b>generation ⊂ iteration ⊂ cycle ⊂ epoch</b> — an epoch is one full pass over the dataset of record; a generation is one turnover of a population under evaluation and culling.</div>
+  </div>
+
+  <h2>Roles of the epoch</h2>
+  <div class="meta">Record: <span class="mono">docs/ops/DOE-ROLES-EPOCH-2026-11-03.md</span> (PR #4731), written in the Identity Registry's canonical names only, and concurred by the Registry seat with no correction owed.</div>
+  <div class="card">
+    <div class="row"><span><b>builder</b></span><span class="leg">authors the machinery: provisioning and fold/replay code, proof packets, the dispatch feed</span></div>
+    <div class="row"><span><b>operator</b></span><span class="leg">runs the plane: queue admission, ordering, timeboxes — and, as the accountable hand, the D1 submission itself</span></div>
+    <div class="row"><span><b>steward</b></span><span class="leg">custodian of a record or feed: keeps the ledger current, carries artifacts forward unedited, selects nothing</span></div>
+    <div class="row"><span><b>observer</b></span><span class="leg">counts and renders faithfully: the census, the dashboards, the mirror's custody</span></div>
+    <div class="row"><span><b>reviewer</b></span><span class="leg">verdicts from firsthand reads: conformity passes, integrity checks, the cold goldfish review form</span></div>
+    <div class="row"><span><b>scout</b></span><span class="leg">selects arms from the live feed only, under health gates — never from static grounds</span></div>
+    <div class="row"><span><b>gambler</b></span><span class="leg">scored on asserted forecasts only; an open position with no asserted probability is NOT_SCORED, honestly</span></div>
+    <div class="row"><span><b>participant</b></span><span class="leg">existence is registered; standing is earned — a pool or a wallet is never itself a standing</span></div>
+    <p class="leg" style="margin-bottom:0">Two class names are <b>reserved and absent</b>: <i>bookmaker</i> and <i>11th man</i> — the parimutuel design has no bookmaker, and no listing may render them as present. <i>Forecast</i> is an output class, not a participant. Wiring of record for the pool program: the Desk's queue <b>consumes</b> the DoE pool feed on dispatch (operator), ledger operations keep it current (steward), and DoE holds <b>integrity</b> over it (reviewer) — existence never renders as standing.</p>
+  </div>
+
+  <h2>Proofs (Lean)</h2>
+  <div class="meta">Standing requirement (owner, 2026-11-03): for every experiment of record, DoE creates its proof. Directory of record: <span class="mono">experiments/doe/proofs/</span> — INDEX (the coverage map) + MANIFEST (each entry wired to the data layers it proves over: ledger/feed paths · the QUE measurement plane · lane-events/Neon · telemetry corpora). <b>An experiment without its proof — or an entry missing its data-layer refs — reads INCOMPLETE.</b></div>
+  <div class="card">
+    <div class="row"><span class="mono">E001.lean</span><span class="chip">proved-fragment</span><span class="leg">Oracle run 41746401168: <b>verdict FAIL</b> of record (artifact read firsthand by DoE after assembly; compile failure localized to the snapshot section — a repair packet is owed and the FAIL stands on the record meanwhile). The live state of record is the MANIFEST; this page is not upgraded in transit.</span></div>
+    <p class="leg" style="margin:8px 0 0">Artifact: <span class="mono">research/nse-023/examples/E001.lean</span> (PR #4729), on the Batteries pin of record. It proves, by computation over fixtures mirroring the audit's own: the settlement invariants' checkable fragment (including the Brier control 1/25); the snapshot shape and validity, with the n ≥ 30 evidence floor proved in both directions; the cycle's stage transitions and trace validity (the G0 trace and the layered trace valid, a skipped-stage trace invalid); and the iteration opening rule, cull-record shape, and epoch freeze bound. Named as <b>open statements</b> — formalized, not proven, never hidden: settlement authenticity (a kernel checks the citation, not the world it cites), leg independence, Ekman adequacy, dispersion adequacy, and the Wilson/Dirichlet bound correctness (the Mathlib-leg packet M001).</p>
+  </div>
+  <div class="card">
+    <div class="meta" style="margin-bottom:6px"><b>Coverage at assembly</b> — from the MANIFEST of record: <b>26 entries</b> · 3 proved-fragment (all E001) · 1 statements-only (Panel Judge Mirror) · 22 open. Where a row touches the wallet/pool layer, that layer is <b>paper/test</b> throughout this program.</div>
+    <div class="leg">Gap order, worked down in turn: <b>E002</b> EGM verdict arithmetic · <b>E003</b> Speculators acceptance predicate · <b>E004</b> dispatch-protocol accounting · <b>E005</b> mirror scoring at judging close (2026-11-18) · <b>E006</b> census count arithmetic · <b>M001</b> Wilson/Dirichlet bounds (Mathlib leg) · then campaign decision-rule predicates as their windows produce numbers.</div>
+  </div>
+
+  <h2>Who audits DoE — and the gap</h2>
+  <div class="meta">Record: DOE-FAMILY register, audit-surface entry (PR #4746). The audit surface is named, not assumed: {the <b>kernel</b> (the Lean oracle's verdict artifacts, never a job's color) · <b>second legs</b> (the corroboration rule applied inward) · <b>Registry concurrence</b> · <b>owner/main spot checks</b> (firsthand re-reads; one such re-read caught a fabricated submission record this epoch and it was corrected in the open) · <b>scored reality</b> (DoE's forecasts and verdicts scored against outcomes of record: 2026-11-08 · 2026-11-18)}.</div>
+  <div class="card" style="border-color:var(--warn);background:#221a08">
+    <b class="warn">THE GAP — OPEN ITEM.</b> No standing auditor holds the duty of auditing DoE as a standing office; the surface above is assembled from neighbors' acts, not an office. Named candidate: <b>Swarm-formalization</b> (the audit surface as a workflow-held duty). The owner's pick is <b>pending</b>, and the gap stays open on the register until it lands. The improvement loop runs meanwhile: executions landing · the proof gap-list worked down · oracle verdicts moving coverage rows · scored outcomes · classifier trueing — each pass landing as register entries, nothing self-amending silently.
+  </div>
+
+  <h2>Version | settings of record</h2>
+  <div class="meta">Record: DOE-FAMILY register, version|settings entry (PR #4746). Changes land as register entries, citable like any layer; settings not listed there are not DoE settings of record.</div>
+  <div class="card">
+    <div class="row"><span><b>Proof pins</b></span><span class="leg mono">Batteries @36cc05ca2d0e (fleet fork, toolchain v4.34.0-rc1) · Mathlib @cc8b65263ab8 (toolchain v4.36.0-rc2) · manifest schema doe-proofs-manifest/v1</span></div>
+    <div class="row"><span><b>Cycle parameters</b></span><span class="leg">dispatch in sets of 3 · floor n = 3, cap n = 12 per trigger · ESTABLISHED gate: n ≥ 30 ∧ minority ≥ 10 ∧ p &lt; .05 · accumulation bars per arm: 30 (mean) · 100 (variance) · ~384 (claim-grade proportion)</span></div>
+    <div class="row"><span><b>Method versions</b></span><span class="leg mono">pool-scope-methods/v1 · doe-questions-matrix v1 · panel-judge-mirror v0 · egm-evaluation v0 · lens-frame v0 · equivalence-proof/v0</span></div>
+  </div>
+
+</main>
+<footer>
+  Assembled by the DoE seat (doe-expert) from artifacts of record in <span class="mono">timerloggedout-spec/termux-monorepo</span>, each item traceable to the record it cites. Served on the Web3 surface family under DESIGN §12 after the Web3 seat's pre-serve verify.
+</footer>
+</body>
+</html>
