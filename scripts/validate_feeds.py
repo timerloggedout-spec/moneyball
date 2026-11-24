@@ -120,7 +120,7 @@ if pools_path.exists():
     if cards_path.exists():
         card_ids = {c.get("card_id") for c in json.loads(cards_path.read_text()).get("cards", [])}
     for p in pf.get("pools", []):
-        if card_ids and p.get("card_id") not in card_ids:
+        if p.get("card_id") is not None and p.get("card_id") not in card_ids:
             errs.append(f"pool {p.get('pool_wallet_id')} references unknown card {p.get('card_id')}")
         if not p.get("styles"):
             errs.append(f"pool {p.get('pool_wallet_id')} missing styles")
