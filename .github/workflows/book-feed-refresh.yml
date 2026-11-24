@@ -1,82 +1,93 @@
-name: book-feed-refresh
+name: feed-refresh
 
-# G1 feed-refresh fold-in — Swarm dispatch #1 (Web3 seat 779d33ad,
-# 2026-11-03; DESIGN §2.2 pipeline + §9 step 3 remainder).
-# Mirrors the monorepo Book publication feed into data/book-feed.json
-# VERBATIM (consumed, never re-authored — §9.1). Source of record:
-# timerloggedout-spec/termux-monorepo (public)
-#   ops/agentic-gambling/book/book-feed.json
-# generated there from challenges-book.json + ledger.jsonl by
-# scripts/moneyball/wagering_book_feed.py.
-# Commit actor: termux-fleet-moneyball[bot] via the SEC-03
-# installation token — the mint step precedes checkout so the
-# checkout-persisted credential is the App, never GITHUB_TOKEN.
-# Cadence (§2.2: Actions only): scheduled sweep + manual dispatch +
-# repository_dispatch(book-feed-changed) for event-driven callers.
-# A no-change run is a green no-op and says so; validation of the
-# mirrored feed rides the repo's validate-feeds workflow on push.
+# MoneyBall consumes the Book and Registry as read-only source planes.
+# Refreshes are deterministic projections; the source records remain in the monorepo.
+# Publication uses the specialist App and a reviewed PR, never a direct main push.
 
 on:
   workflow_dispatch:
   schedule:
     - cron: "17 * * * *"
   repository_dispatch:
-    types: [book-feed-changed]
+    types: [book-feed-changed, cards-feed-changed]
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: book-feed-refresh
+  group: feed-refresh
   cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - name: Mint the App installation token (before checkout)
+      - name: Mint the MoneyBall App installation token
         id: app-token
         uses: actions/create-github-app-token@b60ed23e06e1e229cd0384bf542ad2781a8df21e # v3
         with:
           app-id: ${{ vars.TERMUX_FLEET_MONEYBALL_APP_ID }}
           private-key: ${{ secrets.TERMUX_FLEET_MONEYBALL_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
 
-      - uses: actions/checkout@v4
+      - name: Checkout with the specialist App identity
+        uses: actions/checkout@v4
         with:
           token: ${{ steps.app-token.outputs.token }}
 
-      - name: Mirror the Book publication feed verbatim
-        id: mirror
-        run: |
-          curl -fsSL "https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/ops/agentic-gambling/book/book-feed.json" -o "$RUNNER_TEMP/book-feed.json"
-          python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$RUNNER_TEMP/book-feed.json"
-          if cmp -s "$RUNNER_TEMP/book-feed.json" data/book-feed.json; then
-            echo "in_sync=true" >> "$GITHUB_OUTPUT"
-            echo "Book feed already in sync with the monorepo publication feed — no commit."
-          else
-            cp "$RUNNER_TEMP/book-feed.json" data/book-feed.json
-            echo "in_sync=false" >> "$GITHUB_OUTPUT"
-            echo "Book feed changed upstream — committing the refresh."
-          fi
+      - name: Set up the generator runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-      - name: Commit the refresh as the App bot
-        if: steps.mirror.outputs.in_sync == 'false'
+      - name: Fetch authoritative source feeds
+        env:
+          BOOK_FEED_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/ops/agentic-gambling/book/book-feed.json
+          REGISTRY_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/docs/ops/AGENT-MONIKERS.md
         run: |
-          git config user.name "termux-fleet-moneyball[bot]"
-          git config user.email "termux-fleet-moneyball[bot]@users.noreply.github.com"
-          git add data/book-feed.json
-          git commit -m "data: book-feed refresh — mirror of the monorepo Book publication feed (run ${{ github.run_id }})"
-          # main is a live branch (Book settlements, custodian
-          # reports land while a queued run waits): a rejected
-          # non-fast-forward push rebases onto the new head and
-          # retries, bounded -- never force, never silent.
-          for attempt in 1 2 3; do
-            if git push; then
-              echo "pushed on attempt $attempt"
-              exit 0
-            fi
-            echo "push rejected (attempt $attempt) -- rebasing onto origin/main"
-            git pull --rebase origin main
-          done
-          echo "push still rejected after 3 attempts"
-          exit 1
+          set -euo pipefail
+          curl --fail --silent --show-error --location "$BOOK_FEED_URL" --output "$RUNNER_TEMP/book-feed.json"
+          curl --fail --silent --show-error --location "$REGISTRY_URL" --output "$RUNNER_TEMP/AGENT-MONIKERS.md"
+          python3 -m json.tool "$RUNNER_TEMP/book-feed.json" >/dev/null
+
+      - name: Refresh the Book mirror verbatim
+        run: |
+          set -euo pipefail
+          cp "$RUNNER_TEMP/book-feed.json" data/book-feed.json
+
+      - name: Rebuild cards from the Registry and Book feeds
+        run: |
+          set -euo pipefail
+          python3 scripts/generate_cards_feed.py \
+            --monikers "$RUNNER_TEMP/AGENT-MONIKERS.md" \
+            --book-feed data/book-feed.json \
+            --out data/cards-feed.json
+
+      - name: Validate every published feed
+        run: |
+          set -euo pipefail
+          python3 scripts/validate_feeds.py
+
+      - name: Open or update the reviewed feed-refresh PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          branch: automation/feed-refresh
+          delete-branch: true
+          add-paths: |
+            data/book-feed.json
+            data/cards-feed.json
+          commit-message: "data: refresh Book and cards publication feeds"
+          title: "data: refresh Book and cards feeds"
+          body: |
+            Automated, receipt-preserving projection refresh.
+
+            - Mirrors the monorepo Book publication feed verbatim.
+            - Rebuilds the cards feed from the Registry and mirrored Book feed.
+            - Runs the repository feed validator before publication.
+            - Uses the specialist `termux-fleet-moneyball[bot]` App identity.
+
+            Source records remain authoritative in `timerloggedout-spec/termux-monorepo`.
+            Nulls and `NOT_ESTABLISHED` states remain explicit; hidden internal metrics stay excluded.
+          base: main
