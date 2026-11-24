@@ -45,11 +45,20 @@ jobs:
         env:
           BOOK_FEED_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/ops/agentic-gambling/book/book-feed.json
           REGISTRY_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/docs/ops/AGENT-MONIKERS.md
+          WALLET_LEDGER_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/ops/agentic-gambling/site/wallet-ledger.jsonl
         run: |
           set -euo pipefail
           curl --fail --silent --show-error --location "$BOOK_FEED_URL" --output "$RUNNER_TEMP/book-feed.json"
           curl --fail --silent --show-error --location "$REGISTRY_URL" --output "$RUNNER_TEMP/AGENT-MONIKERS.md"
+          curl --fail --silent --show-error --location "$WALLET_LEDGER_URL" --output "$RUNNER_TEMP/wallet-ledger.jsonl"
           python3 -m json.tool "$RUNNER_TEMP/book-feed.json" >/dev/null
+          python3 - "$RUNNER_TEMP/wallet-ledger.jsonl" <<'PY'
+          import json, sys
+          with open(sys.argv[1], encoding="utf-8") as f:
+              for number, line in enumerate(f, 1):
+                  if line.strip():
+                      json.loads(line)
+          PY
 
       - name: Refresh the Book mirror verbatim
         run: |
@@ -91,6 +100,49 @@ jobs:
               print("Cards feed source data changed; staging the regenerated snapshot.")
           PY
 
+      - name: Rebuild the pools projection from the wallet ledger
+        run: |
+          set -euo pipefail
+          ledger_blob="$(git hash-object "$RUNNER_TEMP/wallet-ledger.jsonl")"
+          python3 scripts/generate_pools_feed.py \
+            --ledger "$RUNNER_TEMP/wallet-ledger.jsonl" \
+            --out "$RUNNER_TEMP/pools-feed.generated.json" \
+            --ledger-blob "$ledger_blob" \
+            --generator-note "regen via generator of record; split carried mechanically from provisioning events"
+          if cmp -s "$RUNNER_TEMP/pools-feed.generated.json" data/pools-feed.json; then
+            echo "Pools feed unchanged."
+          else
+            cp "$RUNNER_TEMP/pools-feed.generated.json" data/pools-feed.json
+            echo "Pools feed refreshed from the authoritative wallet ledger."
+          fi
+
+      - name: Rebuild the proposals projection from its append-only source
+        run: |
+          set -euo pipefail
+          python3 scripts/generate_proposals_feed.py \
+            --home data \
+            --out "$RUNNER_TEMP/proposals-feed.generated.json"
+          python3 - "$RUNNER_TEMP/proposals-feed.generated.json" data/proposals-feed.json <<'PY'
+          import json, shutil, sys
+
+          candidate_path, current_path = sys.argv[1:]
+          with open(candidate_path, encoding="utf-8") as f:
+              candidate = json.load(f)
+          try:
+              with open(current_path, encoding="utf-8") as f:
+                  current = json.load(f)
+          except FileNotFoundError:
+              current = None
+          candidate.pop("generated_at", None)
+          if current is not None:
+              current.pop("generated_at", None)
+          if current is not None and candidate == current:
+              print("Proposals feed unchanged at the source-data level.")
+          else:
+              shutil.copyfile(candidate_path, current_path)
+              print("Proposals feed source data changed; staging the regenerated snapshot.")
+          PY
+
       - name: Validate every published feed
         run: |
           set -euo pipefail
@@ -105,6 +157,8 @@ jobs:
           add-paths: |
             data/book-feed.json
             data/cards-feed.json
+            data/pools-feed.json
+            data/proposals-feed.json
           commit-message: "data: refresh Book and cards publication feeds"
           title: "data: refresh Book and cards feeds"
           body: |
