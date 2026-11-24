@@ -46,19 +46,15 @@ jobs:
           BOOK_FEED_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/ops/agentic-gambling/book/book-feed.json
           REGISTRY_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/docs/ops/AGENT-MONIKERS.md
           WALLET_LEDGER_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/ops/agentic-gambling/site/wallet-ledger.jsonl
+          WALLET_LEDGER_TOOL_URL: https://raw.githubusercontent.com/timerloggedout-spec/termux-monorepo/master/scripts/moneyball/wallet_ledger.py
         run: |
           set -euo pipefail
           curl --fail --silent --show-error --location "$BOOK_FEED_URL" --output "$RUNNER_TEMP/book-feed.json"
           curl --fail --silent --show-error --location "$REGISTRY_URL" --output "$RUNNER_TEMP/AGENT-MONIKERS.md"
           curl --fail --silent --show-error --location "$WALLET_LEDGER_URL" --output "$RUNNER_TEMP/wallet-ledger.jsonl"
+          curl --fail --silent --show-error --location "$WALLET_LEDGER_TOOL_URL" --output "$RUNNER_TEMP/wallet_ledger.py"
           python3 -m json.tool "$RUNNER_TEMP/book-feed.json" >/dev/null
-          python3 - "$RUNNER_TEMP/wallet-ledger.jsonl" <<'PY'
-          import json, sys
-          with open(sys.argv[1], encoding="utf-8") as f:
-              for number, line in enumerate(f, 1):
-                  if line.strip():
-                      json.loads(line)
-          PY
+          python3 "$RUNNER_TEMP/wallet_ledger.py" verify "$RUNNER_TEMP/wallet-ledger.jsonl"
 
       - name: Refresh the Book mirror verbatim
         run: |
