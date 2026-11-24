@@ -62,7 +62,34 @@ jobs:
           python3 scripts/generate_cards_feed.py \
             --monikers "$RUNNER_TEMP/AGENT-MONIKERS.md" \
             --book-feed data/book-feed.json \
-            --out data/cards-feed.json
+            --out "$RUNNER_TEMP/cards-feed.generated.json"
+          python3 - "$RUNNER_TEMP/cards-feed.generated.json" data/cards-feed.json <<'PY'
+          import json, shutil, sys
+
+          volatile = {"generated_at", "generator_run_id", "snapshot_at"}
+
+          def stable(value):
+              if isinstance(value, dict):
+                  return {k: stable(v) for k, v in value.items() if k not in volatile}
+              if isinstance(value, list):
+                  return [stable(v) for v in value]
+              return value
+
+          candidate_path, current_path = sys.argv[1:]
+          with open(candidate_path, encoding="utf-8") as f:
+              candidate = json.load(f)
+          try:
+              with open(current_path, encoding="utf-8") as f:
+                  current = json.load(f)
+          except FileNotFoundError:
+              current = None
+
+          if current is not None and stable(candidate) == stable(current):
+              print("Cards feed unchanged at the source-data level; preserving the existing snapshot.")
+          else:
+              shutil.copyfile(candidate_path, current_path)
+              print("Cards feed source data changed; staging the regenerated snapshot.")
+          PY
 
       - name: Validate every published feed
         run: |
