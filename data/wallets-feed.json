@@ -11,7 +11,7 @@
   "population_labelling": "EVERY wallet in this feed is paper|test. unit = booktally (observational) — issued display name (Registry PR #4825); the ledger unit of record remains soft_quota_token (see unit_transition). No wallet holds, represents, or implies real-money value; balances are observational accounting only.",
   "per_row_fields": "paper_test (true, every row) + paper_test_label + kind (paper|test) + unit (booktally (observational), the issued display unit; the provisioning events of record carry the legacy unit soft_quota_token — see unit_transition) — carried from each wallet's provisioning record so the page labels from feed data, never invented copy",
   "prohibited_content": "no winprob / metrics_internal / probability / odds / expected-value fields exist in this feed in any encoding — verified against the source fold at generation (0 probability-shaped keys in all ledger events)",
-  "balances": "fold-proven only (last-event balance_after). The only nonzero balances in the fold are the 12 genesis paper wallets at 1,000; the only nonzero deltas in the ledger are the 12 genesis faucets. Nothing in the fold implies a balance beyond measured values."
+  "balances": "fold-proven only (balance_after of each wallet's last ledger event). Every balance reflects the verified append-only fold; no estimates or implied values are introduced."
  },
  "reconciliation": {
   "feed_wallets": 705,
