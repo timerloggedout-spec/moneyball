@@ -96,6 +96,21 @@ jobs:
               print("Cards feed source data changed; staging the regenerated snapshot.")
           PY
 
+      - name: Rebuild the wallets projection from the verified ledger
+        run: |
+          set -euo pipefail
+          ledger_blob="$(git hash-object "$RUNNER_TEMP/wallet-ledger.jsonl")"
+          python3 scripts/generate_wallets_feed.py \
+            --ledger "$RUNNER_TEMP/wallet-ledger.jsonl" \
+            --out "$RUNNER_TEMP/wallets-feed.generated.json" \
+            --ledger-blob "$ledger_blob"
+          if cmp -s "$RUNNER_TEMP/wallets-feed.generated.json" data/wallets-feed.json; then
+            echo "Wallets feed unchanged."
+          else
+            cp "$RUNNER_TEMP/wallets-feed.generated.json" data/wallets-feed.json
+            echo "Wallets feed refreshed from the verified authoritative ledger."
+          fi
+
       - name: Rebuild the pools projection from the wallet ledger
         run: |
           set -euo pipefail
@@ -155,8 +170,9 @@ jobs:
             data/cards-feed.json
             data/pools-feed.json
             data/proposals-feed.json
-          commit-message: "data: refresh Book and cards publication feeds"
-          title: "data: refresh Book and cards feeds"
+            data/wallets-feed.json
+          commit-message: "data: refresh MoneyBall source projections"
+          title: "data: refresh MoneyBall source feeds"
           body: |
             Automated, receipt-preserving projection refresh.
 
