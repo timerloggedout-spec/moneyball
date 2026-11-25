@@ -27,4 +27,4 @@ Deploy shape (Pages-from-repo vs Vercel) is decided in the design doc — repo f
 
 ## Docs
 
-Design + specs live in [`docs/`](docs/). Founding design: site + market design (subjects · card schema · ownership model · settlement-from-receipts · widening path) — lands via proposal PR.
+Design + specs live in [`docs/`](docs/). [Feed automation](docs/FEED-AUTOMATION.md) records source ownership, the 15-minute refresh cadence, the wallet-ledger fold, validation, and App-based publication. Founding design: site + market design (subjects · card schema · ownership model · settlement-from-receipts · widening path) — lands via proposal PR.
