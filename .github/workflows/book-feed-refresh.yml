@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   repository_dispatch:
-    types: [book-feed-changed, cards-feed-changed]
+    types: [book-feed-changed, cards-feed-changed, wallets-feed-changed, pools-feed-changed, proposals-feed-changed]
 
 permissions:
   contents: read
