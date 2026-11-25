@@ -12,7 +12,7 @@ UNIT_TRANSITION = {"kind":"versioned unit-name transition (Registry issuance; fe
 
 def digest(event):
     body = {k: v for k, v in event.items() if k != "receipt"}
-    raw = json.dumps(body, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+    raw = json.dumps(body, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 def fold(events):
