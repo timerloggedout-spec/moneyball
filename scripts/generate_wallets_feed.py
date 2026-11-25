@@ -71,10 +71,21 @@ def build(events, ledger_blob=None, note=None):
             },
         }
         if is_pool:
-            for key in ("pool_class", "depth", "parent_wallet", "parent_entity",
-                        "entity_ref", "display", "grandfathered"):
-                if key in provision:
-                    row[key] = provision[key]
+            if provision.get("card_ref") is not None:
+                row.update({
+                    "pool_class": "moniker",
+                    "depth": 0,
+                    "parent_wallet": None,
+                    "parent_entity": None,
+                    "entity_ref": provision["card_ref"],
+                    "display": provision.get("card_moniker"),
+                    "grandfathered": True,
+                })
+            else:
+                for key in ("pool_class", "depth", "parent_wallet", "parent_entity",
+                            "entity_ref", "display", "grandfathered"):
+                    if key in provision:
+                        row[key] = provision[key]
         elif provision.get("participant") is not None:
             row["participant"] = provision["participant"]
         rows.append(row)
