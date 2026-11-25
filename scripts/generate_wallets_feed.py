@@ -82,8 +82,11 @@ def build(events, ledger_blob=None, note=None):
                     "grandfathered": True,
                 })
             else:
-                for key in ("pool_class", "depth", "parent_wallet", "parent_entity",
-                            "entity_ref", "display", "grandfathered"):
+                row["pool_class"] = provision.get("pool_class")
+                row["depth"] = provision.get("depth", 0)
+                row["parent_wallet"] = provision.get("parent_wallet")
+                row["parent_entity"] = provision.get("parent_entity")
+                for key in ("entity_ref", "display", "grandfathered"):
                     if key in provision:
                         row[key] = provision[key]
         elif provision.get("participant") is not None:
