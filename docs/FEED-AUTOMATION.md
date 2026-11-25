@@ -8,7 +8,7 @@ record of authority; this repository stores render-ready projections.
 
 `.github/workflows/book-feed-refresh.yml` runs every 15 minutes, accepts
 manual `workflow_dispatch`, and accepts the repository-dispatch events
-`book-feed-changed` and `cards-feed-changed`.
+`book-feed-changed`, `cards-feed-changed`, `wallets-feed-changed`,\n`pools-feed-changed`, and `proposals-feed-changed`.
 
 The scheduled run provides the automatic refresh path. The repository
 currently has no webhook delivery configured for the MoneyBall App, and
