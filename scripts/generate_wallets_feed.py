@@ -22,6 +22,20 @@ def fold(events):
     for seq, event in enumerate(events, 1):
         wid = event.get("wallet_id")
         receipt = event.get("receipt") or {}
+        def inspect_keys(value, path=f"row {seq}"):
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    normalized = key.lower().replace("-", "_")
+                    if any(term in normalized for term in (
+                        "winprob", "win_prob", "probability", "odds",
+                        "expected_value", "metrics_internal"
+                    )):
+                        errors.append(f"prohibited metric key at {path}.{key}")
+                    inspect_keys(child, f"{path}.{key}")
+            elif isinstance(value, list):
+                for index, child in enumerate(value):
+                    inspect_keys(child, f"{path}[{index}]")
+        inspect_keys(event)
         current = digest(event)
         if event.get("seq") != seq:
             errors.append(f"sequence mismatch at row {seq}")
@@ -52,13 +66,18 @@ def build(events, ledger_blob=None, note=None):
     rows = []
     for wid, provision in sorted(provisioned.items()):
         final = last[wid]
-        is_pool = provision.get("class") == "pool"
+        source_class = provision.get("class")
+        if source_class not in ("pool", "speculator"):
+            raise ValueError(f"unsupported wallet class for {wid}: {source_class!r}")
+        if provision.get("kind") != "paper|test":
+            raise ValueError(f"wallet {wid} lacks its paper|test provisioning label")
+        is_pool = source_class == "pool"
         row = {
             "wallet_id": wid,
             "class": "pool" if is_pool else None,
             "paper_test": True,
             "paper_test_label": PAPER_LABEL,
-            "kind": provision.get("kind", "paper|test"),
+            "kind": provision["kind"],
             "unit": UNIT,
             "balance": balances[wid],
             "balance_basis": BALANCE_BASIS,
@@ -96,6 +115,12 @@ def build(events, ledger_blob=None, note=None):
     pools = sum(r["class"] == "pool" for r in rows)
     if paper + pools != len(rows) or any(r["kind"] != "paper|test" for r in rows):
         raise ValueError("wallet feed population violates paper/test classification")
+    claims = dict(CLAIMS)
+    claims["balances"] = (
+        "fold-proven only (balance_after of each wallet's last ledger event). "
+        "Every balance reflects the verified append-only fold; no estimates "
+        "or implied values are introduced."
+    )
     return {
         "schema": SCHEMA,
         "generated_from": {
@@ -105,7 +130,7 @@ def build(events, ledger_blob=None, note=None):
             "ledger_blob": ledger_blob,
             "generator": "[MUSEai]@{role:{moneyball-plane}} — wallets-feed from the wallet-ledger fold of record (feed-machinery custody); regen at current ledger head" + (f"; {note}" if note else ""),
         },
-        "claims_ceiling": CLAIMS,
+        "claims_ceiling": claims,
         "reconciliation": {
             "feed_wallets": len(rows),
             "fold_distinct_wallets": len(balances),
