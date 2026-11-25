@@ -5,7 +5,7 @@
   "ledger_events": 717,
   "head_seq": 717,
   "ledger_blob": "0b0c4d5e302ebdb14c59d5f532c5b22f487ade2b",
-  "generator": "[MUSEai]@{role:{moneyball-plane}} — wallets-feed from the wallet-ledger fold of record (feed-machinery custody); regen at 717 events (devwork/recon/arm/loop classes + depth rows landed)"
+  "generator": "[MUSEai]@{role:{moneyball-plane}} — wallets-feed from the wallet-ledger fold of record (feed-machinery custody); regen at current ledger head"
  },
  "claims_ceiling": {
   "population_labelling": "EVERY wallet in this feed is paper|test. unit = booktally (observational) — issued display name (Registry PR #4825); the ledger unit of record remains soft_quota_token (see unit_transition). No wallet holds, represents, or implies real-money value; balances are observational accounting only.",
